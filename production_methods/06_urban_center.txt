@@ -1,15 +1,13 @@
 ﻿pm_market_stalls = {
 	texture = "gfx/interface/icons/production_method_icons/market_stalls.dds"
-
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_services_add = 15
 		}
-
 		level_scaled = {
-			building_employment_laborers_add = 1750
-			building_employment_clerks_add = 450
-			building_employment_shopkeepers_add = 200
+			building_employment_laborers_add = 880
+			building_employment_clerks_add = 230
+			building_employment_shopkeepers_add = 100
 		}
 	}
 }
@@ -27,9 +25,9 @@ pm_market_squares = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3000
-			building_employment_clerks_add = 1400
-			building_employment_shopkeepers_add = 400
+			building_employment_laborers_add = 1500
+			building_employment_clerks_add = 700
+			building_employment_shopkeepers_add = 200
 		}
 	}
 }
@@ -48,9 +46,9 @@ pm_covered_markets = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2500
-			building_employment_clerks_add = 1900
-			building_employment_shopkeepers_add = 400
+			building_employment_laborers_add = 1250
+			building_employment_clerks_add = 950
+			building_employment_shopkeepers_add = 200
 		}
 	}
 }
@@ -70,9 +68,9 @@ pm_arcades = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1000
-			building_employment_clerks_add = 3000
-			building_employment_shopkeepers_add = 1000
+			building_employment_laborers_add = 500
+			building_employment_clerks_add = 1500
+			building_employment_shopkeepers_add = 500
 		}
 	}
 
@@ -100,7 +98,7 @@ pm_gas_streetlights = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 250
+			building_employment_laborers_add = 130
 		}
 	}
 
@@ -127,8 +125,8 @@ pm_electric_streetlights = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 200
-			building_employment_engineers_add = 75
+			building_employment_laborers_add = 100
+			building_employment_engineers_add = 40
 		}
 	}
 
@@ -171,9 +169,9 @@ pm_public_trams = {
 		}
 
 		level_scaled = {
-			building_employment_engineers_add = 100
-			building_employment_machinists_add = 200
-			building_employment_laborers_add = -500
+			building_employment_engineers_add = 50
+			building_employment_machinists_add = 100
+			building_employment_laborers_add = -250
 		}
 	}
 }
@@ -198,9 +196,9 @@ pm_public_motor_carriages = {
 		}
 
 		level_scaled = {
-			building_employment_engineers_add = 200
-			building_employment_machinists_add = 400
-			building_employment_laborers_add = -1000
+			building_employment_engineers_add = 100
+			building_employment_machinists_add = 200
+			building_employment_laborers_add = -500
 		}
 	}
 }
