@@ -3,17 +3,13 @@
 
 	building_modifiers = {
 		workforce_scaled = {
-			# input goods
-			goods_input_grain_add = 40		# x20 =  800
-
-			# output goods
+			goods_input_grain_add = 40		# x20 = 800
 			goods_output_groceries_add = 45	# x30 = 1350
 		}
 
 		level_scaled = {
-			# profit = 550
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2250
+			building_employment_shopkeepers_add = 60	# x2.0 = 120 laborer wages
+			building_employment_laborers_add = 565		# x2.0 = 1130 laborer wages
 		}
 	}
 }
@@ -1608,10 +1604,10 @@ pm_open_hearth_process = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2500
-			building_employment_machinists_add = 1250
-			building_employment_engineers_add = 750
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1250
+			building_employment_machinists_add = 625
+			building_employment_engineers_add = 375
 		}
 	}
 }
@@ -1642,10 +1638,10 @@ pm_electric_arc_process = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 500
 		}
 	}
 
@@ -1673,7 +1669,7 @@ pm_watertube_boiler_building_steel_mills = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1500
+			building_employment_laborers_add = -750
 		}
 	}
 }
@@ -1699,7 +1695,7 @@ pm_rotary_valve_engine_building_steel_mills = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -1000
 		}
 	}
 }
@@ -1721,10 +1717,10 @@ pm_steam_engines = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2500
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1250
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 250
 		}
 	}
 }
@@ -1753,10 +1749,10 @@ pm_electric_engines = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 500
 		}
 	}
 
@@ -1787,10 +1783,10 @@ pm_diesel_engines = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 1500
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 750
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 750
 		}
 	}
 }
@@ -1816,8 +1812,8 @@ pm_watertube_boiler_building_motor_industry = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -500
-			building_employment_machinists_add = -500
+			building_employment_laborers_add = -250
+			building_employment_machinists_add = -250
 		}
 	}
 }
@@ -1843,8 +1839,8 @@ pm_rotary_valve_engine_building_motor_industry = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
-			building_employment_machinists_add = -500
+			building_employment_laborers_add = -500
+			building_employment_machinists_add = -250
 		}
 	}
 }
@@ -1870,8 +1866,8 @@ pm_assembly_lines_building_motor_industry = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1500
-			building_employment_machinists_add = -500
+			building_employment_laborers_add = -750
+			building_employment_machinists_add = -250
 		}
 	}
 
@@ -1899,8 +1895,8 @@ pm_assembly_lines_building_automotive_industry = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1500
-			building_employment_machinists_add = -500
+			building_employment_laborers_add = -750
+			building_employment_machinists_add = -250
 		}
 	}
 
@@ -1922,10 +1918,10 @@ pm_basic_shipbuilding = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2250
-			building_employment_machinists_add = 750
-			building_employment_engineers_add = 125
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1125
+			building_employment_machinists_add = 375
+			building_employment_engineers_add = 62
 		}
 	}
 }
@@ -1950,10 +1946,10 @@ pm_complex_shipbuilding = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 3000
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 250
 		}
 	}
 }
@@ -1984,10 +1980,10 @@ pm_metal_shipbuilding = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 500
 		}
 	}
 }
@@ -2018,10 +2014,10 @@ pm_arc_welding_shipbuilding = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 1000
-			building_employment_machinists_add = 2000
-			building_employment_engineers_add = 1500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 750
 		}
 	}
 
@@ -2047,10 +2043,10 @@ pm_military_shipbuilding_wooden = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 3500
-			building_employment_machinists_add = 750
-			building_employment_engineers_add = 125
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1750
+			building_employment_machinists_add = 375
+			building_employment_engineers_add = 62
 		}
 	}
 }
@@ -2074,10 +2070,10 @@ pm_military_shipbuilding_wooden_2 = {
 		}
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 3000
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 250
 		}
 	}
 }
@@ -2100,10 +2096,10 @@ pm_military_shipbuilding_steam = {
 		}
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2500
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1250
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 500
 		}
 	}
 }
@@ -2127,10 +2123,10 @@ pm_military_shipbuilding_steam_2 = {
 		}
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 500
 		}
 	}
 
@@ -2161,10 +2157,10 @@ pm_automobile_production = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 500
 		}
 	}
 }
@@ -2193,10 +2189,10 @@ pm_mass_automobile_production = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 1500
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 750
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 750
 		}
 	}
 }
@@ -2219,12 +2215,12 @@ pm_aeroplane_production = {
 			goods_input_fabric_add = 4
 
 			# output goods
-			goods_output_automobiles_add = -10
+			goods_output_automobiles_add = -5
 			goods_output_aeroplanes_add = 10
 		}
 
 		level_scaled = {
-			building_employment_engineers_add = 125
+			building_employment_engineers_add = 62
 		}
 	}
 }
@@ -2246,12 +2242,12 @@ pm_tank_production = {
 			goods_input_steel_add = 5
 
 			# output goods
-			goods_output_automobiles_add = -20
+			goods_output_automobiles_add = -10
 			goods_output_tanks_add = 20
 		}
 
 		level_scaled = {
-			building_employment_engineers_add = 125
+			building_employment_engineers_add = 62
 		}
 	}
 }
@@ -2269,10 +2265,10 @@ pm_telephones = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 1500
-			building_employment_machinists_add = 2000
-			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 750
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
 		}
 	}
 }
@@ -2289,12 +2285,12 @@ pm_radios = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_electricity_add = 50
-			goods_output_telephones_add = -20
+			goods_output_telephones_add = -10
 			goods_output_radios_add = 40
 		}
 
 		level_scaled = {
-			building_employment_engineers_add = 500
+			building_employment_engineers_add = 250
 		}
 	}
 
@@ -2316,9 +2312,9 @@ pm_muskets = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 4000
-			building_employment_machinists_add = 250
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 125
 		}
 	}
 }
@@ -2343,9 +2339,9 @@ pm_rifles = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 3500
-			building_employment_machinists_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1750
+			building_employment_machinists_add = 500
 		}
 	}
 }
@@ -2370,10 +2366,10 @@ pm_repeaters = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 3000
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 250
 		}
 	}
 }
@@ -2399,10 +2395,10 @@ pm_bolt_action_rifles = {
 
 		level_scaled = {
 			# employment
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2500
-			building_employment_machinists_add = 1250
-			building_employment_engineers_add = 750
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1250
+			building_employment_machinists_add = 625
+			building_employment_engineers_add = 375
 		}
 	}
 }
@@ -2429,9 +2425,9 @@ pm_cannons = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 3500
-			building_employment_machinists_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1750
+			building_employment_machinists_add = 500
 		}
 	}
 }
@@ -2454,10 +2450,10 @@ pm_smoothbores = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 3250
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 125
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1625
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 62
 		}
 	}
 }
@@ -2481,10 +2477,10 @@ pm_breech_loaders = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2500
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1250
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 250
 		}
 	}
 }
@@ -2508,10 +2504,10 @@ pm_recoiled_barrels = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 500
 		}
 	}
 }
@@ -2535,7 +2531,7 @@ pm_rotary_valve_engine_building_arms_industry = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -1000
 		}
 	}
 }
@@ -2560,7 +2556,7 @@ pm_assembly_lines_building_arms_industry = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2500
+			building_employment_laborers_add = -1250
 		}
 	}
 
@@ -2587,10 +2583,10 @@ pm_percussion_caps = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 3000
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 500
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 250
 		}
 	}
 }
@@ -2619,10 +2615,10 @@ pm_explosive_shells = {
 		}
 
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_laborers_add = 2500
-			building_employment_machinists_add = 1250
-			building_employment_engineers_add = 750
+			building_employment_shopkeepers_add = 125
+			building_employment_laborers_add = 1250
+			building_employment_machinists_add = 625
+			building_employment_engineers_add = 375
 		}
 	}
 }
@@ -2646,7 +2642,7 @@ pm_rotary_valve_engine_building_munition_plants = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -1000
 		}
 	}
 }
@@ -2671,7 +2667,7 @@ pm_assembly_lines_building_munition_plants = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -3000
+			building_employment_laborers_add = -1500
 		}
 	}
 
