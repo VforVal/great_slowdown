@@ -1,0 +1,12 @@
+{
+  "name" : "The great slowdown",
+	"id" : "",
+  "version" : "0.1",
+  "supported_game_version" : "0.1",
+  "short_description" : "Changes to the construction sector and building employment per level intended to slow down the economy and prevent the great peasant crash of 1880",
+  "tags" : ["realism", "economy", "construction", "building", "employment"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}
