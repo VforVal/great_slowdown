@@ -5,3 +5,4 @@ This mod aims to slow down the game economy and development in Victoria 3 to mor
 
 ## Summary of Recent Changes
 - **Employment:** Reduced employment levels across various sectors to slow down economic growth and development. This reduces the de-pesantification effect felt throughout the world in-game.
+- **Construction Inputs:** Rebalanced the input goods required for construction sector production methods and reduced the construction output
