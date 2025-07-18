@@ -5,7 +5,7 @@
 
 # Global Static Modifiers
 base_values = {
-	country_weekly_innovation_add = 50
+	country_weekly_innovation_add = 10
 	country_weekly_innovation_max_add = 50
 	country_tech_spread_add = 25
 
@@ -21,7 +21,7 @@ base_values = {
 
 	country_law_enactment_max_setbacks_add = 3
 
-	country_minting_add = 500
+	country_minting_add = 50
 	country_government_dividends_efficiency_add = 0.25
 
 	state_tax_capacity_add = 100
@@ -40,8 +40,7 @@ base_values = {
 	state_capitalists_investment_pool_contribution_add = 0.30
 
 	# To balance for unincorporated states not paying taxes
-	state_unincorporated_starting_wages_mult = -0.20
-	building_unincorporated_subsistence_output_mult = -0.20
+	state_unincorporated_starting_wages_mult = -0.50
 
 	country_construction_add = 1
 
@@ -49,7 +48,7 @@ base_values = {
 
 	building_economy_of_scale_level_cap_add = 20
 
-	state_market_access_price_impact = 0.75
+	state_market_access_price_impact = 0.7
 
 	country_company_throughput_bonus_add = 0.2
 	country_company_construction_efficiency_bonus_add = 0.5

@@ -335,7 +335,7 @@ modifier_rejected_enlightened_despotism = {
 
 modifier_industrial_organisation_shaken = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	country_construction_add = -5
+	country_construction_goods_cost_mult = 2
 	country_resource_discovery_chance_mult = -0.15
 }
 
