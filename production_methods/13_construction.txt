@@ -5,7 +5,7 @@
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 1
+			country_construction_add = 2
 		}
 	}
 
@@ -16,9 +16,9 @@
 		}
 
 		level_scaled = {
-			building_employment_bureaucrats_add = 80
-			building_employment_clerks_add = 80
-			building_employment_laborers_add = 640
+			building_employment_bureaucrats_add = 100
+			building_employment_clerks_add = 100
+			building_employment_laborers_add = 800
 		}
 		unscaled = {
 			building_laborers_mortality_mult = 0.1
@@ -31,6 +31,7 @@
 		}
 	}
 }
+
 pm_iron_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
 
@@ -40,7 +41,7 @@ pm_iron_frame_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 3
+			country_construction_add = 5
 		}
 
 	}
@@ -69,6 +70,7 @@ pm_iron_frame_buildings = {
 		}
 	}
 }
+
 pm_steel_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
 
@@ -78,7 +80,7 @@ pm_steel_frame_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 8
+			country_construction_add = 10
 		}
 	}
 
@@ -107,6 +109,7 @@ pm_steel_frame_buildings = {
 		}
 	}
 }
+
 pm_arc_welded_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
 
@@ -116,7 +119,7 @@ pm_arc_welded_buildings = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_construction_add = 20
+			country_construction_add = 15
 		}
 	}
 

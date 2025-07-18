@@ -14,6 +14,7 @@
 		}
 	}
 }
+
 automatic_irrigation_building_coffee_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -42,6 +43,7 @@ automatic_irrigation_building_coffee_plantation = {
 		}
 	}
 }
+
 pm_steam_rail_transport = {
 	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
 
@@ -66,6 +68,7 @@ pm_steam_rail_transport = {
 		}
 	}
 }
+
 default_building_cotton_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -82,6 +85,7 @@ default_building_cotton_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_cotton_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -110,6 +114,7 @@ automatic_irrigation_building_cotton_plantation = {
 		}
 	}
 }
+
 default_building_dye_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -126,6 +131,7 @@ default_building_dye_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_dye_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -154,6 +160,7 @@ automatic_irrigation_building_dye_plantation = {
 		}
 	}
 }
+
 default_building_opium_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -170,6 +177,7 @@ default_building_opium_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_opium_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -198,6 +206,7 @@ automatic_irrigation_building_opium_plantation = {
 		}
 	}
 }
+
 default_building_tea_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -214,6 +223,7 @@ default_building_tea_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_tea_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -242,6 +252,7 @@ automatic_irrigation_building_tea_plantation = {
 		}
 	}
 }
+
 default_building_tobacco_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -258,6 +269,7 @@ default_building_tobacco_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_tobacco_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -286,6 +298,7 @@ automatic_irrigation_building_tobacco_plantation = {
 		}
 	}
 }
+
 default_building_sugar_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -302,6 +315,7 @@ default_building_sugar_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_sugar_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -330,6 +344,7 @@ automatic_irrigation_building_sugar_plantation = {
 		}
 	}
 }
+
 default_building_banana_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -344,6 +359,7 @@ default_building_banana_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_banana_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -372,6 +388,7 @@ automatic_irrigation_building_banana_plantation = {
 		}
 	}
 }
+
 default_building_silk_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -388,6 +405,7 @@ default_building_silk_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_silk_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -416,6 +434,7 @@ automatic_irrigation_building_silk_plantation = {
 		}
 	}
 }
+
 default_building_vineyard_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
 
@@ -432,6 +451,7 @@ default_building_vineyard_plantation = {
 		}
 	}
 }
+
 automatic_irrigation_building_vineyard_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
