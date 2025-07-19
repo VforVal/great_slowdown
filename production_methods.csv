@@ -1,0 +1,343 @@
+production_method_name,parent_building,filepath,filename,inputs,outputs,total_employment
+pm_dummy,dummy,common\production_methods\00_dummy.txt,00_dummy.txt,{},{},0
+pm_bakery,industry,common\production_methods\01_industry.txt,01_industry.txt,{'grain': 40},{'groceries': 45},5000
+pm_sweeteners,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'grain': 40, 'sugar': 15}",{'groceries': 65},5000
+pm_baking_powder,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'grain': 80, 'sugar': 30}",{'groceries': 120},5000
+pm_disabled_canning,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_cannery,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'grain': -20, 'meat': 20, 'iron': 10}",{'groceries': 30},500
+pm_cannery_fish,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'grain': -20, 'fish': 30, 'iron': 10}",{'groceries': 30},500
+pm_vacuum_canning,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'grain': -30, 'fish': 30, 'meat': 20, 'iron': 10, 'oil': 5}",{'groceries': 60},700
+pm_vacuum_canning_principle_3,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'grain': -30, 'fish': 30, 'meat': 20, 'iron': 10, 'oil': 5}",{'groceries': 70},700
+pm_disabled_distillery,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_pot_stills,industry,common\production_methods\01_industry.txt,01_industry.txt,{'sugar': 25},"{'liquor': 60, 'groceries': -30}",350
+pm_patent_stills,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'sugar': 25, 'glass': 10}","{'liquor': 100, 'groceries': -40}",900
+pm_manual_dough_processing,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_automated_bakery,industry,common\production_methods\01_industry.txt,01_industry.txt,{'tools': 10},{},-2500
+pm_handsewn_clothes,industry,common\production_methods\01_industry.txt,01_industry.txt,{'fabric': 40},{'clothes': 45},5000
+pm_dye_workshops,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'fabric': 40, 'dye': 5}",{'clothes': 60},5000
+pm_sewing_machines,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'fabric': 60, 'dye': 10, 'tools': 5}",{'clothes': 100},5000
+pm_electric_sewing_machines,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'fabric': 60, 'dye': 20, 'tools': 10, 'electricity': 10}",{'clothes': 140},5000
+pm_no_luxury_clothes,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_craftsman_sewing,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'silk': 15, 'fabric': -15}","{'clothes': -30, 'luxury_clothes': 30}",500
+pm_elastics,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'rubber': 10, 'silk': 35, 'fabric': -35}","{'clothes': -70, 'luxury_clothes': 70}",1000
+pm_traditional_looms,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_mechanized_looms,industry,common\production_methods\01_industry.txt,01_industry.txt,{'tools': 5},{},-1500
+pm_automatic_power_looms,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'electricity': 10}",{},-2500
+pm_handcrafted_furniture,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 30, 'fabric': 10}",{'furniture': 45},5000
+pm_lathe,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 30, 'fabric': 10, 'tools': 5}",{'furniture': 65},5000
+pm_mechanized_workshops,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 50, 'fabric': 10, 'tools': 10}",{'furniture': 110},5500
+pm_no_luxuries,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_luxury_furniture,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'hardwood': 15, 'wood': -15}","{'furniture': -25, 'luxury_furniture': 25}",500
+pm_precision_tools,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'hardwood': 25, 'tools': 10, 'wood': -25}","{'furniture': -55, 'luxury_furniture': 55}",1000
+pm_automation_disabled,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_watertube_boiler_building_furniture_manufacturies,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'coal': 5}",{},-1500
+pm_rotary_valve_engine_building_furniture_manufacturies,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'coal': 10}",{},-2000
+pm_assembly_lines_building_furniture_manufacturies,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'oil': 5, 'electricity': 5}",{},-3000
+pm_forest_glass,industry,common\production_methods\01_industry.txt,01_industry.txt,{'wood': 30},{'glass': 30},5000
+pm_leaded_glass,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 20, 'lead': 10}",{'glass': 40},5000
+pm_crystal_glass,industry,common\production_methods\01_industry.txt,01_industry.txt,{'lead': 35},{'glass': 60},5000
+pm_houseware_plastics,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'oil': 20, 'lead': 30}",{'glass': 100},5000
+pm_disabled_ceramics,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_ceramics,industry,common\production_methods\01_industry.txt,01_industry.txt,{'dye': 5},"{'glass': -10, 'porcelain': 10}",250
+pm_bone_china,industry,common\production_methods\01_industry.txt,01_industry.txt,{'dye': 10},"{'glass': -20, 'porcelain': 30}",500
+pm_manual_glassblowing,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_automatic_bottle_blowers,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 2, 'engines': 2, 'oil': 5}",{},-2500
+pm_crude_tools,industry,common\production_methods\01_industry.txt,01_industry.txt,{'wood': 30},{'tools': 30},5000
+pm_pig_iron,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 30, 'iron': 20}",{'tools': 60},5000
+pm_steel,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 30, 'steel': 20}",{'tools': 80},5000
+pm_rubber_grips,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'rubber': 10, 'steel': 30}",{'tools': 110},5000
+pm_watertube_boiler_building_tooling_workshops,industry,common\production_methods\01_industry.txt,01_industry.txt,{'coal': 10},{},-1500
+pm_rotary_valve_engine_building_tooling_workshops,industry,common\production_methods\01_industry.txt,01_industry.txt,{'coal': 15},{},-2000
+pm_assembly_lines_building_tooling_workshops,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'oil': 10, 'electricity': 5}",{},-3000
+pm_pulp_pressing,industry,common\production_methods\01_industry.txt,01_industry.txt,{'wood': 30},{'paper': 40},5000
+pm_sulfite_pulping,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 30, 'sulfur': 10}",{'paper': 70},5000
+pm_bleached_paper,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 30, 'sulfur': 10, 'dye': 10}",{'paper': 100},5000
+pm_watertube_boiler_building_paper_mills,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'coal': 5}",{},-1500
+pm_rotary_valve_engine_building_paper_mills,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'coal': 10}",{},-2000
+pm_artificial_fertilizers,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'sulfur': 30, 'iron': 10}",{'fertilizer': 90},5000
+pm_improved_fertilizer,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'sulfur': 30, 'iron': 30}",{'fertilizer': 140},5000
+pm_nitrogen_fixation,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'sulfur': 40, 'oil': 20, 'iron': 30}",{'fertilizer': 200},5000
+pm_no_explosives_production,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_leblanc_process,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'sulfur': 20, 'fertilizer': 20}",{'explosives': 50},5000
+pm_vacuum_evaporation,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'sulfur': 40, 'fertilizer': 40, 'paper': 20}",{'explosives': 110},4500
+pm_brine_electrolysis,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'sulfur': 40, 'fertilizer': 50, 'paper': 30, 'electricity': 20}",{'explosives': 150},4000
+pm_dye_production,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'sulfur': 20, 'fertilizer': 30}",{'dye': 80},5000
+pm_no_artificial_fibers,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_rayon,industry,common\production_methods\01_industry.txt,01_industry.txt,{'wood': 10},"{'dye': -10, 'silk': 30}",0
+pm_blister_steel_process,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'iron': 40, 'coal': 30}",{'steel': 65},5000
+pm_bessemer_process,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'iron': 60, 'coal': 30}",{'steel': 90},5000
+pm_open_hearth_process,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'iron': 90, 'coal': 30}",{'steel': 120},5000
+pm_electric_arc_process,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'iron': 100, 'coal': 30, 'electricity': 30}",{'steel': 150},5000
+pm_watertube_boiler_building_steel_mills,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'coal': 5}",{},-1500
+pm_rotary_valve_engine_building_steel_mills,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'coal': 10}",{},-2000
+pm_steam_engines,industry,common\production_methods\01_industry.txt,01_industry.txt,{'steel': 30},{'engines': 40},5000
+pm_electric_engines,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 40, 'electricity': 30}",{'engines': 80},5000
+pm_diesel_engines,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 50, 'oil': 50}",{'engines': 120},5000
+pm_watertube_boiler_building_motor_industry,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'coal': 5}",{},-1000
+pm_rotary_valve_engine_building_motor_industry,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'coal': 10}",{},-1500
+pm_assembly_lines_building_motor_industry,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'oil': 5, 'electricity': 5}",{},-2000
+pm_assembly_lines_building_automotive_industry,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'tools': 5, 'oil': 5, 'electricity': 5}",{},-2000
+pm_basic_shipbuilding,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 40, 'fabric': 20}",{'clippers': 35},5000
+pm_complex_shipbuilding,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'wood': 20, 'hardwood': 20, 'fabric': 20, 'engines': 5}",{'clippers': 70},5000
+pm_metal_shipbuilding,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 30, 'coal': 10, 'engines': 10}",{'steamers': 65},5000
+pm_arc_welding_shipbuilding,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 30, 'electricity': 30, 'engines': 10}",{'steamers': 80},5000
+pm_no_military_shipbuilding,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_military_shipbuilding_wooden,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'hardwood': 20, 'fabric': 20, 'iron': 10}",{'manowars': 35},5000
+pm_military_shipbuilding_wooden_2,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'hardwood': 30, 'fabric': 10, 'engines': 5, 'iron': 10}",{'manowars': 45},5000
+pm_military_shipbuilding_steam,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 40, 'coal': 20, 'engines': 10}",{'ironclads': 55},5000
+pm_military_shipbuilding_steam_2,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 40, 'electricity': 30, 'engines': 20}",{'ironclads': 70},5000
+pm_automobile_production,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'engines': 10, 'rubber': 5, 'oil': 5}",{'automobiles': 30},5000
+pm_mass_automobile_production,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'engines': 10, 'rubber': 10, 'oil': 10}",{'automobiles': 60},5000
+pm_no_aeroplane_production,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_aeroplane_production,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'hardwood': 4, 'fabric': 4}","{'automobiles': -10, 'aeroplanes': 10}",250
+pm_no_tank_production,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_tank_production,industry,common\production_methods\01_industry.txt,01_industry.txt,{'steel': 5},"{'automobiles': -20, 'tanks': 20}",250
+pm_telephones,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'iron': 20, 'rubber': 20, 'lead': 20, 'tools': 10}",{'telephones': 60},5000
+pm_no_radios,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_radios,industry,common\production_methods\01_industry.txt,01_industry.txt,{'electricity': 50},"{'telephones': -20, 'radios': 40}",500
+pm_muskets,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'iron': 10, 'hardwood': 10}",{'small_arms': 30},5000
+pm_rifles,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 10, 'hardwood': 10, 'tools': 5}",{'small_arms': 50},5000
+pm_repeaters,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 20, 'hardwood': 10, 'tools': 10}",{'small_arms': 70},5000
+pm_bolt_action_rifles,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 20, 'hardwood': 10, 'tools': 20, 'oil': 10}",{'small_arms': 100},5000
+pm_no_artillery_production,industry,common\production_methods\01_industry.txt,01_industry.txt,{},{},0
+pm_cannons,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'iron': 15, 'hardwood': 10}",{'artillery': 25},5000
+pm_smoothbores,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'iron': 25, 'hardwood': 15}",{'artillery': 45},5000
+pm_breech_loaders,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 25, 'hardwood': 10, 'tools': 10}",{'artillery': 65},5000
+pm_recoiled_barrels,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'steel': 40, 'tools': 20, 'oil': 10}",{'artillery': 90},5000
+pm_rotary_valve_engine_building_arms_industry,industry,common\production_methods\01_industry.txt,01_industry.txt,{'coal': 15},{},-2000
+pm_assembly_lines_building_arms_industry,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'oil': 10, 'electricity': 5}",{},-2500
+pm_percussion_caps,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'explosives': 20, 'lead': 20}",{'ammunition': 50},5000
+pm_explosive_shells,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'explosives': 40, 'lead': 30}",{'ammunition': 90},5000
+pm_rotary_valve_engine_building_munition_plants,industry,common\production_methods\01_industry.txt,01_industry.txt,{'coal': 15},{},-2000
+pm_assembly_lines_building_munition_plants,industry,common\production_methods\01_industry.txt,01_industry.txt,"{'oil': 10, 'electricity': 5}",{},-3000
+pm_simple_farming,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},{'grain': 20},5000
+pm_soil_enriching_farming,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'fertilizer': 5},{'grain': 30},5000
+pm_fertilization,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'fertilizer': 10},{'grain': 45},5000
+pm_chemical_fertilizer,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'fertilizer': 15},{'grain': 60},5000
+pm_no_secondary,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},{},0
+pm_potatoes,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},"{'grain': -10, 'liquor': 10}",0
+pm_apple_orchards,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},"{'grain': -10, 'fruit': 5, 'sugar': 5}",0
+pm_tools_disabled,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},{},0
+pm_tools,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'tools': 2},{},-1000
+pm_steam_threshers,agriculture,common\production_methods\02_agro.txt,02_agro.txt,"{'tools': 2, 'coal': 1}",{},-1500
+pm_tractors,agriculture,common\production_methods\02_agro.txt,02_agro.txt,"{'coal': 2, 'engines': 1}",{},-2000
+pm_compression_ignition_tractors,agriculture,common\production_methods\02_agro.txt,02_agro.txt,"{'oil': 2, 'engines': 1}",{},-2500
+pm_citrus_orchards,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},"{'grain': -10, 'fruit': 5, 'sugar': 5}",0
+pm_simple_farming_building_rice_farm,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},{'grain': 35},10000
+pm_soil_enriching_farming_building_rice_farm,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'fertilizer': 10},{'grain': 50},10000
+pm_fertilization_building_rice_farm,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'fertilizer': 20},{'grain': 75},10000
+pm_chemical_fertilizer_building_rice_farm,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'fertilizer': 30},{'grain': 100},10000
+pm_fig_orchards_building_rice_farm,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},"{'grain': -30, 'fruit': 12, 'sugar': 18}",0
+pm_tools_building_rice_farm,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'tools': 4},{},-2000
+pm_steam_threshers_building_rice_farm,agriculture,common\production_methods\02_agro.txt,02_agro.txt,"{'tools': 4, 'coal': 2}",{},-3000
+pm_fig_orchards,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},"{'grain': -10, 'fruit': 5, 'sugar': 5}",0
+pm_simple_ranch,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},{'fabric': 5},0
+pm_sheep_farms,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'grain': 10},"{'fabric': 15, 'fertilizer': 2}",0
+pm_intensive_grazing_ranch,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'grain': 15},"{'fabric': 25, 'fertilizer': 5}",0
+pm_open_air_stockyards,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},{'meat': 10},5000
+pm_butchering_tools,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'tools': 2},{'meat': 15},5000
+pm_slaughterhouses,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'tools': 5},{'meat': 25},5000
+pm_mechanized_slaughtering,agriculture,common\production_methods\02_agro.txt,02_agro.txt,"{'tools': 5, 'coal': 5}",{'meat': 35},5000
+pm_standard_fences,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},{},0
+pm_barbed_wire_fences,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'iron': 1},{},-500
+pm_electric_fencing,agriculture,common\production_methods\02_agro.txt,02_agro.txt,"{'iron': 1, 'electricity': 1}",{},-1000
+pm_unrefrigerated,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{},{},0
+pm_refrigerated_storage_building_livestock_ranch,agriculture,common\production_methods\02_agro.txt,02_agro.txt,{'electricity': 1},{},-500
+pm_refrigerated_rail_cars_building_livestock_ranch,agriculture,common\production_methods\02_agro.txt,02_agro.txt,"{'electricity': 1, 'transportation': 1}",{},-1000
+pm_picks_and_shovels_building_coal_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'tools': 5},{'coal': 25},5000
+pm_atmospheric_engine_pump_building_coal_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'tools': 10},{'coal': 40},5000
+pm_condensing_engine_pump_building_coal_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'tools': 15},{'coal': 60},5000
+pm_diesel_pump_building_coal_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'oil': 5}",{'coal': 90},5000
+pm_no_explosives,mines,common\production_methods\03_mines.txt,03_mines.txt,{},{},0
+pm_nitroglycerin_building_coal_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 5},{'coal': 15},250
+pm_dynamite_building_coal_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 10},{'coal': 25},250
+pm_no_steam_automation,mines,common\production_methods\03_mines.txt,03_mines.txt,{},{},0
+pm_steam_donkey_building_coal_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'engines': 1},{'coal': -3},-1000
+pm_road_carts,mines,common\production_methods\03_mines.txt,03_mines.txt,{},{},0
+pm_picks_and_shovels_building_iron_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'tools': 5},{'iron': 20},5000
+pm_atmospheric_engine_pump_building_iron_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 10, 'coal': 10}",{'iron': 40},5000
+pm_condensing_engine_pump_building_iron_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'coal': 15}",{'iron': 60},5000
+pm_diesel_pump_building_iron_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'oil': 5}",{'iron': 70},5000
+pm_nitroglycerin_building_iron_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 5},{'iron': 12},250
+pm_dynamite_building_iron_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 10},{'iron': 20},250
+pm_steam_donkey_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'engines': 1, 'coal': 4}",{},-1000
+pm_rail_transport_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'transportation': 5},{},-1000
+pm_picks_and_shovels_building_lead_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'tools': 5},{'lead': 20},5000
+pm_atmospheric_engine_pump_building_lead_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 10, 'coal': 10}",{'lead': 40},5000
+pm_condensing_engine_pump_building_lead_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'coal': 15}",{'lead': 60},5000
+pm_diesel_pump_building_lead_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'oil': 5}",{'lead': 70},5000
+pm_nitroglycerin_building_lead_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 5},{'lead': 12},250
+pm_dynamite_building_lead_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 10},{'lead': 20},250
+pm_picks_and_shovels_building_sulfur_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'tools': 5},{'sulfur': 20},5000
+pm_atmospheric_engine_pump_building_sulfur_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 10, 'coal': 10}",{'sulfur': 40},5000
+pm_condensing_engine_pump_building_sulfur_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'coal': 15}",{'sulfur': 60},5000
+pm_diesel_pump_building_sulfur_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'oil': 5}",{'sulfur': 80},5000
+pm_nitroglycerin_building_sulfur_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 5},{'sulfur': 10},250
+pm_dynamite_building_sulfur_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 10},{'sulfur': 20},250
+pm_picks_and_shovels_building_gold_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'tools': 5},{'gold': 8},5000
+pm_atmospheric_engine_pump_building_gold_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 10, 'coal': 10}",{'gold': 15},5000
+pm_condensing_engine_pump_building_gold_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'coal': 15}",{'gold': 25},5000
+pm_diesel_pump_building_gold_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,"{'tools': 15, 'oil': 5}",{'gold': 30},5000
+pm_nitroglycerin_building_gold_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 5},{'gold': 5},250
+pm_dynamite_building_gold_mine,mines,common\production_methods\03_mines.txt,03_mines.txt,{'explosives': 10},{'gold': 10},250
+pm_steam_rail_transport,plantations,common\production_methods\04_plantations.txt,04_plantations.txt,{'transportation': 5},{},-1000
+pm_no_organization,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_general_training,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_advanced_tactics_training,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_training_streamlining,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_nco_incorporation,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_mobile_warfare_tactics,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_no_organization_conscription,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_general_training_conscription,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_advanced_tactics_training_conscription,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_training_streamlining_conscription,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_nco_incorporation_conscription,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_mobile_warfare_tactics_conscription,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_no_naval_theory,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_power_of_the_purse,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_jeune_ecole,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_sea_lane_strategies,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_battlefleet_tactics,military,common\production_methods\05_military.txt,05_military.txt,{},{},0
+pm_market_stalls,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{'services': 15},4800
+pm_market_squares,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,"{'wood': 1, 'glass': 1}",{'services': 20},4800
+pm_covered_markets,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,"{'glass': 2, 'steel': 1}",{'services': 25},4800
+pm_arcades,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,"{'glass': 2, 'steel': 2, 'electricity': 1}",{'services': 30},5000
+pm_no_street_lighting,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},0
+pm_gas_streetlights,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{'coal': 2},{'services': 5},250
+pm_electric_streetlights,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{'electricity': 3},{'services': 10},250
+pm_no_public_transport,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{'transportation': 2},0
+pm_public_trams,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{'engines': 0},{'transportation': 4},-200
+pm_public_motor_carriages,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{'automobiles': 1},{'transportation': 8},-400
+pm_state_urban_clergy,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},200
+pm_free_urban_clergy,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},250
+pm_no_urban_clergy,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},200
+pm_traditional_art,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{'paper': 10},{'fine_art': 5},0
+pm_realist_art,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{'paper': 15},{'fine_art': 6},0
+pm_photographic_art,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,"{'paper': 15, 'tools': 8}",{'fine_art': 8},0
+pm_film_art,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,"{'tools': 10, 'paper': 15, 'electricity': 5}",{'fine_art': 10},0
+pm_principle_freedom_of_movement_3,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},0
+pm_freedom_of_movement_no_effect,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},0
+pm_traditional_patronage,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},5000
+pm_bourgeoisie_patronage,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},5000
+pm_independent_artists,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{},{},5000
+pm_hydroelectric_plant,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,{'engines': 10},{'electricity': 50},5500
+pm_early_power_plant,urban_center,common\production_methods\06_urban_center.txt,06_urban_center.txt,"{'engines': 4, 'coal': 5, 'wood': 5}",{'electricity': 25},1000
+pm_simple_organization,government,common\production_methods\07_government.txt,07_government.txt,{},{},500
+pm_horizontal_drawer_cabinets,government,common\production_methods\07_government.txt,07_government.txt,{'paper': 10},{},500
+pm_vertical_filing_cabinets,government,common\production_methods\07_government.txt,07_government.txt,{'paper': 20},{},500
+pm_switch_boards,government,common\production_methods\07_government.txt,07_government.txt,"{'paper': 20, 'telephones': 5}",{},500
+pm_hereditary_bureaucrats,government,common\production_methods\07_government.txt,07_government.txt,{},{},500
+pm_professional_bureaucrats,government,common\production_methods\07_government.txt,07_government.txt,{},{},500
+pm_secular_bureaucrats,government,common\production_methods\07_government.txt,07_government.txt,{},{},500
+pm_religious_bureaucrats,government,common\production_methods\07_government.txt,07_government.txt,{},{},500
+pm_scholastic_education,government,common\production_methods\07_government.txt,07_government.txt,{'paper': 5},{},500
+pm_philosophy_department,government,common\production_methods\07_government.txt,07_government.txt,{'paper': 10},{},500
+pm_analytical_philosophy_department,government,common\production_methods\07_government.txt,07_government.txt,{'paper': 15},{},500
+pm_secular_academia,government,common\production_methods\07_government.txt,07_government.txt,{},{},500
+pm_religious_academia,government,common\production_methods\07_government.txt,07_government.txt,{},{},500
+pm_skyscraper_bureaucratic_nexus,government,common\production_methods\07_government.txt,07_government.txt,{'paper': 25},{},1000
+pm_skyscraper_trade_nexus,government,common\production_methods\07_government.txt,07_government.txt,{'paper': 25},{},1000
+pm_no_airships,government,common\production_methods\07_government.txt,07_government.txt,{},{},0
+pm_airship_mooring_post,government,common\production_methods\07_government.txt,07_government.txt,{},{},0
+pm_default_building_eiffel_tower,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},100
+pm_default_building_cristo_redentor,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},100
+pm_default_building_angkor_wat,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_default_building_big_ben,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},100
+pm_default_building_forbidden_city,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},1000
+pm_default_building_hagia_sophia,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},200
+pm_default_building_mosque_of_djenne,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_default_building_saint_basils_cathedral,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},200
+pm_default_building_statue_of_liberty,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},100
+pm_default_building_taj_mahal,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},100
+pm_default_building_vatican_city,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_monument_prestige_only_vatican_city,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},0
+pm_default_building_white_house,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_monument_prestige_only,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},0
+pm_monument_no_effects,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},0
+pm_power_bloc_statue_sovereign_empire,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_power_bloc_statue_ideological_union,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_power_bloc_statue_military_treaty,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_power_bloc_statue_trade_league,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_power_bloc_statue_religious,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_power_bloc_prestige_only,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},0
+pm_default_building_victoria_terminus,monuments,common\production_methods\08_monuments.txt,08_monuments.txt,{},{},500
+pm_simple_forestry,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{},{'wood': 30},5000
+pm_saw_mills,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'tools': 5},{'wood': 60},5000
+pm_electric_saw_mills,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'tools': 10, 'electricity': 5}",{'wood': 100},5000
+pm_no_hardwood,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{},{},0
+pm_hardwood,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{},"{'wood': -25, 'hardwood': 10}",0
+pm_increased_hardwood,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{},"{'wood': -40, 'hardwood': 20}",0
+pm_no_equipment,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{},{},0
+pm_steam_donkey_building_logging_camp,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'engines': 1, 'coal': 4}",{},-1000
+pm_chainsaws,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'engines': 1, 'oil': 4}",{},-1250
+pm_rail_transport_building_logging_camp,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'transportation': 5},{},-1000
+pm_log_carts,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'transportation': 8},{},-1500
+pm_simple_fishing,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{},{'fish': 25},5000
+pm_fishing_trawlers,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'clippers': 5},{'fish': 50},5000
+pm_steam_trawlers,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'steamers': 5, 'coal': 15}",{'fish': 100},5000
+pm_refrigerated_storage_building_fishing_wharf,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'electricity': 5},{},-1000
+pm_refrigerated_rail_cars_building_fishing_wharf,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'electricity': 5, 'transportation': 5}",{},-2000
+pm_flash_freezing_building_fishing_wharf,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'electricity': 7, 'transportation': 7}",{},-3000
+pm_simple_whaling,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{},"{'meat': 5, 'oil': 10}",5000
+pm_wooden_whaling_ships,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'clippers': 5},"{'meat': 10, 'oil': 20}",5000
+pm_steam_whaling_ships,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'steamers': 5, 'coal': 20}","{'meat': 20, 'oil': 40}",5000
+pm_refrigerated_storage_building_whaling_station,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'electricity': 5},{},-1000
+pm_refrigerated_rail_cars_building_whaling_station,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'electricity': 5, 'transportation': 5}",{},-2000
+pm_flash_freezing_building_whaling_station,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'electricity': 7, 'transportation': 7}",{},-3000
+pm_steam_derricks,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,"{'engines': 5, 'coal': 10}",{'oil': 60},5000
+pm_combustion_derricks,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'engines': 10},{'oil': 100},5000
+pm_rail_transport_building_oil_rig,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'transportation': 5},{},-1000
+pm_tanker_cars,misc_resource,common\production_methods\09_misc_resource.txt,09_misc_resource.txt,{'transportation': 10},{},-2000
+pm_canal,canals,common\production_methods\10_canals.txt,10_canals.txt,"{'tools': 10, 'coal': 15}",{},5000
+pm_anchorage,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},250
+pm_basic_port,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{'clippers': 5},{'merchant_marine': 10},1000
+pm_industrial_port,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'steamers': 5, 'coal': 5}",{'merchant_marine': 20},1000
+pm_modern_port,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'steamers': 5, 'oil': 10}",{'merchant_marine': 30},1000
+pm_early_trains,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'engines': 5, 'coal': 2}",{'transportation': 20},1000
+pm_steam_trains,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'engines': 5, 'coal': 5}",{'transportation': 25},1000
+pm_steam_trains_principle_transport_3,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'engines': 6, 'coal': 6}",{'transportation': 30},1000
+pm_electric_trains,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'engines': 5, 'electricity': 8}",{'transportation': 35},1000
+pm_electric_trains_principle_transport_3,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'engines': 6, 'electricity': 10}",{'transportation': 45},1000
+pm_diesel_trains,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'engines': 5, 'oil': 6}",{'transportation': 40},1000
+pm_diesel_trains_principle_transport_3,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,"{'engines': 6, 'oil': 8}",{'transportation': 50},1000
+pm_no_passenger_trains,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},0
+pm_wooden_passenger_carriages,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{'wood': 8},{'transportation': 10},100
+pm_steel_passenger_carriages,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{'steel': 5},{'transportation': 15},200
+pm_trade_center,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},1000
+pm_trade_center_principle_external_trade_2,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},1000
+pm_trade_center_trade_quantity_limited,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{'merchant_marine': 3},{},0
+pm_trade_center_trade_quantity_normal,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{'merchant_marine': 4},{},0
+pm_trade_center_trade_quantity_high,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{'merchant_marine': 5},{},0
+pm_trade_center_trade_quantity_very_high,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{'merchant_marine': 6},{},0
+pm_financial_district_privately_owned,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},100
+pm_financial_district_publicly_traded,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},100
+pm_financial_district_principle_divine_economics_2,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},100
+pm_manor_house_privately_owned,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},50
+pm_manor_house_principle_divine_economics_2,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},100
+pm_manor_house_bureaucrat_ownership,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},100
+pm_manor_house_clergy_ownership,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},100
+pm_company_headquarter_privately_owned,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},50
+pm_company_headquarter_principle_divine_economics_2,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},50
+pm_company_headquarter_government_run,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},100
+pm_company_headquarter_worker_cooperative,private_infrastructure,common\production_methods\11_private_infrastructure.txt,11_private_infrastructure.txt,{},{},100
+pm_home_workshops_no_building_subsistence_farms,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'grain': 0, 'fabric': 0, 'wood': 0}",0
+pm_home_workshops_building_subsistence_farms,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'clothes': 0, 'furniture': 0, 'liquor': 0}",0
+pm_serfdom_no,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},{},0
+pm_homesteading_building_subsistence,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},{'grain': 0},0
+pm_serfdom,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},{'grain': 0},0
+pm_home_workshops_no_building_subsistence_orchards,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'fruit': 0, 'fabric': 0, 'wood': 0}",0
+pm_home_workshops_building_subsistence_orchards,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'clothes': 0, 'furniture': 0, 'liquor': 0}",0
+pm_serfdom_building_subsistence_orchards,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},{'fruit': 0},0
+pm_home_workshops_no_building_subsistence_pastures,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'meat': 0, 'fabric': 0}",0
+pm_home_workshops_building_subsistence_pastures,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'clothes': 0, 'furniture': 0, 'liquor': 0}",0
+pm_serfdom_building_subsistence_pastures,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},{'meat': 0},0
+pm_home_workshops_no_building_subsistence_fishing_villages,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'fish': 0, 'fabric': 0, 'wood': 0}",0
+pm_home_workshops_building_subsistence_fishing_villages,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'clothes': 0, 'furniture': 0, 'liquor': 0}",0
+pm_serfdom_building_subsistence_fishing_villages,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},{'fish': 0},0
+pm_home_workshops_no_building_subsistence_rice_paddies,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'grain': 1, 'fabric': 0, 'wood': 0}",0
+pm_home_workshops_building_subsistence_rice_paddies,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},"{'clothes': 0, 'furniture': 0, 'liquor': 0}",0
+pm_serfdom_building_subsistence_rice_paddies,subsistence,common\production_methods\12_subsistence.txt,12_subsistence.txt,{},{'grain': 1},0
+pm_wooden_buildings,construction,common\production_methods\13_construction.txt,13_construction.txt,"{'fabric': 25, 'wood': 75}",{},1000
+pm_iron_frame_buildings,construction,common\production_methods\13_construction.txt,13_construction.txt,"{'wood': 45, 'fabric': 20, 'iron': 50, 'tools': 10}",{},1000
+pm_steel_frame_buildings,construction,common\production_methods\13_construction.txt,13_construction.txt,"{'steel': 56, 'glass': 40, 'explosives': 10, 'tools': 20}",{},1000
+pm_arc_welded_buildings,construction,common\production_methods\13_construction.txt,13_construction.txt,"{'steel': 48, 'glass': 40, 'explosives': 20, 'tools': 40, 'electricity': 40}",{},1000
