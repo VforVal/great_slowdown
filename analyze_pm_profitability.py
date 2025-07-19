@@ -25,7 +25,7 @@ class PMProfitabilityAnalyzer:
             
             # Pattern to match goods and their costs
             # Matches: good_name = { ... cost = 20 ... }
-            goods_pattern = r'(\w+)\s*=\s*\{[^}]*cost\s*=\s*(\d+)[^}]*\}'
+            goods_pattern = r'(\w+)\s*=\s*\{[^}]*?cost\s*=\s*(\d+)'
             matches = re.findall(goods_pattern, content, re.DOTALL)
             
             for good_name, cost in matches:
@@ -117,7 +117,9 @@ class PMProfitabilityAnalyzer:
             if pm_info['total_employment'] != 0:
                 pm_info['profit_per_employee'] = pm_info['total_profit'] / pm_info['total_employment']
             else:
-                pm_info['profit_per_employee'] = 0 if pm_info['total_profit'] == 0 else float('inf')
+                # If no employment, mark as unknown rather than infinite
+                pm_info['profit_per_employee'] = None
+                pm_info['employment_status'] = 'no_employment_data'
             
             results.append(pm_info)
         
@@ -128,9 +130,8 @@ class PMProfitabilityAnalyzer:
         if df.empty:
             return {}
         
-        # Filter out infinite values for statistics
-        finite_profit = df[df['profit_per_employee'] != float('inf')]
-        finite_profit = finite_profit[finite_profit['profit_per_employee'] != float('-inf')]
+        # Filter out None values for statistics
+        finite_profit = df[df['profit_per_employee'].notna()]
         
         stats = {
             'total_pms': len(df),
@@ -178,15 +179,51 @@ class PMProfitabilityAnalyzer:
         for _, pm in top_by_total.iterrows():
             print(f"{pm['production_method_name']:40} | Profit: {pm['total_profit']:8.1f} | Per Employee: {pm['profit_per_employee']:6.1f} | Employment: {pm['total_employment']:4}")
         
-        # Sort by profit per employee (excluding infinite values)
-        finite_df = df[df['profit_per_employee'] != float('inf')]
-        finite_df = finite_df[finite_df['profit_per_employee'] != float('-inf')]
+        # Sort by profit per employee (excluding None values)
+        finite_df = df[df['profit_per_employee'].notna()]
         
         if not finite_df.empty:
             top_by_per_employee = finite_df.nlargest(top_n, 'profit_per_employee')
             print(f"\nBy Profit Per Employee:")
             for _, pm in top_by_per_employee.iterrows():
                 print(f"{pm['production_method_name']:40} | Profit: {pm['total_profit']:8.1f} | Per Employee: {pm['profit_per_employee']:6.1f} | Employment: {pm['total_employment']:4}")
+
+    def print_employment_analysis(self, df: pd.DataFrame) -> None:
+        """Print analysis of employment data quality."""
+        if df.empty:
+            print("No data to analyze")
+            return
+        
+        print(f"\n=== EMPLOYMENT DATA ANALYSIS ===")
+        
+        # Count PMs with different employment statuses
+        zero_employment = df[df['total_employment'] == 0]
+        negative_employment = df[df['total_employment'] < 0]
+        positive_employment = df[df['total_employment'] > 0]
+        
+        print(f"PMs with zero employment: {len(zero_employment)} ({len(zero_employment)/len(df)*100:.1f}%)")
+        print(f"PMs with negative employment: {len(negative_employment)} ({len(negative_employment)/len(df)*100:.1f}%)")
+        print(f"PMs with positive employment: {len(positive_employment)} ({len(positive_employment)/len(df)*100:.1f}%)")
+        
+        # Show examples of PMs with zero employment
+        if not zero_employment.empty:
+            print(f"\nExamples of PMs with zero employment (likely use default building employment):")
+            for _, pm in zero_employment.head(10).iterrows():
+                print(f"  {pm['production_method_name']} ({pm['parent_building']})")
+        
+        # Show examples of PMs with negative employment (automation)
+        if not negative_employment.empty:
+            print(f"\nExamples of PMs with negative employment (automation):")
+            for _, pm in negative_employment.head(10).iterrows():
+                print(f"  {pm['production_method_name']} ({pm['parent_building']}) - {pm['total_employment']} employees")
+        
+        # Employment range for PMs with positive employment
+        if not positive_employment.empty:
+            print(f"\nEmployment range for PMs with explicit employment:")
+            print(f"  Min: {positive_employment['total_employment'].min()}")
+            print(f"  Max: {positive_employment['total_employment'].max()}")
+            print(f"  Average: {positive_employment['total_employment'].mean():.1f}")
+            print(f"  Median: {positive_employment['total_employment'].median():.1f}")
 
 def main():
     """Main function to run the profitability analysis."""
@@ -227,6 +264,9 @@ def main():
         print(f"\nMissing Price Data:")
         print(f"  Missing input prices: {stats['total_missing_input_prices']}")
         print(f"  Missing output prices: {stats['total_missing_output_prices']}")
+        
+        # Show employment analysis
+        analyzer.print_employment_analysis(results_df)
         
         # Show top profitable PMs
         analyzer.print_top_profitable_pms(results_df, 15)

@@ -139,6 +139,11 @@ class SimplePMExtractor:
             value = int(match.group(2))
             pm_info['total_employment'] += value
         
+        # If no explicit employment found, this PM likely uses default building employment
+        # We can't determine this from the PM file alone, so we'll mark it as unknown
+        if pm_info['total_employment'] == 0:
+            pm_info['employment_note'] = 'uses_default_building_employment'
+        
         return pm_info
 
     def _infer_parent_building(self, filepath: str) -> str:
