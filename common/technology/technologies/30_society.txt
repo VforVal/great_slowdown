@@ -24,6 +24,7 @@ urban_planning = {
 	category = society
 
 	modifier = {
+		country_construction_add = 1
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
@@ -161,6 +162,7 @@ centralization = {
 	category = society
 
 	modifier = {
+		country_construction_add = 1
 		state_tax_capacity_add = 25
 		country_institution_home_affairs_max_investment_add = 1
 	}
@@ -439,6 +441,7 @@ modern_sewerage = {
 	category = society
 
 	modifier = {
+		country_construction_add = 1
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5

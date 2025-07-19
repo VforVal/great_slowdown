@@ -34,6 +34,10 @@ manufacturies = {
 	texture = "gfx/interface/icons/invention_icons/manufacturies.dds"
 	category = production
 
+	modifier = {
+		country_construction_add = 1
+	}
+
 	ai_weight = {
 		value = 3 # Very important tech in general
 	}
@@ -44,6 +48,10 @@ shaft_mining = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/shaft_mining.dds"
 	category = production
+
+	modifier = {
+		country_construction_add = 1
+	}
 
 	unlocking_technologies = {
 		enclosure
@@ -255,6 +263,10 @@ atmospheric_engine = {
 
 	unlocking_technologies = {
 		shaft_mining
+	}
+
+	modifier = {
+		country_construction_add = 1
 	}
 
 	ai_weight = {

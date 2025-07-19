@@ -243,6 +243,7 @@ logistics = {
 	category = military
 
 	modifier = {
+		country_construction_add = 1
 		state_conscription_rate_mult = 0.2
 	}
 
