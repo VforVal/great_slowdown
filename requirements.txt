@@ -1,3 +1,7 @@
 # For Paradox script parsing
 pyradox-txt-parser
-# If paradox.py is not available, try: pip install git+https://github.com/tboby/paradox.py.git 
+# If paradox.py is not available, try: pip install git+https://github.com/tboby/paradox.py.git
+
+# For data analysis and dataframe operations
+pandas
+openpyxl 
