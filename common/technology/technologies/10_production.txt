@@ -49,10 +49,6 @@ shaft_mining = {
 	texture = "gfx/interface/icons/invention_icons/shaft_mining.dds"
 	category = production
 
-	modifier = {
-		country_construction_add = 1
-	}
-
 	unlocking_technologies = {
 		enclosure
 		manufacturies
