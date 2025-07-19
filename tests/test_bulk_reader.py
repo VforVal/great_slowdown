@@ -3,7 +3,7 @@
 Test the bulk reader with a single production method file
 """
 
-from bulk_reader import BulkReader
+from bulk_tools.bulk_reader import BulkReader
 
 def test_single_file():
     """Test bulk reader with a single file."""

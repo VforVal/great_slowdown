@@ -3,7 +3,7 @@
 Debug script to see what the bulk reader extracts
 """
 
-from bulk_reader import BulkReader
+from bulk_tools.bulk_reader import BulkReader
 import pandas as pd
 
 def debug_extraction():

@@ -1,4 +1,4 @@
-from bulk_editor import BulkEditor
+from bulk_tools.bulk_editor import BulkEditor
 
 # Original task: for each file, edit all 'building_employment_*_add' keys with the given multiplier
 file_configs = [

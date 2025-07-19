@@ -6,7 +6,7 @@ with parent building, production method name, input/output goods, and employment
 """
 
 import pandas as pd
-from bulk_reader import BulkReader
+from bulk_tools.bulk_reader import BulkReader
 from typing import Dict, List, Any, Optional
 from pathlib import Path
 
@@ -38,16 +38,8 @@ class ProductionMethodExtractor:
             'production_method_name', 'parent_building', 'filepath', 'filename',
             'texture', 'is_default', 'is_hidden_when_unavailable',
             'unlocking_technologies', 'unlocking_principles', 'disallowing_laws',
-            'replacement_if_valid', 'required_input_goods'
+            'replacement_if_valid', 'required_input_goods', 'inputs', 'outputs'
         ]
-        
-        # Add input goods columns
-        input_cols = [col for col in df.columns if col.startswith('input_')]
-        column_order.extend(sorted(input_cols))
-        
-        # Add output goods columns
-        output_cols = [col for col in df.columns if col.startswith('output_')]
-        column_order.extend(sorted(output_cols))
         
         # Add employment columns
         employment_cols = [col for col in df.columns if col.startswith('employment_') or col == 'total_employment']
@@ -58,6 +50,18 @@ class ProductionMethodExtractor:
         if existing_cols:
             df = df[existing_cols].copy()
         
+        # Reduce to only the requested columns before saving
+        final_columns = [
+            'production_method_name',
+            'parent_building',
+            'filepath',
+            'filename',
+            'inputs',
+            'outputs',
+            'total_employment',
+        ]
+        df = df[final_columns]
+
         return df
     
     def extract_file_data(self, filepath: str) -> List[Dict]:
@@ -91,6 +95,8 @@ class ProductionMethodExtractor:
             'disallowing_laws': '',
             'replacement_if_valid': '',
             'required_input_goods': '',
+            'inputs': {},  # Dictionary for all input goods
+            'outputs': {},  # Dictionary for all output goods
         }
         
         # Process all the extracted data
@@ -117,10 +123,10 @@ class ProductionMethodExtractor:
                 pm_data['required_input_goods'] = value
             elif key.startswith('goods_input_'):
                 good_name = key.replace('goods_input_', '').replace('_add', '')
-                pm_data[f'input_{good_name}'] = value
+                pm_data['inputs'][good_name] = value
             elif key.startswith('goods_output_'):
                 good_name = key.replace('goods_output_', '').replace('_add', '')
-                pm_data[f'output_{good_name}'] = value
+                pm_data['outputs'][good_name] = value
             elif key.startswith('building_employment_'):
                 pop_type = key.replace('building_employment_', '').replace('_add', '')
                 pm_data[f'employment_{pop_type}'] = value
@@ -189,11 +195,6 @@ class ProductionMethodExtractor:
         stats = {
             'total_production_methods': len(df),
             'parent_buildings': df['parent_building'].value_counts().to_dict(),
-            'default_methods': df['is_default'].sum(),
-            'hidden_methods': df['is_hidden_when_unavailable'].sum(),
-            'input_goods_columns': [col for col in df.columns if col.startswith('input_')],
-            'output_goods_columns': [col for col in df.columns if col.startswith('output_')],
-            'employment_columns': [col for col in df.columns if col.startswith('employment_')],
             'files_processed': df['filename'].nunique()
         }
         
@@ -233,8 +234,6 @@ def main():
         stats = extractor.get_summary_stats()
         print(f"\nSummary Statistics:")
         print(f"Parent buildings: {stats['parent_buildings']}")
-        print(f"Default methods: {stats['default_methods']}")
-        print(f"Hidden methods: {stats['hidden_methods']}")
         print(f"Files processed: {stats['files_processed']}")
         
         if 'employment_stats' in stats:
