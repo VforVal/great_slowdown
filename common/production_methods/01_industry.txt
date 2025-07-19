@@ -923,13 +923,14 @@ pm_crude_tools = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 30
+			goods_input_wood_add = 30				# x20 = 600
 
 			# output goods
-			goods_output_tools_add = 30
+			goods_output_tools_add = 30				# x40 = 1200
 		}
 
 		level_scaled = {
+			# profit = 300 (0.06 per employee)
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 4500
 		}
@@ -946,14 +947,15 @@ pm_pig_iron = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 30
-			goods_input_iron_add = 20
+			goods_input_wood_add = 30				# x20 = 600
+			goods_input_iron_add = 20				# x45 = 900
 
 			# output goods
-			goods_output_tools_add = 60
+			goods_output_tools_add = 60				# x40 = 2700
 		}
 
 		level_scaled = {
+			# profit = 600 (0.12 per employee)
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 4000
 			building_employment_machinists_add = 500
@@ -969,14 +971,15 @@ pm_steel = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 30
-			goods_input_steel_add = 20
+			goods_input_wood_add = 30				# x30 = 900
+			goods_input_steel_add = 20				# x50 = 1000
 
 			# output goods
-			goods_output_tools_add = 80
+			goods_output_tools_add = 80				# x40 = 3200
 		}
 
 		level_scaled = {
+			# profit = 1300 (0.26 per employee)
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 3500
 			building_employment_machinists_add = 500
@@ -993,14 +996,15 @@ pm_rubber_grips = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_rubber_add = 10
-			goods_input_steel_add = 30
+			goods_input_rubber_add = 10				# x19 = 190
+			goods_input_steel_add = 30				# x50 = 1500
 
 			# output goods
-			goods_output_tools_add = 110
+			goods_output_tools_add = 110				# x40 = 4400
 		}
 
 		level_scaled = {
+			# profit = 2710 (0.54 per employee)
 			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 3000
 			building_employment_machinists_add = 1000
@@ -1028,10 +1032,11 @@ pm_watertube_boiler_building_tooling_workshops = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_coal_add = 10
+			goods_input_coal_add = 10				# x30 = 300
 		}
 
 		level_scaled = {
+			# automation: reduces employment by 1500, costs 300
 			building_employment_laborers_add = -1500
 		}
 	}
@@ -1056,10 +1061,11 @@ pm_rotary_valve_engine_building_tooling_workshops = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_coal_add = 15
+			goods_input_coal_add = 15				# x30 = 450
 		}
 
 		level_scaled = {
+			# automation: reduces employment by 2000, costs 450
 			building_employment_laborers_add = -2000
 		}
 	}
@@ -1084,11 +1090,12 @@ pm_assembly_lines_building_tooling_workshops = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_oil_add = 10
-			goods_input_electricity_add = 5
+			goods_input_oil_add = 10				# x30 = 300
+			goods_input_electricity_add = 5		# x20 = 100
 		}
 
 		level_scaled = {
+			# automation: reduces employment by 3000, costs 400
 			building_employment_laborers_add = -3000
 		}
 	}
