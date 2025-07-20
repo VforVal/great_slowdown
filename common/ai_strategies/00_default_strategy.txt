@@ -3396,11 +3396,49 @@ ai_strategy_default = {
 				value = investment_pool_income
 				divide = 2000 # 1 construction output per this much into the investment pool
 			}
-
 			add = {
-			value = income
+				value = income
+				divide = 2000 # 1 construction output per this much income
+			}
 
-			divide = 3000 # 1 construction output per this much income
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:wood = {
+							market_goods_cheaper > 0.25
+						}
+					}
+				}
+				multiply = {
+					value = 1
+					add = {
+						market_capital.market = {
+							mg:wood = {
+								value = market_goods_cheaper
+							}
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:wood = {
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+				multiply = {
+					value = 1
+					subtract = {
+						market_capital.market = {
+							mg:wood = {
+								value = market_goods_pricier
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -3414,11 +3452,49 @@ ai_strategy_default = {
 				value = investment_pool_income
 				divide = 1200 # 1 construction output per this much into the investment pool
 			}
-
 			add = {
-			value = income
+				value = income
+				divide = 1200 # 1 construction output per this much income
+			}
 
-			divide = 2400 # 1 construction output per this much income
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:iron = {
+							market_goods_cheaper > 0.25
+						}
+					}
+				}
+				multiply = {
+					value = 1
+					add = {
+						market_capital.market = {
+							mg:iron = {
+								value = market_goods_cheaper
+							}
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:iron = {
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+				multiply = {
+					value = 1
+					subtract = {
+						market_capital.market = {
+							mg:iron = {
+								value = market_goods_pricier
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -3434,13 +3510,52 @@ ai_strategy_default = {
 			}
 
 			add = {
-			value = income
+				value = income
+				divide = 700 # 1 construction output per this much income
+			}
+			
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:steel = {
+							market_goods_cheaper > 0.25
+						}
+					}
+				}
+				multiply = {
+					value = 1
+					add = {
+						market_capital.market = {
+							mg:steel = {
+								value = market_goods_cheaper
+							}
+						}
+					}
+				}
+			}
 
-			divide = 1400 # 1 construction output per this much income
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:steel = {
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+				multiply = {
+					value = 1
+					subtract = {
+						market_capital.market = {
+							mg:steel = {
+								value = market_goods_pricier
+							}
+						}
+					}
+				}
 			}
 		}
 
-		# Steel frame buildings (steel_frame_buildings)
+		# Arc welded buildings (steel_frame_buildings)
 		if = {
 			limit = {
 				has_technology_researched = arc_welding
@@ -3451,9 +3566,48 @@ ai_strategy_default = {
 			}
 
 			add = {
-			value = income
+				value = income
+				divide = 600 # 1 construction output per this much income
+			}
+			
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:steel = {
+							market_goods_cheaper > 0.25
+						}
+					}
+				}
+				multiply = {
+					value = 1
+					add = {
+						market_capital.market = {
+							mg:steel = {
+								value = market_goods_cheaper
+							}
+						}
+					}
+				}
+			}
 
-			divide = 1200 # 1 construction output per this much income
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:steel = {
+							market_goods_pricier > 0.1
+						}
+					}
+				}
+				multiply = {
+					value = 1
+					subtract = {
+						market_capital.market = {
+							mg:steel = {
+								value = market_goods_pricier
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -3491,8 +3645,14 @@ ai_strategy_default = {
 			multiply = 0.75
 		}
 
+		# If after all that, the reserves are overflowing, add more
+		else_if = {
+					limit = { scaled_gold_reserves >= 0.25 }
+					multiply = 1.1
+		}
+
 		min = 10
-		max = 1000
+		max = 10000
 	}
 
 	# How many levels of barracks should the AI have
