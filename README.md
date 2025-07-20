@@ -6,4 +6,5 @@ This mod aims to slow down the game economy and development in Victoria 3 to mor
 ## Summary of Recent Changes
 - **Construction Inputs:** Rebalanced the input goods required for construction sector production methods and reduced the construction output
 - **Base construction:** Reduced base construction, moved some of the base construction to tech unlocks.
+- **Construction cost:** Made it scale higher for more expensive buildings.
 - **Reduced throughput:** for critical industries for development, like tools
