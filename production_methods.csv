@@ -1,345 +1,345 @@
-production_method_name,parent_building,filename,total_employment,inputs,outputs
-pm_dummy,dummy,00_dummy.txt,0,{},{}
-pm_bakery,industry,01_industry.txt,5000,{'grain': 40.0},{'groceries': 45.0}
-pm_sweeteners,industry,01_industry.txt,5000,"{'grain': 40.0, 'sugar': 15.0}",{'groceries': 65.0}
-pm_baking_powder,industry,01_industry.txt,5000,"{'grain': 80.0, 'sugar': 30.0}",{'groceries': 120.0}
-pm_disabled_canning,industry,01_industry.txt,0,{},{}
-pm_cannery,industry,01_industry.txt,500,"{'grain': -20.0, 'meat': 20.0, 'iron': 10.0}",{'groceries': 30.0}
-pm_cannery_fish,industry,01_industry.txt,500,"{'grain': -20.0, 'fish': 30.0, 'iron': 10.0}",{'groceries': 30.0}
-pm_vacuum_canning,industry,01_industry.txt,700,"{'grain': -30.0, 'fish': 30.0, 'meat': 20.0, 'iron': 10.0, 'oil': 5.0}",{'groceries': 60.0}
-pm_vacuum_canning_principle_3,industry,01_industry.txt,700,"{'grain': -30.0, 'fish': 30.0, 'meat': 20.0, 'iron': 10.0, 'oil': 5.0}",{'groceries': 70.0}
-pm_disabled_distillery,industry,01_industry.txt,0,{},{}
-pm_pot_stills,industry,01_industry.txt,350,{'sugar': 25.0},"{'liquor': 60.0, 'groceries': -30.0}"
-pm_patent_stills,industry,01_industry.txt,900,"{'sugar': 25.0, 'glass': 10.0}","{'liquor': 100.0, 'groceries': -40.0}"
-pm_manual_dough_processing,industry,01_industry.txt,0,{},{}
-pm_automated_bakery,industry,01_industry.txt,-2500,{'tools': 10.0},{}
-pm_handsewn_clothes,industry,01_industry.txt,5000,{'fabric': 40.0},{'clothes': 45.0}
-pm_dye_workshops,industry,01_industry.txt,5000,"{'fabric': 40.0, 'dye': 5.0}",{'clothes': 60.0}
-pm_sewing_machines,industry,01_industry.txt,5000,"{'fabric': 60.0, 'dye': 10.0, 'tools': 5.0}",{'clothes': 100.0}
-pm_electric_sewing_machines,industry,01_industry.txt,5000,"{'fabric': 60.0, 'dye': 20.0, 'tools': 10.0, 'electricity': 10.0}",{'clothes': 140.0}
-pm_no_luxury_clothes,industry,01_industry.txt,0,{},{}
-pm_craftsman_sewing,industry,01_industry.txt,500,"{'silk': 15.0, 'fabric': -15.0}","{'clothes': -30.0, 'luxury_clothes': 30.0}"
-pm_elastics,industry,01_industry.txt,1000,"{'rubber': 10.0, 'silk': 35.0, 'fabric': -35.0}","{'clothes': -70.0, 'luxury_clothes': 70.0}"
-pm_traditional_looms,industry,01_industry.txt,0,{},{}
-pm_mechanized_looms,industry,01_industry.txt,-1500,{'tools': 5.0},{}
-pm_automatic_power_looms,industry,01_industry.txt,-2500,"{'tools': 5.0, 'electricity': 10.0}",{}
-pm_handcrafted_furniture,industry,01_industry.txt,5000,"{'wood': 30.0, 'fabric': 10.0}",{'furniture': 45.0}
-pm_lathe,industry,01_industry.txt,5000,"{'wood': 30.0, 'fabric': 10.0, 'tools': 5.0}",{'furniture': 65.0}
-pm_mechanized_workshops,industry,01_industry.txt,5500,"{'wood': 50.0, 'fabric': 10.0, 'tools': 10.0}",{'furniture': 110.0}
-pm_no_luxuries,industry,01_industry.txt,0,{},{}
-pm_luxury_furniture,industry,01_industry.txt,500,"{'hardwood': 15.0, 'wood': -15.0}","{'furniture': -25.0, 'luxury_furniture': 25.0}"
-pm_precision_tools,industry,01_industry.txt,1000,"{'hardwood': 25.0, 'tools': 10.0, 'wood': -25.0}","{'furniture': -55.0, 'luxury_furniture': 55.0}"
-pm_automation_disabled,industry,01_industry.txt,0,{},{}
-pm_watertube_boiler_building_furniture_manufacturies,industry,01_industry.txt,-1500,"{'tools': 5.0, 'coal': 5.0}",{}
-pm_rotary_valve_engine_building_furniture_manufacturies,industry,01_industry.txt,-2000,"{'tools': 5.0, 'coal': 10.0}",{}
-pm_assembly_lines_building_furniture_manufacturies,industry,01_industry.txt,-3000,"{'tools': 5.0, 'oil': 5.0, 'electricity': 5.0}",{}
-pm_forest_glass,industry,01_industry.txt,5000,{'wood': 30.0},{'glass': 30.0}
-pm_leaded_glass,industry,01_industry.txt,5000,"{'wood': 20.0, 'lead': 10.0}",{'glass': 40.0}
-pm_crystal_glass,industry,01_industry.txt,5000,{'lead': 35.0},{'glass': 60.0}
-pm_houseware_plastics,industry,01_industry.txt,5000,"{'oil': 20.0, 'lead': 30.0}",{'glass': 100.0}
-pm_disabled_ceramics,industry,01_industry.txt,0,{},{}
-pm_ceramics,industry,01_industry.txt,250,{'dye': 5.0},"{'glass': -10.0, 'porcelain': 10.0}"
-pm_bone_china,industry,01_industry.txt,500,{'dye': 10.0},"{'glass': -20.0, 'porcelain': 30.0}"
-pm_manual_glassblowing,industry,01_industry.txt,0,{},{}
-pm_automatic_bottle_blowers,industry,01_industry.txt,-2500,"{'tools': 2.0, 'engines': 2.0, 'oil': 5.0}",{}
-pm_crude_tools,industry,01_industry.txt,5000,{'wood': 30.0},{'tools': 25.0}
-pm_pig_iron,industry,01_industry.txt,5000,"{'wood': 30.0, 'iron': 20.0}",{'tools': 50.0}
-pm_steel,industry,01_industry.txt,5000,"{'wood': 30.0, 'steel': 20.0}",{'tools': 70.0}
-pm_rubber_grips,industry,01_industry.txt,5000,"{'rubber': 10.0, 'steel': 30.0}",{'tools': 95.0}
-pm_watertube_boiler_building_tooling_workshops,industry,01_industry.txt,-1500,{'coal': 10.0},{}
-pm_rotary_valve_engine_building_tooling_workshops,industry,01_industry.txt,-2000,{'coal': 15.0},{}
-pm_assembly_lines_building_tooling_workshops,industry,01_industry.txt,-3000,"{'oil': 10.0, 'electricity': 5.0}",{}
-pm_pulp_pressing,industry,01_industry.txt,5000,{'wood': 30.0},{'paper': 40.0}
-pm_sulfite_pulping,industry,01_industry.txt,5000,"{'wood': 30.0, 'sulfur': 10.0}",{'paper': 70.0}
-pm_bleached_paper,industry,01_industry.txt,5000,"{'wood': 30.0, 'sulfur': 10.0, 'dye': 10.0}",{'paper': 100.0}
-pm_watertube_boiler_building_paper_mills,industry,01_industry.txt,-1500,"{'tools': 5.0, 'coal': 5.0}",{}
-pm_rotary_valve_engine_building_paper_mills,industry,01_industry.txt,-2000,"{'tools': 5.0, 'coal': 10.0}",{}
-pm_artificial_fertilizers,industry,01_industry.txt,5000,"{'sulfur': 30.0, 'iron': 10.0}",{'fertilizer': 90.0}
-pm_improved_fertilizer,industry,01_industry.txt,5000,"{'sulfur': 30.0, 'iron': 30.0}",{'fertilizer': 140.0}
-pm_nitrogen_fixation,industry,01_industry.txt,5000,"{'sulfur': 40.0, 'oil': 20.0, 'iron': 30.0}",{'fertilizer': 200.0}
-pm_no_explosives_production,industry,01_industry.txt,0,{},{}
-pm_leblanc_process,industry,01_industry.txt,5000,"{'sulfur': 20.0, 'fertilizer': 20.0}",{'explosives': 50.0}
-pm_ammonia-soda_process,industry,01_industry.txt,5000,"{'sulfur': 30.0, 'fertilizer': 30.0, 'paper': 10.0}",{'explosives': 80.0}
-pm_vacuum_evaporation,industry,01_industry.txt,4500,"{'sulfur': 40.0, 'fertilizer': 40.0, 'paper': 20.0}",{'explosives': 110.0}
-pm_brine_electrolysis,industry,01_industry.txt,4000,"{'sulfur': 40.0, 'fertilizer': 50.0, 'paper': 30.0, 'electricity': 20.0}",{'explosives': 150.0}
-pm_dye_production,industry,01_industry.txt,5000,"{'sulfur': 20.0, 'fertilizer': 30.0}",{'dye': 80.0}
-pm_no_artificial_fibers,industry,01_industry.txt,0,{},{}
-pm_rayon,industry,01_industry.txt,0,{'wood': 10.0},"{'dye': -10.0, 'silk': 30.0}"
-pm_blister_steel_process,industry,01_industry.txt,5000,"{'iron': 40.0, 'coal': 30.0}",{'steel': 65.0}
-pm_bessemer_process,industry,01_industry.txt,5000,"{'iron': 60.0, 'coal': 30.0}",{'steel': 90.0}
-pm_open_hearth_process,industry,01_industry.txt,5000,"{'iron': 90.0, 'coal': 30.0}",{'steel': 120.0}
-pm_electric_arc_process,industry,01_industry.txt,5000,"{'iron': 100.0, 'coal': 30.0, 'electricity': 30.0}",{'steel': 150.0}
-pm_watertube_boiler_building_steel_mills,industry,01_industry.txt,-1500,"{'tools': 5.0, 'coal': 5.0}",{}
-pm_rotary_valve_engine_building_steel_mills,industry,01_industry.txt,-2000,"{'tools': 5.0, 'coal': 10.0}",{}
-pm_steam_engines,industry,01_industry.txt,5000,{'steel': 30.0},{'engines': 40.0}
-pm_electric_engines,industry,01_industry.txt,5000,"{'steel': 40.0, 'electricity': 30.0}",{'engines': 80.0}
-pm_diesel_engines,industry,01_industry.txt,5000,"{'steel': 50.0, 'oil': 50.0}",{'engines': 120.0}
-pm_watertube_boiler_building_motor_industry,industry,01_industry.txt,-1000,"{'tools': 5.0, 'coal': 5.0}",{}
-pm_rotary_valve_engine_building_motor_industry,industry,01_industry.txt,-1500,"{'tools': 5.0, 'coal': 10.0}",{}
-pm_assembly_lines_building_motor_industry,industry,01_industry.txt,-2000,"{'tools': 5.0, 'oil': 5.0, 'electricity': 5.0}",{}
-pm_assembly_lines_building_automotive_industry,industry,01_industry.txt,-2000,"{'tools': 5.0, 'oil': 5.0, 'electricity': 5.0}",{}
-pm_basic_shipbuilding,industry,01_industry.txt,5000,"{'wood': 40.0, 'fabric': 20.0}",{'clippers': 35.0}
-pm_complex_shipbuilding,industry,01_industry.txt,5000,"{'wood': 20.0, 'hardwood': 20.0, 'fabric': 20.0, 'engines': 5.0}",{'clippers': 70.0}
-pm_metal_shipbuilding,industry,01_industry.txt,5000,"{'steel': 30.0, 'coal': 10.0, 'engines': 10.0}",{'steamers': 65.0}
-pm_arc_welding_shipbuilding,industry,01_industry.txt,5000,"{'steel': 30.0, 'electricity': 30.0, 'engines': 10.0}",{'steamers': 80.0}
-pm_no_military_shipbuilding,industry,01_industry.txt,0,{},{}
-pm_military_shipbuilding_wooden,industry,01_industry.txt,5000,"{'hardwood': 20.0, 'fabric': 20.0, 'iron': 10.0}",{'manowars': 35.0}
-pm_military_shipbuilding_wooden_2,industry,01_industry.txt,5000,"{'hardwood': 30.0, 'fabric': 10.0, 'engines': 5.0, 'iron': 10.0}",{'manowars': 45.0}
-pm_military_shipbuilding_steam,industry,01_industry.txt,5000,"{'steel': 40.0, 'coal': 20.0, 'engines': 10.0}",{'ironclads': 55.0}
-pm_military_shipbuilding_steam_2,industry,01_industry.txt,5000,"{'steel': 40.0, 'electricity': 30.0, 'engines': 20.0}",{'ironclads': 70.0}
-pm_automobile_production,industry,01_industry.txt,5000,"{'engines': 10.0, 'rubber': 5.0, 'oil': 5.0}",{'automobiles': 30.0}
-pm_mass_automobile_production,industry,01_industry.txt,5000,"{'engines': 10.0, 'rubber': 10.0, 'oil': 10.0}",{'automobiles': 60.0}
-pm_no_aeroplane_production,industry,01_industry.txt,0,{},{}
-pm_aeroplane_production,industry,01_industry.txt,250,"{'hardwood': 4.0, 'fabric': 4.0}","{'automobiles': -10.0, 'aeroplanes': 10.0}"
-pm_no_tank_production,industry,01_industry.txt,0,{},{}
-pm_tank_production,industry,01_industry.txt,250,{'steel': 5.0},"{'automobiles': -20.0, 'tanks': 20.0}"
-pm_telephones,industry,01_industry.txt,5000,"{'iron': 20.0, 'rubber': 20.0, 'lead': 20.0, 'tools': 10.0}",{'telephones': 60.0}
-pm_no_radios,industry,01_industry.txt,0,{},{}
-pm_radios,industry,01_industry.txt,500,{'electricity': 50.0},"{'telephones': -20.0, 'radios': 40.0}"
-pm_muskets,industry,01_industry.txt,5000,"{'iron': 10.0, 'hardwood': 10.0}",{'small_arms': 30.0}
-pm_rifles,industry,01_industry.txt,5000,"{'steel': 10.0, 'hardwood': 10.0, 'tools': 5.0}",{'small_arms': 50.0}
-pm_repeaters,industry,01_industry.txt,5000,"{'steel': 20.0, 'hardwood': 10.0, 'tools': 10.0}",{'small_arms': 70.0}
-pm_bolt_action_rifles,industry,01_industry.txt,5000,"{'steel': 20.0, 'hardwood': 10.0, 'tools': 20.0, 'oil': 10.0}",{'small_arms': 100.0}
-pm_no_artillery_production,industry,01_industry.txt,0,{},{}
-pm_cannons,industry,01_industry.txt,5000,"{'iron': 15.0, 'hardwood': 10.0}",{'artillery': 25.0}
-pm_smoothbores,industry,01_industry.txt,5000,"{'iron': 25.0, 'hardwood': 15.0}",{'artillery': 45.0}
-pm_breech_loaders,industry,01_industry.txt,5000,"{'steel': 25.0, 'hardwood': 10.0, 'tools': 10.0}",{'artillery': 65.0}
-pm_recoiled_barrels,industry,01_industry.txt,5000,"{'steel': 40.0, 'tools': 20.0, 'oil': 10.0}",{'artillery': 90.0}
-pm_rotary_valve_engine_building_arms_industry,industry,01_industry.txt,-2000,{'coal': 15.0},{}
-pm_assembly_lines_building_arms_industry,industry,01_industry.txt,-2500,"{'oil': 10.0, 'electricity': 5.0}",{}
-pm_percussion_caps,industry,01_industry.txt,5000,"{'explosives': 20.0, 'lead': 20.0}",{'ammunition': 50.0}
-pm_explosive_shells,industry,01_industry.txt,5000,"{'explosives': 40.0, 'lead': 30.0}",{'ammunition': 90.0}
-pm_rotary_valve_engine_building_munition_plants,industry,01_industry.txt,-2000,{'coal': 15.0},{}
-pm_assembly_lines_building_munition_plants,industry,01_industry.txt,-3000,"{'oil': 10.0, 'electricity': 5.0}",{}
-pm_simple_farming,agro,02_agro.txt,5000,{},{'grain': 20.0}
-pm_soil_enriching_farming,agro,02_agro.txt,5000,{'fertilizer': 5.0},{'grain': 30.0}
-pm_fertilization,agro,02_agro.txt,5000,{'fertilizer': 10.0},{'grain': 45.0}
-pm_chemical_fertilizer,agro,02_agro.txt,5000,{'fertilizer': 15.0},{'grain': 60.0}
-pm_no_secondary,agro,02_agro.txt,0,{},{}
-pm_potatoes,agro,02_agro.txt,0,{},"{'grain': -10.0, 'liquor': 10.0}"
-pm_apple_orchards,agro,02_agro.txt,0,{},"{'grain': -10.0, 'fruit': 5.0, 'sugar': 5.0}"
-pm_tools_disabled,agro,02_agro.txt,0,{},{}
-pm_tools,agro,02_agro.txt,-1000,{'tools': 2.0},{}
-pm_steam_threshers,agro,02_agro.txt,-1500,"{'tools': 2.0, 'coal': 1.0}",{}
-pm_tractors,agro,02_agro.txt,-2000,"{'coal': 2.0, 'engines': 1.0}",{}
-pm_compression_ignition_tractors,agro,02_agro.txt,-2500,"{'oil': 2.0, 'engines': 1.0}",{}
-pm_citrus_orchards,agro,02_agro.txt,0,{},"{'grain': -10.0, 'fruit': 5.0, 'sugar': 5.0}"
-pm_simple_farming_building_rice_farm,agro,02_agro.txt,10000,{},{'grain': 35.0}
-pm_soil_enriching_farming_building_rice_farm,agro,02_agro.txt,10000,{'fertilizer': 10.0},{'grain': 50.0}
-pm_fertilization_building_rice_farm,agro,02_agro.txt,10000,{'fertilizer': 20.0},{'grain': 75.0}
-pm_chemical_fertilizer_building_rice_farm,agro,02_agro.txt,10000,{'fertilizer': 30.0},{'grain': 100.0}
-pm_fig_orchards_building_rice_farm,agro,02_agro.txt,0,{},"{'grain': -30.0, 'fruit': 12.0, 'sugar': 18.0}"
-pm_tools_building_rice_farm,agro,02_agro.txt,-2000,{'tools': 4.0},{}
-pm_steam_threshers_building_rice_farm,agro,02_agro.txt,-3000,"{'tools': 4.0, 'coal': 2.0}",{}
-pm_fig_orchards,agro,02_agro.txt,0,{},"{'grain': -10.0, 'fruit': 5.0, 'sugar': 5.0}"
-pm_simple_ranch,agro,02_agro.txt,0,{},{'fabric': 5.0}
-pm_sheep_farms,agro,02_agro.txt,0,{'grain': 10.0},"{'fabric': 15.0, 'fertilizer': 2.5}"
-pm_intensive_grazing_ranch,agro,02_agro.txt,0,{'grain': 15.0},"{'fabric': 25.0, 'fertilizer': 5.0}"
-pm_open_air_stockyards,agro,02_agro.txt,5000,{},{'meat': 10.0}
-pm_butchering_tools,agro,02_agro.txt,5000,{'tools': 2.0},{'meat': 15.0}
-pm_slaughterhouses,agro,02_agro.txt,5000,{'tools': 5.0},{'meat': 25.0}
-pm_mechanized_slaughtering,agro,02_agro.txt,5000,"{'tools': 5.0, 'coal': 5.0}",{'meat': 35.0}
-pm_standard_fences,agro,02_agro.txt,0,{},{}
-pm_barbed_wire_fences,agro,02_agro.txt,-500,{'iron': 1.0},{}
-pm_electric_fencing,agro,02_agro.txt,-1000,"{'iron': 1.0, 'electricity': 1.0}",{}
-pm_unrefrigerated,agro,02_agro.txt,0,{},{}
-pm_refrigerated_storage_building_livestock_ranch,agro,02_agro.txt,-500,{'electricity': 1.0},{}
-pm_refrigerated_rail_cars_building_livestock_ranch,agro,02_agro.txt,-1000,"{'electricity': 1.0, 'transportation': 1.0}",{}
-pm_picks_and_shovels_building_coal_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'coal': 25.0}
-pm_atmospheric_engine_pump_building_coal_mine,mines,03_mines.txt,5000,{'tools': 10.0},{'coal': 40.0}
-pm_condensing_engine_pump_building_coal_mine,mines,03_mines.txt,5000,{'tools': 15.0},{'coal': 60.0}
-pm_diesel_pump_building_coal_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'coal': 90.0}
-pm_no_explosives,mines,03_mines.txt,0,{},{}
-pm_nitroglycerin_building_coal_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'coal': 15.0}
-pm_dynamite_building_coal_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'coal': 25.0}
-pm_no_steam_automation,mines,03_mines.txt,0,{},{}
-pm_steam_donkey_building_coal_mine,mines,03_mines.txt,-1000,{'engines': 1.0},{'coal': -3.0}
-pm_road_carts,mines,03_mines.txt,0,{},{}
-pm_picks_and_shovels_building_iron_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'iron': 20.0}
-pm_atmospheric_engine_pump_building_iron_mine,mines,03_mines.txt,5000,"{'tools': 10.0, 'coal': 10.0}",{'iron': 40.0}
-pm_condensing_engine_pump_building_iron_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'coal': 15.0}",{'iron': 60.0}
-pm_diesel_pump_building_iron_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'iron': 70.0}
-pm_nitroglycerin_building_iron_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'iron': 12.0}
-pm_dynamite_building_iron_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'iron': 20.0}
-pm_steam_donkey_mine,mines,03_mines.txt,-1000,"{'engines': 1.0, 'coal': 4.0}",{}
-pm_rail_transport_mine,mines,03_mines.txt,-1000,{'transportation': 5.0},{}
-pm_picks_and_shovels_building_lead_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'lead': 20.0}
-pm_atmospheric_engine_pump_building_lead_mine,mines,03_mines.txt,5000,"{'tools': 10.0, 'coal': 10.0}",{'lead': 40.0}
-pm_condensing_engine_pump_building_lead_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'coal': 15.0}",{'lead': 60.0}
-pm_diesel_pump_building_lead_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'lead': 70.0}
-pm_nitroglycerin_building_lead_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'lead': 12.0}
-pm_dynamite_building_lead_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'lead': 20.0}
-pm_picks_and_shovels_building_sulfur_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'sulfur': 20.0}
-pm_atmospheric_engine_pump_building_sulfur_mine,mines,03_mines.txt,5000,"{'tools': 10.0, 'coal': 10.0}",{'sulfur': 40.0}
-pm_condensing_engine_pump_building_sulfur_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'coal': 15.0}",{'sulfur': 60.0}
-pm_diesel_pump_building_sulfur_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'sulfur': 80.0}
-pm_nitroglycerin_building_sulfur_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'sulfur': 10.0}
-pm_dynamite_building_sulfur_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'sulfur': 20.0}
-pm_picks_and_shovels_building_gold_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'gold': 8.0}
-pm_atmospheric_engine_pump_building_gold_mine,mines,03_mines.txt,5000,"{'tools': 10.0, 'coal': 10.0}",{'gold': 15.0}
-pm_condensing_engine_pump_building_gold_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'coal': 15.0}",{'gold': 25.0}
-pm_diesel_pump_building_gold_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'gold': 30.0}
-pm_nitroglycerin_building_gold_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'gold': 5.0}
-pm_dynamite_building_gold_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'gold': 10.0}
-pm_steam_rail_transport,plantations,04_plantations.txt,-1000,{'transportation': 5.0},{}
-pm_no_organization,military,05_military.txt,0,{},{}
-pm_general_training,military,05_military.txt,0,{},{}
-pm_advanced_tactics_training,military,05_military.txt,0,{},{}
-pm_training_streamlining,military,05_military.txt,0,{},{}
-pm_nco_incorporation,military,05_military.txt,0,{},{}
-pm_mobile_warfare_tactics,military,05_military.txt,0,{},{}
-pm_no_organization_conscription,military,05_military.txt,0,{},{}
-pm_general_training_conscription,military,05_military.txt,0,{},{}
-pm_advanced_tactics_training_conscription,military,05_military.txt,0,{},{}
-pm_training_streamlining_conscription,military,05_military.txt,0,{},{}
-pm_nco_incorporation_conscription,military,05_military.txt,0,{},{}
-pm_mobile_warfare_tactics_conscription,military,05_military.txt,0,{},{}
-pm_no_naval_theory,military,05_military.txt,0,{},{}
-pm_power_of_the_purse,military,05_military.txt,0,{},{}
-pm_jeune_ecole,military,05_military.txt,0,{},{}
-pm_sea_lane_strategies,military,05_military.txt,0,{},{}
-pm_battlefleet_tactics,military,05_military.txt,0,{},{}
-pm_market_stalls,urban_center,06_urban_center.txt,4800,{},{'services': 15.0}
-pm_market_squares,urban_center,06_urban_center.txt,4800,"{'wood': 1.0, 'glass': 1.0}",{'services': 20.0}
-pm_covered_markets,urban_center,06_urban_center.txt,4800,"{'glass': 2.0, 'steel': 1.0}",{'services': 25.0}
-pm_arcades,urban_center,06_urban_center.txt,5000,"{'glass': 2.0, 'steel': 2.0, 'electricity': 1.0}",{'services': 30.0}
-pm_no_street_lighting,urban_center,06_urban_center.txt,0,{},{}
-pm_gas_streetlights,urban_center,06_urban_center.txt,250,{'coal': 2.0},{'services': 5.0}
-pm_electric_streetlights,urban_center,06_urban_center.txt,250,{'electricity': 3.0},{'services': 10.0}
-pm_no_public_transport,urban_center,06_urban_center.txt,0,{},{'transportation': 2.0}
-pm_public_trams,urban_center,06_urban_center.txt,-200,{'engines': 0.5},{'transportation': 4.0}
-pm_public_motor_carriages,urban_center,06_urban_center.txt,-400,{'automobiles': 1.0},{'transportation': 8.0}
-pm_state_urban_clergy,urban_center,06_urban_center.txt,200,{},{}
-pm_free_urban_clergy,urban_center,06_urban_center.txt,250,{},{}
-pm_no_urban_clergy,urban_center,06_urban_center.txt,200,{},{}
-pm_traditional_art,urban_center,06_urban_center.txt,0,{'paper': 10.0},{'fine_art': 5.0}
-pm_realist_art,urban_center,06_urban_center.txt,0,{'paper': 15.0},{'fine_art': 6.0}
-pm_photographic_art,urban_center,06_urban_center.txt,0,"{'paper': 15.0, 'tools': 8.0}",{'fine_art': 8.0}
-pm_film_art,urban_center,06_urban_center.txt,0,"{'tools': 10.0, 'paper': 15.0, 'electricity': 5.0}",{'fine_art': 10.0}
-pm_principle_freedom_of_movement_3,urban_center,06_urban_center.txt,0,{},{}
-pm_freedom_of_movement_no_effect,urban_center,06_urban_center.txt,0,{},{}
-pm_traditional_patronage,urban_center,06_urban_center.txt,5000,{},{}
-pm_bourgeoisie_patronage,urban_center,06_urban_center.txt,5000,{},{}
-pm_independent_artists,urban_center,06_urban_center.txt,5000,{},{}
-pm_early_power_plant,urban_center,06_urban_center.txt,1000,"{'engines': 4.0, 'coal': 5.0, 'wood': 5.0}",{'electricity': 25.0}
-pm_coal-fired_plant,urban_center,06_urban_center.txt,1000,"{'engines': 6.0, 'coal': 20.0}",{'electricity': 50.0}
-pm_oil-fired_plant,urban_center,06_urban_center.txt,1000,"{'engines': 10.0, 'oil': 25.0}",{'electricity': 80.0}
-pm_simple_organization,government,07_government.txt,500,{},{}
-pm_horizontal_drawer_cabinets,government,07_government.txt,500,{'paper': 10.0},{}
-pm_vertical_filing_cabinets,government,07_government.txt,500,{'paper': 20.0},{}
-pm_switch_boards,government,07_government.txt,500,"{'paper': 20.0, 'telephones': 5.0}",{}
-pm_hereditary_bureaucrats,government,07_government.txt,500,{},{}
-pm_professional_bureaucrats,government,07_government.txt,500,{},{}
-pm_secular_bureaucrats,government,07_government.txt,500,{},{}
-pm_religious_bureaucrats,government,07_government.txt,500,{},{}
-pm_scholastic_education,government,07_government.txt,500,{'paper': 5.0},{}
-pm_philosophy_department,government,07_government.txt,500,{'paper': 10.0},{}
-pm_analytical_philosophy_department,government,07_government.txt,500,{'paper': 15.0},{}
-pm_secular_academia,government,07_government.txt,500,{},{}
-pm_religious_academia,government,07_government.txt,500,{},{}
-pm_skyscraper_bureaucratic_nexus,government,07_government.txt,1000,{'paper': 25.0},{}
-pm_skyscraper_trade_nexus,government,07_government.txt,1000,{'paper': 25.0},{}
-pm_no_airships,government,07_government.txt,0,{},{}
-pm_airship_mooring_post,government,07_government.txt,0,{},{}
-pm_default_building_eiffel_tower,monuments,08_monuments.txt,100,{},{}
-pm_default_building_cristo_redentor,monuments,08_monuments.txt,100,{},{}
-pm_default_building_angkor_wat,monuments,08_monuments.txt,500,{},{}
-pm_default_building_big_ben,monuments,08_monuments.txt,100,{},{}
-pm_default_building_forbidden_city,monuments,08_monuments.txt,1000,{},{}
-pm_default_building_hagia_sophia,monuments,08_monuments.txt,200,{},{}
-pm_default_building_mosque_of_djenne,monuments,08_monuments.txt,500,{},{}
-pm_default_building_saint_basils_cathedral,monuments,08_monuments.txt,200,{},{}
-pm_default_building_statue_of_liberty,monuments,08_monuments.txt,100,{},{}
-pm_default_building_taj_mahal,monuments,08_monuments.txt,100,{},{}
-pm_default_building_vatican_city,monuments,08_monuments.txt,500,{},{}
-pm_monument_prestige_only_vatican_city,monuments,08_monuments.txt,0,{},{}
-pm_default_building_white_house,monuments,08_monuments.txt,500,{},{}
-pm_monument_prestige_only,monuments,08_monuments.txt,0,{},{}
-pm_monument_no_effects,monuments,08_monuments.txt,0,{},{}
-pm_power_bloc_statue_sovereign_empire,monuments,08_monuments.txt,500,{},{}
-pm_power_bloc_statue_ideological_union,monuments,08_monuments.txt,500,{},{}
-pm_power_bloc_statue_military_treaty,monuments,08_monuments.txt,500,{},{}
-pm_power_bloc_statue_trade_league,monuments,08_monuments.txt,500,{},{}
-pm_power_bloc_statue_religious,monuments,08_monuments.txt,500,{},{}
-pm_power_bloc_prestige_only,monuments,08_monuments.txt,0,{},{}
-pm_default_building_victoria_terminus,monuments,08_monuments.txt,500,{},{}
-pm_simple_forestry,misc_resource,09_misc_resource.txt,5000,{},{'wood': 30.0}
-pm_saw_mills,misc_resource,09_misc_resource.txt,5000,{'tools': 5.0},{'wood': 60.0}
-pm_electric_saw_mills,misc_resource,09_misc_resource.txt,5000,"{'tools': 10.0, 'electricity': 5.0}",{'wood': 100.0}
-pm_no_hardwood,misc_resource,09_misc_resource.txt,0,{},{}
-pm_hardwood,misc_resource,09_misc_resource.txt,0,{},"{'wood': -25.0, 'hardwood': 10.0}"
-pm_increased_hardwood,misc_resource,09_misc_resource.txt,0,{},"{'wood': -40.0, 'hardwood': 20.0}"
-pm_no_equipment,misc_resource,09_misc_resource.txt,0,{},{}
-pm_steam_donkey_building_logging_camp,misc_resource,09_misc_resource.txt,-1000,"{'engines': 1.0, 'coal': 4.0}",{}
-pm_chainsaws,misc_resource,09_misc_resource.txt,-1250,"{'engines': 1.0, 'oil': 4.0}",{}
-pm_rail_transport_building_logging_camp,misc_resource,09_misc_resource.txt,-1000,{'transportation': 5.0},{}
-pm_log_carts,misc_resource,09_misc_resource.txt,-1500,{'transportation': 8.0},{}
-pm_simple_fishing,misc_resource,09_misc_resource.txt,5000,{},{'fish': 25.0}
-pm_fishing_trawlers,misc_resource,09_misc_resource.txt,5000,{'clippers': 5.0},{'fish': 50.0}
-pm_steam_trawlers,misc_resource,09_misc_resource.txt,5000,"{'steamers': 5.0, 'coal': 15.0}",{'fish': 100.0}
-pm_refrigerated_storage_building_fishing_wharf,misc_resource,09_misc_resource.txt,-1000,{'electricity': 5.0},{}
-pm_refrigerated_rail_cars_building_fishing_wharf,misc_resource,09_misc_resource.txt,-2000,"{'electricity': 5.0, 'transportation': 5.0}",{}
-pm_flash_freezing_building_fishing_wharf,misc_resource,09_misc_resource.txt,-3000,"{'electricity': 7.0, 'transportation': 7.0}",{}
-pm_simple_whaling,misc_resource,09_misc_resource.txt,5000,{},"{'meat': 5.0, 'oil': 10.0}"
-pm_wooden_whaling_ships,misc_resource,09_misc_resource.txt,5000,{'clippers': 5.0},"{'meat': 10.0, 'oil': 20.0}"
-pm_steam_whaling_ships,misc_resource,09_misc_resource.txt,5000,"{'steamers': 5.0, 'coal': 20.0}","{'meat': 20.0, 'oil': 40.0}"
-pm_refrigerated_storage_building_whaling_station,misc_resource,09_misc_resource.txt,-1000,{'electricity': 5.0},{}
-pm_refrigerated_rail_cars_building_whaling_station,misc_resource,09_misc_resource.txt,-2000,"{'electricity': 5.0, 'transportation': 5.0}",{}
-pm_flash_freezing_building_whaling_station,misc_resource,09_misc_resource.txt,-3000,"{'electricity': 7.0, 'transportation': 7.0}",{}
-pm_steam_derricks,misc_resource,09_misc_resource.txt,5000,"{'engines': 5.0, 'coal': 10.0}",{'oil': 60.0}
-pm_combustion_derricks,misc_resource,09_misc_resource.txt,5000,{'engines': 10.0},{'oil': 100.0}
-pm_rail_transport_building_oil_rig,misc_resource,09_misc_resource.txt,-1000,{'transportation': 5.0},{}
-pm_tanker_cars,misc_resource,09_misc_resource.txt,-2000,{'transportation': 10.0},{}
-pm_canal,canals,10_canals.txt,5000,"{'tools': 10.0, 'coal': 15.0}",{}
-pm_anchorage,private_infrastructure,11_private_infrastructure.txt,250,{},{}
-pm_basic_port,private_infrastructure,11_private_infrastructure.txt,1000,{'clippers': 5.0},{'merchant_marine': 10.0}
-pm_industrial_port,private_infrastructure,11_private_infrastructure.txt,1000,"{'steamers': 5.0, 'coal': 5.0}",{'merchant_marine': 20.0}
-pm_modern_port,private_infrastructure,11_private_infrastructure.txt,1000,"{'steamers': 5.0, 'oil': 10.0}",{'merchant_marine': 30.0}
-pm_early_trains,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 5.0, 'coal': 2.0}",{'transportation': 20.0}
-pm_steam_trains,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 5.0, 'coal': 5.0}",{'transportation': 25.0}
-pm_steam_trains_principle_transport_3,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 6.0, 'coal': 6.0}",{'transportation': 30.0}
-pm_electric_trains,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 5.0, 'electricity': 8.0}",{'transportation': 35.0}
-pm_electric_trains_principle_transport_3,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 6.0, 'electricity': 10.0}",{'transportation': 45.0}
-pm_diesel_trains,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 5.0, 'oil': 6.0}",{'transportation': 40.0}
-pm_diesel_trains_principle_transport_3,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 6.0, 'oil': 8.0}",{'transportation': 50.0}
-pm_no_passenger_trains,private_infrastructure,11_private_infrastructure.txt,0,{},{}
-pm_wooden_passenger_carriages,private_infrastructure,11_private_infrastructure.txt,100,{'wood': 8.0},{'transportation': 10.0}
-pm_steel_passenger_carriages,private_infrastructure,11_private_infrastructure.txt,200,{'steel': 5.0},{'transportation': 15.0}
-pm_trade_center,private_infrastructure,11_private_infrastructure.txt,1000,{},{}
-pm_trade_center_principle_external_trade_2,private_infrastructure,11_private_infrastructure.txt,1000,{},{}
-pm_trade_center_trade_quantity_limited,private_infrastructure,11_private_infrastructure.txt,0,{'merchant_marine': 3.0},{}
-pm_trade_center_trade_quantity_normal,private_infrastructure,11_private_infrastructure.txt,0,{'merchant_marine': 4.0},{}
-pm_trade_center_trade_quantity_high,private_infrastructure,11_private_infrastructure.txt,0,{'merchant_marine': 5.0},{}
-pm_trade_center_trade_quantity_very_high,private_infrastructure,11_private_infrastructure.txt,0,{'merchant_marine': 6.0},{}
-pm_financial_district_privately_owned,private_infrastructure,11_private_infrastructure.txt,100,{},{}
-pm_financial_district_publicly_traded,private_infrastructure,11_private_infrastructure.txt,100,{},{}
-pm_financial_district_principle_divine_economics_2,private_infrastructure,11_private_infrastructure.txt,100,{},{}
-pm_manor_house_privately_owned,private_infrastructure,11_private_infrastructure.txt,50,{},{}
-pm_manor_house_principle_divine_economics_2,private_infrastructure,11_private_infrastructure.txt,100,{},{}
-pm_manor_house_bureaucrat_ownership,private_infrastructure,11_private_infrastructure.txt,100,{},{}
-pm_manor_house_clergy_ownership,private_infrastructure,11_private_infrastructure.txt,100,{},{}
-pm_company_headquarter_privately_owned,private_infrastructure,11_private_infrastructure.txt,50,{},{}
-pm_company_headquarter_principle_divine_economics_2,private_infrastructure,11_private_infrastructure.txt,50,{},{}
-pm_company_headquarter_government_run,private_infrastructure,11_private_infrastructure.txt,100,{},{}
-pm_company_headquarter_worker_cooperative,private_infrastructure,11_private_infrastructure.txt,100,{},{}
-pm_home_workshops_no_building_subsistence_farms,subsistence,12_subsistence.txt,0,{},"{'grain': 0.5, 'fabric': 0.25, 'wood': 0.25}"
-pm_home_workshops_building_subsistence_farms,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.25, 'furniture': 0.25, 'liquor': 0.25}"
-pm_serfdom_no,subsistence,12_subsistence.txt,0,{},{}
-pm_homesteading_building_subsistence,subsistence,12_subsistence.txt,0,{},{'grain': 0.25}
-pm_serfdom,subsistence,12_subsistence.txt,0,{},{'grain': 0.5}
-pm_home_workshops_no_building_subsistence_orchards,subsistence,12_subsistence.txt,0,{},"{'fruit': 0.33, 'fabric': 0.25, 'wood': 0.25}"
-pm_home_workshops_building_subsistence_orchards,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.25, 'furniture': 0.25, 'liquor': 0.25}"
-pm_serfdom_building_subsistence_orchards,subsistence,12_subsistence.txt,0,{},{'fruit': 0.33}
-pm_home_workshops_no_building_subsistence_pastures,subsistence,12_subsistence.txt,0,{},"{'meat': 0.33, 'fabric': 0.5}"
-pm_home_workshops_building_subsistence_pastures,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.25, 'furniture': 0.25, 'liquor': 0.25}"
-pm_serfdom_building_subsistence_pastures,subsistence,12_subsistence.txt,0,{},{'meat': 0.33}
-pm_home_workshops_no_building_subsistence_fishing_villages,subsistence,12_subsistence.txt,0,{},"{'fish': 0.5, 'fabric': 0.25, 'wood': 0.25}"
-pm_home_workshops_building_subsistence_fishing_villages,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.25, 'furniture': 0.25, 'liquor': 0.25}"
-pm_serfdom_building_subsistence_fishing_villages,subsistence,12_subsistence.txt,0,{},{'fish': 0.5}
-pm_home_workshops_no_building_subsistence_rice_paddies,subsistence,12_subsistence.txt,0,{},"{'grain': 1.0, 'fabric': 0.5, 'wood': 0.5}"
-pm_home_workshops_building_subsistence_rice_paddies,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.5, 'furniture': 0.5, 'liquor': 0.5}"
-pm_serfdom_building_subsistence_rice_paddies,subsistence,12_subsistence.txt,0,{},{'grain': 1.0}
-pm_wooden_buildings,construction,13_construction.txt,1000,"{'fabric': 25.0, 'wood': 75.0}",{}
-pm_iron_frame_buildings,construction,13_construction.txt,1000,"{'wood': 45.0, 'fabric': 20.0, 'iron': 50.0, 'tools': 10.0}",{}
-pm_steel_frame_buildings,construction,13_construction.txt,1000,"{'steel': 56.0, 'glass': 40.0, 'explosives': 10.0, 'tools': 20.0}",{}
-pm_arc_welded_buildings,construction,13_construction.txt,1000,"{'steel': 48.0, 'glass': 40.0, 'explosives': 20.0, 'tools': 40.0, 'electricity': 40.0}",{}
+production_method_name,parent_building,filename,total_employment,inputs,outputs,input_cost,output_revenue,total_profit,profit_per_employee
+pm_dummy,dummy,00_dummy.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_bakery,industry,01_industry.txt,5000,{'grain': 40.0},{'groceries': 45.0},800.0,1350.0,550.0,0.11
+pm_sweeteners,industry,01_industry.txt,5000,"{'grain': 40.0, 'sugar': 15.0}",{'groceries': 65.0},1250.0,1950.0,700.0,0.14
+pm_baking_powder,industry,01_industry.txt,5000,"{'grain': 80.0, 'sugar': 30.0}",{'groceries': 120.0},2500.0,3600.0,1100.0,0.22
+pm_disabled_canning,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_cannery,industry,01_industry.txt,500,"{'grain': -20.0, 'meat': 20.0, 'iron': 10.0}",{'groceries': 30.0},600.0,900.0,300.0,0.6
+pm_cannery_fish,industry,01_industry.txt,500,"{'grain': -20.0, 'fish': 30.0, 'iron': 10.0}",{'groceries': 30.0},600.0,900.0,300.0,0.6
+pm_vacuum_canning,industry,01_industry.txt,700,"{'grain': -30.0, 'fish': 30.0, 'meat': 20.0, 'iron': 10.0, 'oil': 5.0}",{'groceries': 60.0},1200.0,1800.0,600.0,0.8571428571428571
+pm_vacuum_canning_principle_3,industry,01_industry.txt,700,"{'grain': -30.0, 'fish': 30.0, 'meat': 20.0, 'iron': 10.0, 'oil': 5.0}",{'groceries': 70.0},1200.0,2100.0,900.0,1.2857142857142858
+pm_disabled_distillery,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_pot_stills,industry,01_industry.txt,350,{'sugar': 25.0},"{'liquor': 60.0, 'groceries': -30.0}",750.0,900.0,150.0,0.42857142857142855
+pm_patent_stills,industry,01_industry.txt,900,"{'sugar': 25.0, 'glass': 10.0}","{'liquor': 100.0, 'groceries': -40.0}",1150.0,1800.0,650.0,0.7222222222222222
+pm_manual_dough_processing,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_automated_bakery,industry,01_industry.txt,-2500,{'tools': 10.0},{},400.0,0.0,-400.0,0.16
+pm_handsewn_clothes,industry,01_industry.txt,5000,{'fabric': 40.0},{'clothes': 45.0},800.0,1350.0,550.0,0.11
+pm_dye_workshops,industry,01_industry.txt,5000,"{'fabric': 40.0, 'dye': 5.0}",{'clothes': 60.0},1000.0,1800.0,800.0,0.16
+pm_sewing_machines,industry,01_industry.txt,5000,"{'fabric': 60.0, 'dye': 10.0, 'tools': 5.0}",{'clothes': 100.0},1800.0,3000.0,1200.0,0.24
+pm_electric_sewing_machines,industry,01_industry.txt,5000,"{'fabric': 60.0, 'dye': 20.0, 'tools': 10.0, 'electricity': 10.0}",{'clothes': 140.0},2700.0,4200.0,1500.0,0.3
+pm_no_luxury_clothes,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_craftsman_sewing,industry,01_industry.txt,500,"{'silk': 15.0, 'fabric': -15.0}","{'clothes': -30.0, 'luxury_clothes': 30.0}",300.0,900.0,600.0,1.2
+pm_elastics,industry,01_industry.txt,1000,"{'rubber': 10.0, 'silk': 35.0, 'fabric': -35.0}","{'clothes': -70.0, 'luxury_clothes': 70.0}",1100.0,2100.0,1000.0,1.0
+pm_traditional_looms,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_mechanized_looms,industry,01_industry.txt,-1500,{'tools': 5.0},{},200.0,0.0,-200.0,0.13333333333333333
+pm_automatic_power_looms,industry,01_industry.txt,-2500,"{'tools': 5.0, 'electricity': 10.0}",{},500.0,0.0,-500.0,0.2
+pm_handcrafted_furniture,industry,01_industry.txt,5000,"{'wood': 30.0, 'fabric': 10.0}",{'furniture': 45.0},800.0,1350.0,550.0,0.11
+pm_lathe,industry,01_industry.txt,5000,"{'wood': 30.0, 'fabric': 10.0, 'tools': 5.0}",{'furniture': 65.0},1000.0,1950.0,950.0,0.19
+pm_mechanized_workshops,industry,01_industry.txt,5500,"{'wood': 50.0, 'fabric': 10.0, 'tools': 10.0}",{'furniture': 110.0},1600.0,3300.0,1700.0,0.3090909090909091
+pm_no_luxuries,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_luxury_furniture,industry,01_industry.txt,500,"{'hardwood': 15.0, 'wood': -15.0}","{'furniture': -25.0, 'luxury_furniture': 25.0}",300.0,750.0,450.0,0.9
+pm_precision_tools,industry,01_industry.txt,1000,"{'hardwood': 25.0, 'tools': 10.0, 'wood': -25.0}","{'furniture': -55.0, 'luxury_furniture': 55.0}",900.0,1650.0,750.0,0.75
+pm_automation_disabled,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_watertube_boiler_building_furniture_manufacturies,industry,01_industry.txt,-1500,"{'tools': 5.0, 'coal': 5.0}",{},350.0,0.0,-350.0,0.23333333333333334
+pm_rotary_valve_engine_building_furniture_manufacturies,industry,01_industry.txt,-2000,"{'tools': 5.0, 'coal': 10.0}",{},500.0,0.0,-500.0,0.25
+pm_assembly_lines_building_furniture_manufacturies,industry,01_industry.txt,-3000,"{'tools': 5.0, 'oil': 5.0, 'electricity': 5.0}",{},550.0,0.0,-550.0,0.18333333333333332
+pm_forest_glass,industry,01_industry.txt,5000,{'wood': 30.0},{'glass': 30.0},600.0,1200.0,600.0,0.12
+pm_leaded_glass,industry,01_industry.txt,5000,"{'wood': 20.0, 'lead': 10.0}",{'glass': 40.0},800.0,1600.0,800.0,0.16
+pm_crystal_glass,industry,01_industry.txt,5000,{'lead': 35.0},{'glass': 60.0},1400.0,2400.0,1000.0,0.2
+pm_houseware_plastics,industry,01_industry.txt,5000,"{'oil': 20.0, 'lead': 30.0}",{'glass': 100.0},2000.0,4000.0,2000.0,0.4
+pm_disabled_ceramics,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_ceramics,industry,01_industry.txt,250,{'dye': 5.0},"{'glass': -10.0, 'porcelain': 10.0}",200.0,300.0,100.0,0.4
+pm_bone_china,industry,01_industry.txt,500,{'dye': 10.0},"{'glass': -20.0, 'porcelain': 30.0}",400.0,1300.0,900.0,1.8
+pm_manual_glassblowing,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_automatic_bottle_blowers,industry,01_industry.txt,-2500,"{'tools': 2.0, 'engines': 2.0, 'oil': 5.0}",{},400.0,0.0,-400.0,0.16
+pm_crude_tools,industry,01_industry.txt,5000,{'wood': 30.0},{'tools': 25.0},600.0,1000.0,400.0,0.08
+pm_pig_iron,industry,01_industry.txt,5000,"{'wood': 30.0, 'iron': 20.0}",{'tools': 50.0},1400.0,2000.0,600.0,0.12
+pm_steel,industry,01_industry.txt,5000,"{'wood': 30.0, 'steel': 20.0}",{'tools': 70.0},1600.0,2800.0,1200.0,0.24
+pm_rubber_grips,industry,01_industry.txt,5000,"{'rubber': 10.0, 'steel': 30.0}",{'tools': 95.0},1900.0,3800.0,1900.0,0.38
+pm_watertube_boiler_building_tooling_workshops,industry,01_industry.txt,-1500,{'coal': 10.0},{},300.0,0.0,-300.0,0.2
+pm_rotary_valve_engine_building_tooling_workshops,industry,01_industry.txt,-2000,{'coal': 15.0},{},450.0,0.0,-450.0,0.225
+pm_assembly_lines_building_tooling_workshops,industry,01_industry.txt,-3000,"{'oil': 10.0, 'electricity': 5.0}",{},550.0,0.0,-550.0,0.18333333333333332
+pm_pulp_pressing,industry,01_industry.txt,5000,{'wood': 30.0},{'paper': 40.0},600.0,1200.0,600.0,0.12
+pm_sulfite_pulping,industry,01_industry.txt,5000,"{'wood': 30.0, 'sulfur': 10.0}",{'paper': 70.0},1100.0,2100.0,1000.0,0.2
+pm_bleached_paper,industry,01_industry.txt,5000,"{'wood': 30.0, 'sulfur': 10.0, 'dye': 10.0}",{'paper': 100.0},1500.0,3000.0,1500.0,0.3
+pm_watertube_boiler_building_paper_mills,industry,01_industry.txt,-1500,"{'tools': 5.0, 'coal': 5.0}",{},350.0,0.0,-350.0,0.23333333333333334
+pm_rotary_valve_engine_building_paper_mills,industry,01_industry.txt,-2000,"{'tools': 5.0, 'coal': 10.0}",{},500.0,0.0,-500.0,0.25
+pm_artificial_fertilizers,industry,01_industry.txt,5000,"{'sulfur': 30.0, 'iron': 10.0}",{'fertilizer': 90.0},1900.0,2700.0,800.0,0.16
+pm_improved_fertilizer,industry,01_industry.txt,5000,"{'sulfur': 30.0, 'iron': 30.0}",{'fertilizer': 140.0},2700.0,4200.0,1500.0,0.3
+pm_nitrogen_fixation,industry,01_industry.txt,5000,"{'sulfur': 40.0, 'oil': 20.0, 'iron': 30.0}",{'fertilizer': 200.0},4000.0,6000.0,2000.0,0.4
+pm_no_explosives_production,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_leblanc_process,industry,01_industry.txt,5000,"{'sulfur': 20.0, 'fertilizer': 20.0}",{'explosives': 50.0},1600.0,2500.0,900.0,0.18
+pm_ammonia-soda_process,industry,01_industry.txt,5000,"{'sulfur': 30.0, 'fertilizer': 30.0, 'paper': 10.0}",{'explosives': 80.0},2700.0,4000.0,1300.0,0.26
+pm_vacuum_evaporation,industry,01_industry.txt,4500,"{'sulfur': 40.0, 'fertilizer': 40.0, 'paper': 20.0}",{'explosives': 110.0},3800.0,5500.0,1700.0,0.37777777777777777
+pm_brine_electrolysis,industry,01_industry.txt,4000,"{'sulfur': 40.0, 'fertilizer': 50.0, 'paper': 30.0, 'electricity': 20.0}",{'explosives': 150.0},5000.0,7500.0,2500.0,0.625
+pm_dye_production,industry,01_industry.txt,5000,"{'sulfur': 20.0, 'fertilizer': 30.0}",{'dye': 80.0},1900.0,3200.0,1300.0,0.26
+pm_no_artificial_fibers,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_rayon,industry,01_industry.txt,0,{'wood': 10.0},"{'dye': -10.0, 'silk': 30.0}",200.0,800.0,600.0,0.0
+pm_blister_steel_process,industry,01_industry.txt,5000,"{'iron': 40.0, 'coal': 30.0}",{'steel': 65.0},2500.0,3250.0,750.0,0.15
+pm_bessemer_process,industry,01_industry.txt,5000,"{'iron': 60.0, 'coal': 30.0}",{'steel': 90.0},3300.0,4500.0,1200.0,0.24
+pm_open_hearth_process,industry,01_industry.txt,5000,"{'iron': 90.0, 'coal': 30.0}",{'steel': 120.0},4500.0,6000.0,1500.0,0.3
+pm_electric_arc_process,industry,01_industry.txt,5000,"{'iron': 100.0, 'coal': 30.0, 'electricity': 30.0}",{'steel': 150.0},5800.0,7500.0,1700.0,0.34
+pm_watertube_boiler_building_steel_mills,industry,01_industry.txt,-1500,"{'tools': 5.0, 'coal': 5.0}",{},350.0,0.0,-350.0,0.23333333333333334
+pm_rotary_valve_engine_building_steel_mills,industry,01_industry.txt,-2000,"{'tools': 5.0, 'coal': 10.0}",{},500.0,0.0,-500.0,0.25
+pm_steam_engines,industry,01_industry.txt,5000,{'steel': 30.0},{'engines': 40.0},1500.0,2400.0,900.0,0.18
+pm_electric_engines,industry,01_industry.txt,5000,"{'steel': 40.0, 'electricity': 30.0}",{'engines': 80.0},2900.0,4800.0,1900.0,0.38
+pm_diesel_engines,industry,01_industry.txt,5000,"{'steel': 50.0, 'oil': 50.0}",{'engines': 120.0},4500.0,7200.0,2700.0,0.54
+pm_watertube_boiler_building_motor_industry,industry,01_industry.txt,-1000,"{'tools': 5.0, 'coal': 5.0}",{},350.0,0.0,-350.0,0.35
+pm_rotary_valve_engine_building_motor_industry,industry,01_industry.txt,-1500,"{'tools': 5.0, 'coal': 10.0}",{},500.0,0.0,-500.0,0.3333333333333333
+pm_assembly_lines_building_motor_industry,industry,01_industry.txt,-2000,"{'tools': 5.0, 'oil': 5.0, 'electricity': 5.0}",{},550.0,0.0,-550.0,0.275
+pm_assembly_lines_building_automotive_industry,industry,01_industry.txt,-2000,"{'tools': 5.0, 'oil': 5.0, 'electricity': 5.0}",{},550.0,0.0,-550.0,0.275
+pm_basic_shipbuilding,industry,01_industry.txt,5000,"{'wood': 40.0, 'fabric': 20.0}",{'clippers': 35.0},1200.0,2100.0,900.0,0.18
+pm_complex_shipbuilding,industry,01_industry.txt,5000,"{'wood': 20.0, 'hardwood': 20.0, 'fabric': 20.0, 'engines': 5.0}",{'clippers': 70.0},1900.0,4200.0,2300.0,0.46
+pm_metal_shipbuilding,industry,01_industry.txt,5000,"{'steel': 30.0, 'coal': 10.0, 'engines': 10.0}",{'steamers': 65.0},2400.0,4550.0,2150.0,0.43
+pm_arc_welding_shipbuilding,industry,01_industry.txt,5000,"{'steel': 30.0, 'electricity': 30.0, 'engines': 10.0}",{'steamers': 80.0},3000.0,5600.0,2600.0,0.52
+pm_no_military_shipbuilding,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_military_shipbuilding_wooden,industry,01_industry.txt,5000,"{'hardwood': 20.0, 'fabric': 20.0, 'iron': 10.0}",{'manowars': 35.0},1600.0,2450.0,850.0,0.17
+pm_military_shipbuilding_wooden_2,industry,01_industry.txt,5000,"{'hardwood': 30.0, 'fabric': 10.0, 'engines': 5.0, 'iron': 10.0}",{'manowars': 45.0},2100.0,3150.0,1050.0,0.21
+pm_military_shipbuilding_steam,industry,01_industry.txt,5000,"{'steel': 40.0, 'coal': 20.0, 'engines': 10.0}",{'ironclads': 55.0},3200.0,4400.0,1200.0,0.24
+pm_military_shipbuilding_steam_2,industry,01_industry.txt,5000,"{'steel': 40.0, 'electricity': 30.0, 'engines': 20.0}",{'ironclads': 70.0},4100.0,5600.0,1500.0,0.3
+pm_automobile_production,industry,01_industry.txt,5000,"{'engines': 10.0, 'rubber': 5.0, 'oil': 5.0}",{'automobiles': 30.0},1000.0,3000.0,2000.0,0.4
+pm_mass_automobile_production,industry,01_industry.txt,5000,"{'engines': 10.0, 'rubber': 10.0, 'oil': 10.0}",{'automobiles': 60.0},1400.0,6000.0,4600.0,0.92
+pm_no_aeroplane_production,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_aeroplane_production,industry,01_industry.txt,250,"{'hardwood': 4.0, 'fabric': 4.0}","{'automobiles': -10.0, 'aeroplanes': 10.0}",240.0,-200.0,-440.0,-1.76
+pm_no_tank_production,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_tank_production,industry,01_industry.txt,250,{'steel': 5.0},"{'automobiles': -20.0, 'tanks': 20.0}",250.0,-400.0,-650.0,-2.6
+pm_telephones,industry,01_industry.txt,5000,"{'iron': 20.0, 'rubber': 20.0, 'lead': 20.0, 'tools': 10.0}",{'telephones': 60.0},2800.0,4200.0,1400.0,0.28
+pm_no_radios,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_radios,industry,01_industry.txt,500,{'electricity': 50.0},"{'telephones': -20.0, 'radios': 40.0}",1500.0,1800.0,300.0,0.6
+pm_muskets,industry,01_industry.txt,5000,"{'iron': 10.0, 'hardwood': 10.0}",{'small_arms': 30.0},800.0,1800.0,1000.0,0.2
+pm_rifles,industry,01_industry.txt,5000,"{'steel': 10.0, 'hardwood': 10.0, 'tools': 5.0}",{'small_arms': 50.0},1100.0,3000.0,1900.0,0.38
+pm_repeaters,industry,01_industry.txt,5000,"{'steel': 20.0, 'hardwood': 10.0, 'tools': 10.0}",{'small_arms': 70.0},1800.0,4200.0,2400.0,0.48
+pm_bolt_action_rifles,industry,01_industry.txt,5000,"{'steel': 20.0, 'hardwood': 10.0, 'tools': 20.0, 'oil': 10.0}",{'small_arms': 100.0},2600.0,6000.0,3400.0,0.68
+pm_no_artillery_production,industry,01_industry.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_cannons,industry,01_industry.txt,5000,"{'iron': 15.0, 'hardwood': 10.0}",{'artillery': 25.0},1000.0,1750.0,750.0,0.15
+pm_smoothbores,industry,01_industry.txt,5000,"{'iron': 25.0, 'hardwood': 15.0}",{'artillery': 45.0},1600.0,3150.0,1550.0,0.31
+pm_breech_loaders,industry,01_industry.txt,5000,"{'steel': 25.0, 'hardwood': 10.0, 'tools': 10.0}",{'artillery': 65.0},2050.0,4550.0,2500.0,0.5
+pm_recoiled_barrels,industry,01_industry.txt,5000,"{'steel': 40.0, 'tools': 20.0, 'oil': 10.0}",{'artillery': 90.0},3200.0,6300.0,3100.0,0.62
+pm_rotary_valve_engine_building_arms_industry,industry,01_industry.txt,-2000,{'coal': 15.0},{},450.0,0.0,-450.0,0.225
+pm_assembly_lines_building_arms_industry,industry,01_industry.txt,-2500,"{'oil': 10.0, 'electricity': 5.0}",{},550.0,0.0,-550.0,0.22
+pm_percussion_caps,industry,01_industry.txt,5000,"{'explosives': 20.0, 'lead': 20.0}",{'ammunition': 50.0},1800.0,2500.0,700.0,0.14
+pm_explosive_shells,industry,01_industry.txt,5000,"{'explosives': 40.0, 'lead': 30.0}",{'ammunition': 90.0},3200.0,4500.0,1300.0,0.26
+pm_rotary_valve_engine_building_munition_plants,industry,01_industry.txt,-2000,{'coal': 15.0},{},450.0,0.0,-450.0,0.225
+pm_assembly_lines_building_munition_plants,industry,01_industry.txt,-3000,"{'oil': 10.0, 'electricity': 5.0}",{},550.0,0.0,-550.0,0.18333333333333332
+pm_simple_farming,agro,02_agro.txt,5000,{},{'grain': 20.0},0.0,400.0,400.0,0.08
+pm_soil_enriching_farming,agro,02_agro.txt,5000,{'fertilizer': 5.0},{'grain': 30.0},150.0,600.0,450.0,0.09
+pm_fertilization,agro,02_agro.txt,5000,{'fertilizer': 10.0},{'grain': 45.0},300.0,900.0,600.0,0.12
+pm_chemical_fertilizer,agro,02_agro.txt,5000,{'fertilizer': 15.0},{'grain': 60.0},450.0,1200.0,750.0,0.15
+pm_no_secondary,agro,02_agro.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_potatoes,agro,02_agro.txt,0,{},"{'grain': -10.0, 'liquor': 10.0}",0.0,100.0,100.0,0.0
+pm_apple_orchards,agro,02_agro.txt,0,{},"{'grain': -10.0, 'fruit': 5.0, 'sugar': 5.0}",0.0,100.0,100.0,0.0
+pm_tools_disabled,agro,02_agro.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_tools,agro,02_agro.txt,-1000,{'tools': 2.0},{},80.0,0.0,-80.0,0.08
+pm_steam_threshers,agro,02_agro.txt,-1500,"{'tools': 2.0, 'coal': 1.0}",{},110.0,0.0,-110.0,0.07333333333333333
+pm_tractors,agro,02_agro.txt,-2000,"{'coal': 2.0, 'engines': 1.0}",{},120.0,0.0,-120.0,0.06
+pm_compression_ignition_tractors,agro,02_agro.txt,-2500,"{'oil': 2.0, 'engines': 1.0}",{},140.0,0.0,-140.0,0.056
+pm_citrus_orchards,agro,02_agro.txt,0,{},"{'grain': -10.0, 'fruit': 5.0, 'sugar': 5.0}",0.0,100.0,100.0,0.0
+pm_simple_farming_building_rice_farm,agro,02_agro.txt,10000,{},{'grain': 35.0},0.0,700.0,700.0,0.07
+pm_soil_enriching_farming_building_rice_farm,agro,02_agro.txt,10000,{'fertilizer': 10.0},{'grain': 50.0},300.0,1000.0,700.0,0.07
+pm_fertilization_building_rice_farm,agro,02_agro.txt,10000,{'fertilizer': 20.0},{'grain': 75.0},600.0,1500.0,900.0,0.09
+pm_chemical_fertilizer_building_rice_farm,agro,02_agro.txt,10000,{'fertilizer': 30.0},{'grain': 100.0},900.0,2000.0,1100.0,0.11
+pm_fig_orchards_building_rice_farm,agro,02_agro.txt,0,{},"{'grain': -30.0, 'fruit': 12.0, 'sugar': 18.0}",0.0,300.0,300.0,0.0
+pm_tools_building_rice_farm,agro,02_agro.txt,-2000,{'tools': 4.0},{},160.0,0.0,-160.0,0.08
+pm_steam_threshers_building_rice_farm,agro,02_agro.txt,-3000,"{'tools': 4.0, 'coal': 2.0}",{},220.0,0.0,-220.0,0.07333333333333333
+pm_fig_orchards,agro,02_agro.txt,0,{},"{'grain': -10.0, 'fruit': 5.0, 'sugar': 5.0}",0.0,100.0,100.0,0.0
+pm_simple_ranch,agro,02_agro.txt,0,{},{'fabric': 5.0},0.0,100.0,100.0,0.0
+pm_sheep_farms,agro,02_agro.txt,0,{'grain': 10.0},"{'fabric': 15.0, 'fertilizer': 2.5}",200.0,375.0,175.0,0.0
+pm_intensive_grazing_ranch,agro,02_agro.txt,0,{'grain': 15.0},"{'fabric': 25.0, 'fertilizer': 5.0}",300.0,650.0,350.0,0.0
+pm_open_air_stockyards,agro,02_agro.txt,5000,{},{'meat': 10.0},0.0,300.0,300.0,0.06
+pm_butchering_tools,agro,02_agro.txt,5000,{'tools': 2.0},{'meat': 15.0},80.0,450.0,370.0,0.074
+pm_slaughterhouses,agro,02_agro.txt,5000,{'tools': 5.0},{'meat': 25.0},200.0,750.0,550.0,0.11
+pm_mechanized_slaughtering,agro,02_agro.txt,5000,"{'tools': 5.0, 'coal': 5.0}",{'meat': 35.0},350.0,1050.0,700.0,0.14
+pm_standard_fences,agro,02_agro.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_barbed_wire_fences,agro,02_agro.txt,-500,{'iron': 1.0},{},40.0,0.0,-40.0,0.08
+pm_electric_fencing,agro,02_agro.txt,-1000,"{'iron': 1.0, 'electricity': 1.0}",{},70.0,0.0,-70.0,0.07
+pm_unrefrigerated,agro,02_agro.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_refrigerated_storage_building_livestock_ranch,agro,02_agro.txt,-500,{'electricity': 1.0},{},30.0,0.0,-30.0,0.06
+pm_refrigerated_rail_cars_building_livestock_ranch,agro,02_agro.txt,-1000,"{'electricity': 1.0, 'transportation': 1.0}",{},60.0,0.0,-60.0,0.06
+pm_picks_and_shovels_building_coal_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'coal': 25.0},200.0,750.0,550.0,0.11
+pm_atmospheric_engine_pump_building_coal_mine,mines,03_mines.txt,5000,{'tools': 10.0},{'coal': 40.0},400.0,1200.0,800.0,0.16
+pm_condensing_engine_pump_building_coal_mine,mines,03_mines.txt,5000,{'tools': 15.0},{'coal': 60.0},600.0,1800.0,1200.0,0.24
+pm_diesel_pump_building_coal_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'coal': 90.0},800.0,2700.0,1900.0,0.38
+pm_no_explosives,mines,03_mines.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_nitroglycerin_building_coal_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'coal': 15.0},250.0,450.0,200.0,0.8
+pm_dynamite_building_coal_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'coal': 25.0},500.0,750.0,250.0,1.0
+pm_no_steam_automation,mines,03_mines.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_steam_donkey_building_coal_mine,mines,03_mines.txt,-1000,{'engines': 1.0},{'coal': -3.0},60.0,-90.0,-150.0,0.15
+pm_road_carts,mines,03_mines.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_picks_and_shovels_building_iron_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'iron': 20.0},200.0,800.0,600.0,0.12
+pm_atmospheric_engine_pump_building_iron_mine,mines,03_mines.txt,5000,"{'tools': 10.0, 'coal': 10.0}",{'iron': 40.0},700.0,1600.0,900.0,0.18
+pm_condensing_engine_pump_building_iron_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'coal': 15.0}",{'iron': 60.0},1050.0,2400.0,1350.0,0.27
+pm_diesel_pump_building_iron_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'iron': 70.0},800.0,2800.0,2000.0,0.4
+pm_nitroglycerin_building_iron_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'iron': 12.0},250.0,480.0,230.0,0.92
+pm_dynamite_building_iron_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'iron': 20.0},500.0,800.0,300.0,1.2
+pm_steam_donkey_mine,mines,03_mines.txt,-1000,"{'engines': 1.0, 'coal': 4.0}",{},180.0,0.0,-180.0,0.18
+pm_rail_transport_mine,mines,03_mines.txt,-1000,{'transportation': 5.0},{},150.0,0.0,-150.0,0.15
+pm_picks_and_shovels_building_lead_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'lead': 20.0},200.0,800.0,600.0,0.12
+pm_atmospheric_engine_pump_building_lead_mine,mines,03_mines.txt,5000,"{'tools': 10.0, 'coal': 10.0}",{'lead': 40.0},700.0,1600.0,900.0,0.18
+pm_condensing_engine_pump_building_lead_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'coal': 15.0}",{'lead': 60.0},1050.0,2400.0,1350.0,0.27
+pm_diesel_pump_building_lead_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'lead': 70.0},800.0,2800.0,2000.0,0.4
+pm_nitroglycerin_building_lead_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'lead': 12.0},250.0,480.0,230.0,0.92
+pm_dynamite_building_lead_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'lead': 20.0},500.0,800.0,300.0,1.2
+pm_picks_and_shovels_building_sulfur_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'sulfur': 20.0},200.0,1000.0,800.0,0.16
+pm_atmospheric_engine_pump_building_sulfur_mine,mines,03_mines.txt,5000,"{'tools': 10.0, 'coal': 10.0}",{'sulfur': 40.0},700.0,2000.0,1300.0,0.26
+pm_condensing_engine_pump_building_sulfur_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'coal': 15.0}",{'sulfur': 60.0},1050.0,3000.0,1950.0,0.39
+pm_diesel_pump_building_sulfur_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'sulfur': 80.0},800.0,4000.0,3200.0,0.64
+pm_nitroglycerin_building_sulfur_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'sulfur': 10.0},250.0,500.0,250.0,1.0
+pm_dynamite_building_sulfur_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'sulfur': 20.0},500.0,1000.0,500.0,2.0
+pm_picks_and_shovels_building_gold_mine,mines,03_mines.txt,5000,{'tools': 5.0},{'gold': 8.0},200.0,800.0,600.0,0.12
+pm_atmospheric_engine_pump_building_gold_mine,mines,03_mines.txt,5000,"{'tools': 10.0, 'coal': 10.0}",{'gold': 15.0},700.0,1500.0,800.0,0.16
+pm_condensing_engine_pump_building_gold_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'coal': 15.0}",{'gold': 25.0},1050.0,2500.0,1450.0,0.29
+pm_diesel_pump_building_gold_mine,mines,03_mines.txt,5000,"{'tools': 15.0, 'oil': 5.0}",{'gold': 30.0},800.0,3000.0,2200.0,0.44
+pm_nitroglycerin_building_gold_mine,mines,03_mines.txt,250,{'explosives': 5.0},{'gold': 5.0},250.0,500.0,250.0,1.0
+pm_dynamite_building_gold_mine,mines,03_mines.txt,250,{'explosives': 10.0},{'gold': 10.0},500.0,1000.0,500.0,2.0
+pm_steam_rail_transport,plantations,04_plantations.txt,-1000,{'transportation': 5.0},{},150.0,0.0,-150.0,0.15
+pm_no_organization,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_general_training,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_advanced_tactics_training,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_training_streamlining,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_nco_incorporation,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_mobile_warfare_tactics,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_no_organization_conscription,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_general_training_conscription,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_advanced_tactics_training_conscription,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_training_streamlining_conscription,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_nco_incorporation_conscription,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_mobile_warfare_tactics_conscription,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_no_naval_theory,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_power_of_the_purse,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_jeune_ecole,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_sea_lane_strategies,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_battlefleet_tactics,military,05_military.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_market_stalls,urban_center,06_urban_center.txt,4800,{},{'services': 15.0},0.0,450.0,450.0,0.09375
+pm_market_squares,urban_center,06_urban_center.txt,4800,"{'wood': 1.0, 'glass': 1.0}",{'services': 20.0},60.0,600.0,540.0,0.1125
+pm_covered_markets,urban_center,06_urban_center.txt,4800,"{'glass': 2.0, 'steel': 1.0}",{'services': 25.0},130.0,750.0,620.0,0.12916666666666668
+pm_arcades,urban_center,06_urban_center.txt,5000,"{'glass': 2.0, 'steel': 2.0, 'electricity': 1.0}",{'services': 30.0},210.0,900.0,690.0,0.138
+pm_no_street_lighting,urban_center,06_urban_center.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_gas_streetlights,urban_center,06_urban_center.txt,250,{'coal': 2.0},{'services': 5.0},60.0,150.0,90.0,0.36
+pm_electric_streetlights,urban_center,06_urban_center.txt,250,{'electricity': 3.0},{'services': 10.0},90.0,300.0,210.0,0.84
+pm_no_public_transport,urban_center,06_urban_center.txt,0,{},{'transportation': 2.0},0.0,60.0,60.0,0.0
+pm_public_trams,urban_center,06_urban_center.txt,-200,{'engines': 0.5},{'transportation': 4.0},30.0,120.0,90.0,-0.45
+pm_public_motor_carriages,urban_center,06_urban_center.txt,-400,{'automobiles': 1.0},{'transportation': 8.0},100.0,240.0,140.0,-0.35
+pm_state_urban_clergy,urban_center,06_urban_center.txt,200,{},{},0.0,0.0,0.0,0.0
+pm_free_urban_clergy,urban_center,06_urban_center.txt,250,{},{},0.0,0.0,0.0,0.0
+pm_no_urban_clergy,urban_center,06_urban_center.txt,200,{},{},0.0,0.0,0.0,0.0
+pm_traditional_art,urban_center,06_urban_center.txt,0,{'paper': 10.0},{'fine_art': 5.0},300.0,1000.0,700.0,0.0
+pm_realist_art,urban_center,06_urban_center.txt,0,{'paper': 15.0},{'fine_art': 6.0},450.0,1200.0,750.0,0.0
+pm_photographic_art,urban_center,06_urban_center.txt,0,"{'paper': 15.0, 'tools': 8.0}",{'fine_art': 8.0},770.0,1600.0,830.0,0.0
+pm_film_art,urban_center,06_urban_center.txt,0,"{'tools': 10.0, 'paper': 15.0, 'electricity': 5.0}",{'fine_art': 10.0},1000.0,2000.0,1000.0,0.0
+pm_principle_freedom_of_movement_3,urban_center,06_urban_center.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_freedom_of_movement_no_effect,urban_center,06_urban_center.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_traditional_patronage,urban_center,06_urban_center.txt,5000,{},{},0.0,0.0,0.0,0.0
+pm_bourgeoisie_patronage,urban_center,06_urban_center.txt,5000,{},{},0.0,0.0,0.0,0.0
+pm_independent_artists,urban_center,06_urban_center.txt,5000,{},{},0.0,0.0,0.0,0.0
+pm_early_power_plant,urban_center,06_urban_center.txt,1000,"{'engines': 4.0, 'coal': 5.0, 'wood': 5.0}",{'electricity': 25.0},490.0,750.0,260.0,0.26
+pm_coal-fired_plant,urban_center,06_urban_center.txt,1000,"{'engines': 6.0, 'coal': 20.0}",{'electricity': 50.0},960.0,1500.0,540.0,0.54
+pm_oil-fired_plant,urban_center,06_urban_center.txt,1000,"{'engines': 10.0, 'oil': 25.0}",{'electricity': 80.0},1600.0,2400.0,800.0,0.8
+pm_simple_organization,government,07_government.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_horizontal_drawer_cabinets,government,07_government.txt,500,{'paper': 10.0},{},300.0,0.0,-300.0,-0.6
+pm_vertical_filing_cabinets,government,07_government.txt,500,{'paper': 20.0},{},600.0,0.0,-600.0,-1.2
+pm_switch_boards,government,07_government.txt,500,"{'paper': 20.0, 'telephones': 5.0}",{},950.0,0.0,-950.0,-1.9
+pm_hereditary_bureaucrats,government,07_government.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_professional_bureaucrats,government,07_government.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_secular_bureaucrats,government,07_government.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_religious_bureaucrats,government,07_government.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_scholastic_education,government,07_government.txt,500,{'paper': 5.0},{},150.0,0.0,-150.0,-0.3
+pm_philosophy_department,government,07_government.txt,500,{'paper': 10.0},{},300.0,0.0,-300.0,-0.6
+pm_analytical_philosophy_department,government,07_government.txt,500,{'paper': 15.0},{},450.0,0.0,-450.0,-0.9
+pm_secular_academia,government,07_government.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_religious_academia,government,07_government.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_skyscraper_bureaucratic_nexus,government,07_government.txt,1000,{'paper': 25.0},{},750.0,0.0,-750.0,-0.75
+pm_skyscraper_trade_nexus,government,07_government.txt,1000,{'paper': 25.0},{},750.0,0.0,-750.0,-0.75
+pm_no_airships,government,07_government.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_airship_mooring_post,government,07_government.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_default_building_eiffel_tower,monuments,08_monuments.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_default_building_cristo_redentor,monuments,08_monuments.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_default_building_angkor_wat,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_default_building_big_ben,monuments,08_monuments.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_default_building_forbidden_city,monuments,08_monuments.txt,1000,{},{},0.0,0.0,0.0,0.0
+pm_default_building_hagia_sophia,monuments,08_monuments.txt,200,{},{},0.0,0.0,0.0,0.0
+pm_default_building_mosque_of_djenne,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_default_building_saint_basils_cathedral,monuments,08_monuments.txt,200,{},{},0.0,0.0,0.0,0.0
+pm_default_building_statue_of_liberty,monuments,08_monuments.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_default_building_taj_mahal,monuments,08_monuments.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_default_building_vatican_city,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_monument_prestige_only_vatican_city,monuments,08_monuments.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_default_building_white_house,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_monument_prestige_only,monuments,08_monuments.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_monument_no_effects,monuments,08_monuments.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_power_bloc_statue_sovereign_empire,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_power_bloc_statue_ideological_union,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_power_bloc_statue_military_treaty,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_power_bloc_statue_trade_league,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_power_bloc_statue_religious,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_power_bloc_prestige_only,monuments,08_monuments.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_default_building_victoria_terminus,monuments,08_monuments.txt,500,{},{},0.0,0.0,0.0,0.0
+pm_simple_forestry,misc_resource,09_misc_resource.txt,5000,{},{'wood': 30.0},0.0,600.0,600.0,0.12
+pm_saw_mills,misc_resource,09_misc_resource.txt,5000,{'tools': 5.0},{'wood': 60.0},200.0,1200.0,1000.0,0.2
+pm_electric_saw_mills,misc_resource,09_misc_resource.txt,5000,"{'tools': 10.0, 'electricity': 5.0}",{'wood': 100.0},550.0,2000.0,1450.0,0.29
+pm_no_hardwood,misc_resource,09_misc_resource.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_hardwood,misc_resource,09_misc_resource.txt,0,{},"{'wood': -25.0, 'hardwood': 10.0}",0.0,-100.0,-100.0,0.0
+pm_increased_hardwood,misc_resource,09_misc_resource.txt,0,{},"{'wood': -40.0, 'hardwood': 20.0}",0.0,0.0,0.0,0.0
+pm_no_equipment,misc_resource,09_misc_resource.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_steam_donkey_building_logging_camp,misc_resource,09_misc_resource.txt,-1000,"{'engines': 1.0, 'coal': 4.0}",{},180.0,0.0,-180.0,0.18
+pm_chainsaws,misc_resource,09_misc_resource.txt,-1250,"{'engines': 1.0, 'oil': 4.0}",{},220.0,0.0,-220.0,0.176
+pm_rail_transport_building_logging_camp,misc_resource,09_misc_resource.txt,-1000,{'transportation': 5.0},{},150.0,0.0,-150.0,0.15
+pm_log_carts,misc_resource,09_misc_resource.txt,-1500,{'transportation': 8.0},{},240.0,0.0,-240.0,0.16
+pm_simple_fishing,misc_resource,09_misc_resource.txt,5000,{},{'fish': 25.0},0.0,500.0,500.0,0.1
+pm_fishing_trawlers,misc_resource,09_misc_resource.txt,5000,{'clippers': 5.0},{'fish': 50.0},300.0,1000.0,700.0,0.14
+pm_steam_trawlers,misc_resource,09_misc_resource.txt,5000,"{'steamers': 5.0, 'coal': 15.0}",{'fish': 100.0},800.0,2000.0,1200.0,0.24
+pm_refrigerated_storage_building_fishing_wharf,misc_resource,09_misc_resource.txt,-1000,{'electricity': 5.0},{},150.0,0.0,-150.0,0.15
+pm_refrigerated_rail_cars_building_fishing_wharf,misc_resource,09_misc_resource.txt,-2000,"{'electricity': 5.0, 'transportation': 5.0}",{},300.0,0.0,-300.0,0.15
+pm_flash_freezing_building_fishing_wharf,misc_resource,09_misc_resource.txt,-3000,"{'electricity': 7.0, 'transportation': 7.0}",{},420.0,0.0,-420.0,0.14
+pm_simple_whaling,misc_resource,09_misc_resource.txt,5000,{},"{'meat': 5.0, 'oil': 10.0}",0.0,550.0,550.0,0.11
+pm_wooden_whaling_ships,misc_resource,09_misc_resource.txt,5000,{'clippers': 5.0},"{'meat': 10.0, 'oil': 20.0}",300.0,1100.0,800.0,0.16
+pm_steam_whaling_ships,misc_resource,09_misc_resource.txt,5000,"{'steamers': 5.0, 'coal': 20.0}","{'meat': 20.0, 'oil': 40.0}",950.0,2200.0,1250.0,0.25
+pm_refrigerated_storage_building_whaling_station,misc_resource,09_misc_resource.txt,-1000,{'electricity': 5.0},{},150.0,0.0,-150.0,0.15
+pm_refrigerated_rail_cars_building_whaling_station,misc_resource,09_misc_resource.txt,-2000,"{'electricity': 5.0, 'transportation': 5.0}",{},300.0,0.0,-300.0,0.15
+pm_flash_freezing_building_whaling_station,misc_resource,09_misc_resource.txt,-3000,"{'electricity': 7.0, 'transportation': 7.0}",{},420.0,0.0,-420.0,0.14
+pm_steam_derricks,misc_resource,09_misc_resource.txt,5000,"{'engines': 5.0, 'coal': 10.0}",{'oil': 60.0},600.0,2400.0,1800.0,0.36
+pm_combustion_derricks,misc_resource,09_misc_resource.txt,5000,{'engines': 10.0},{'oil': 100.0},600.0,4000.0,3400.0,0.68
+pm_rail_transport_building_oil_rig,misc_resource,09_misc_resource.txt,-1000,{'transportation': 5.0},{},150.0,0.0,-150.0,0.15
+pm_tanker_cars,misc_resource,09_misc_resource.txt,-2000,{'transportation': 10.0},{},300.0,0.0,-300.0,0.15
+pm_canal,canals,10_canals.txt,5000,"{'tools': 10.0, 'coal': 15.0}",{},850.0,0.0,-850.0,-0.17
+pm_anchorage,private_infrastructure,11_private_infrastructure.txt,250,{},{},0.0,0.0,0.0,0.0
+pm_basic_port,private_infrastructure,11_private_infrastructure.txt,1000,{'clippers': 5.0},{'merchant_marine': 10.0},300.0,500.0,200.0,0.2
+pm_industrial_port,private_infrastructure,11_private_infrastructure.txt,1000,"{'steamers': 5.0, 'coal': 5.0}",{'merchant_marine': 20.0},500.0,1000.0,500.0,0.5
+pm_modern_port,private_infrastructure,11_private_infrastructure.txt,1000,"{'steamers': 5.0, 'oil': 10.0}",{'merchant_marine': 30.0},750.0,1500.0,750.0,0.75
+pm_early_trains,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 5.0, 'coal': 2.0}",{'transportation': 20.0},360.0,600.0,240.0,0.24
+pm_steam_trains,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 5.0, 'coal': 5.0}",{'transportation': 25.0},450.0,750.0,300.0,0.3
+pm_steam_trains_principle_transport_3,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 6.0, 'coal': 6.0}",{'transportation': 30.0},540.0,900.0,360.0,0.36
+pm_electric_trains,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 5.0, 'electricity': 8.0}",{'transportation': 35.0},540.0,1050.0,510.0,0.51
+pm_electric_trains_principle_transport_3,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 6.0, 'electricity': 10.0}",{'transportation': 45.0},660.0,1350.0,690.0,0.69
+pm_diesel_trains,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 5.0, 'oil': 6.0}",{'transportation': 40.0},540.0,1200.0,660.0,0.66
+pm_diesel_trains_principle_transport_3,private_infrastructure,11_private_infrastructure.txt,1000,"{'engines': 6.0, 'oil': 8.0}",{'transportation': 50.0},680.0,1500.0,820.0,0.82
+pm_no_passenger_trains,private_infrastructure,11_private_infrastructure.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_wooden_passenger_carriages,private_infrastructure,11_private_infrastructure.txt,100,{'wood': 8.0},{'transportation': 10.0},160.0,300.0,140.0,1.4
+pm_steel_passenger_carriages,private_infrastructure,11_private_infrastructure.txt,200,{'steel': 5.0},{'transportation': 15.0},250.0,450.0,200.0,1.0
+pm_trade_center,private_infrastructure,11_private_infrastructure.txt,1000,{},{},0.0,0.0,0.0,0.0
+pm_trade_center_principle_external_trade_2,private_infrastructure,11_private_infrastructure.txt,1000,{},{},0.0,0.0,0.0,0.0
+pm_trade_center_trade_quantity_limited,private_infrastructure,11_private_infrastructure.txt,0,{'merchant_marine': 3.0},{},150.0,0.0,-150.0,0.0
+pm_trade_center_trade_quantity_normal,private_infrastructure,11_private_infrastructure.txt,0,{'merchant_marine': 4.0},{},200.0,0.0,-200.0,0.0
+pm_trade_center_trade_quantity_high,private_infrastructure,11_private_infrastructure.txt,0,{'merchant_marine': 5.0},{},250.0,0.0,-250.0,0.0
+pm_trade_center_trade_quantity_very_high,private_infrastructure,11_private_infrastructure.txt,0,{'merchant_marine': 6.0},{},300.0,0.0,-300.0,0.0
+pm_financial_district_privately_owned,private_infrastructure,11_private_infrastructure.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_financial_district_publicly_traded,private_infrastructure,11_private_infrastructure.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_financial_district_principle_divine_economics_2,private_infrastructure,11_private_infrastructure.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_manor_house_privately_owned,private_infrastructure,11_private_infrastructure.txt,50,{},{},0.0,0.0,0.0,0.0
+pm_manor_house_principle_divine_economics_2,private_infrastructure,11_private_infrastructure.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_manor_house_bureaucrat_ownership,private_infrastructure,11_private_infrastructure.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_manor_house_clergy_ownership,private_infrastructure,11_private_infrastructure.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_company_headquarter_privately_owned,private_infrastructure,11_private_infrastructure.txt,50,{},{},0.0,0.0,0.0,0.0
+pm_company_headquarter_principle_divine_economics_2,private_infrastructure,11_private_infrastructure.txt,50,{},{},0.0,0.0,0.0,0.0
+pm_company_headquarter_government_run,private_infrastructure,11_private_infrastructure.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_company_headquarter_worker_cooperative,private_infrastructure,11_private_infrastructure.txt,100,{},{},0.0,0.0,0.0,0.0
+pm_home_workshops_no_building_subsistence_farms,subsistence,12_subsistence.txt,0,{},"{'grain': 0.5, 'fabric': 0.25, 'wood': 0.25}",0.0,20.0,20.0,0.0
+pm_home_workshops_building_subsistence_farms,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.25, 'furniture': 0.25, 'liquor': 0.25}",0.0,22.5,22.5,0.0
+pm_serfdom_no,subsistence,12_subsistence.txt,0,{},{},0.0,0.0,0.0,0.0
+pm_homesteading_building_subsistence,subsistence,12_subsistence.txt,0,{},{'grain': 0.25},0.0,5.0,5.0,0.0
+pm_serfdom,subsistence,12_subsistence.txt,0,{},{'grain': 0.5},0.0,10.0,10.0,0.0
+pm_home_workshops_no_building_subsistence_orchards,subsistence,12_subsistence.txt,0,{},"{'fruit': 0.33, 'fabric': 0.25, 'wood': 0.25}",0.0,19.9,19.9,0.0
+pm_home_workshops_building_subsistence_orchards,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.25, 'furniture': 0.25, 'liquor': 0.25}",0.0,22.5,22.5,0.0
+pm_serfdom_building_subsistence_orchards,subsistence,12_subsistence.txt,0,{},{'fruit': 0.33},0.0,9.9,9.9,0.0
+pm_home_workshops_no_building_subsistence_pastures,subsistence,12_subsistence.txt,0,{},"{'meat': 0.33, 'fabric': 0.5}",0.0,19.9,19.9,0.0
+pm_home_workshops_building_subsistence_pastures,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.25, 'furniture': 0.25, 'liquor': 0.25}",0.0,22.5,22.5,0.0
+pm_serfdom_building_subsistence_pastures,subsistence,12_subsistence.txt,0,{},{'meat': 0.33},0.0,9.9,9.9,0.0
+pm_home_workshops_no_building_subsistence_fishing_villages,subsistence,12_subsistence.txt,0,{},"{'fish': 0.5, 'fabric': 0.25, 'wood': 0.25}",0.0,20.0,20.0,0.0
+pm_home_workshops_building_subsistence_fishing_villages,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.25, 'furniture': 0.25, 'liquor': 0.25}",0.0,22.5,22.5,0.0
+pm_serfdom_building_subsistence_fishing_villages,subsistence,12_subsistence.txt,0,{},{'fish': 0.5},0.0,10.0,10.0,0.0
+pm_home_workshops_no_building_subsistence_rice_paddies,subsistence,12_subsistence.txt,0,{},"{'grain': 1.0, 'fabric': 0.5, 'wood': 0.5}",0.0,40.0,40.0,0.0
+pm_home_workshops_building_subsistence_rice_paddies,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.5, 'furniture': 0.5, 'liquor': 0.5}",0.0,45.0,45.0,0.0
+pm_serfdom_building_subsistence_rice_paddies,subsistence,12_subsistence.txt,0,{},{'grain': 1.0},0.0,20.0,20.0,0.0
+pm_wooden_buildings,construction,13_construction.txt,1000,"{'fabric': 25.0, 'wood': 75.0}",{},2000.0,0.0,-2000.0,-2.0
+pm_iron_frame_buildings,construction,13_construction.txt,1000,"{'wood': 45.0, 'fabric': 20.0, 'iron': 50.0, 'tools': 10.0}",{},3700.0,0.0,-3700.0,-3.7
+pm_steel_frame_buildings,construction,13_construction.txt,1000,"{'steel': 56.0, 'glass': 40.0, 'explosives': 10.0, 'tools': 20.0}",{},5700.0,0.0,-5700.0,-5.7
+pm_arc_welded_buildings,construction,13_construction.txt,1000,"{'steel': 48.0, 'glass': 40.0, 'explosives': 20.0, 'tools': 40.0, 'electricity': 40.0}",{},7800.0,0.0,-7800.0,-7.8

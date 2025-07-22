@@ -9,6 +9,7 @@ import re
 import pandas as pd
 from typing import Dict, List, Tuple
 import pyradox
+from analyze_pm_profitability import PMProfitabilityAnalyzer
 
 def tree_to_dict(node):
     if hasattr(node, 'items'):
@@ -22,6 +23,8 @@ class PMDataExtractor:
     def __init__(self, directory: str):
         self.directory = directory
         self.file_paths = self._find_files()
+        analyzer = PMProfitabilityAnalyzer()
+        self.goods_prices = analyzer.load_goods_prices()
 
     def _find_files(self) -> List[str]:
         files = []
@@ -41,17 +44,39 @@ class PMDataExtractor:
             pms = self.get_pms_from_tree(tree)
             for pm_name, pm_data in pms.items():
                 if isinstance(pm_data, dict):
-                    employment = self.get_employment(pm_data)
+                    employment_dict = self.get_employment(pm_data)
+                    total_employment = sum(employment_dict.values())
                     inputs, outputs = self.get_goods(pm_data)
-                    all_pm_data.append({
+                    
+                    profit_data = self.calculate_profitability(inputs, outputs, total_employment)
+
+                    data = {
                         "production_method_name": pm_name,
                         "parent_building": self.get_parent_building(pm_data, filename),
                         "filename": filename,
-                        "total_employment": sum(employment.values()),
+                        "total_employment": total_employment,
                         "inputs": str(inputs),
-                        "outputs": str(outputs)
-                    })
+                        "outputs": str(outputs),
+                    }
+                    data.update(profit_data)
+                    all_pm_data.append(data)
         return all_pm_data
+
+    def calculate_profitability(self, inputs: Dict[str, float], outputs: Dict[str, float], total_employment: int) -> Dict:
+        input_cost = sum(self.goods_prices.get(good, 0) * quantity for good, quantity in inputs.items())
+        output_revenue = sum(self.goods_prices.get(good, 0) * quantity for good, quantity in outputs.items())
+        total_profit = output_revenue - input_cost
+        
+        profit_per_employee = 0
+        if total_employment != 0:
+            profit_per_employee = total_profit / total_employment
+            
+        return {
+            "input_cost": input_cost,
+            "output_revenue": output_revenue,
+            "total_profit": total_profit,
+            "profit_per_employee": profit_per_employee,
+        }
 
     def get_pms_from_tree(self, tree) -> Dict:
         pms = {}
