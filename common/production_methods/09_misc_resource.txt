@@ -1,9 +1,9 @@
-﻿pm_simple_forestry = {
+pm_simple_forestry = {
 	texture = "gfx/interface/icons/production_method_icons/simple_forestry.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_wood_add = 30
+			goods_output_wood_add = 40 # Price: 20.0, Total: 800.0
 		}
 
 		level_scaled = {
@@ -12,6 +12,7 @@
 			building_employment_laborers_add = 4500
 		}
 	}
+	# Profit = 750.00 (rev) - 250.00 (cost) = 500.00
 }
 
 pm_saw_mills = {
@@ -23,10 +24,10 @@ pm_saw_mills = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_wood_add = 60
+			goods_output_wood_add = 70 # Price: 20.0, Total: 1400.0
 		}
 
 		level_scaled = {
@@ -36,6 +37,7 @@ pm_saw_mills = {
 			building_employment_machinists_add = 500
 		}
 	}
+	# Profit = 1450.00 (rev) - 650.00 (cost) = 800.00
 }
 
 pm_electric_saw_mills = {
@@ -47,11 +49,11 @@ pm_electric_saw_mills = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 10
-			goods_input_electricity_add = 5
+			goods_input_tools_add = 20 # Price: 40.0, Total: 800.0
+			goods_input_electricity_add = 15 # Price: 30.0, Total: 450.0
 
 			# output goods
-			goods_output_wood_add = 100 #+800
+			goods_output_wood_add = 120 #+800 # Price: 20.0, Total: 2400.0
 		}
 
 		level_scaled = {
@@ -64,6 +66,7 @@ pm_electric_saw_mills = {
 	}
 
 	required_input_goods = electricity
+	# Profit = 2400.00 (rev) - 1200.00 (cost) = 1200.00
 }
 
 pm_no_hardwood = {
@@ -92,10 +95,11 @@ pm_increased_hardwood = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			goods_output_wood_add = -40
-			goods_output_hardwood_add = 20
+			goods_output_wood_add = -40 # Price: 20.0, Total: -800.0
+			goods_output_hardwood_add = 20 # Price: 40.0, Total: 800.0
 		}
 	}
+	# Profit = 0.00 (rev) - 0.00 (cost) = 0.00
 }
 
 pm_no_equipment = {
@@ -116,15 +120,16 @@ pm_steam_donkey_building_logging_camp = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_engines_add = 1
-			goods_input_coal_add = 4
+			goods_input_engines_add = 1 # Price: 60.0, Total: 60.0
+			goods_input_coal_add = 4 # Price: 30.0, Total: 120.0
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 250.00 (cost) = -250.00
 }
 
 pm_chainsaws = {
@@ -138,16 +143,17 @@ pm_chainsaws = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_engines_add = 1
-			goods_input_oil_add = 4
+			goods_input_engines_add = 1 # Price: 60.0, Total: 60.0
+			goods_input_oil_add = 4 # Price: 40.0, Total: 160.0
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -1500
-			building_employment_engineers_add = 250
+			building_employment_laborers_add = -1800 # Employment update
+			building_employment_engineers_add = 300 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 300.00 (cost) = -300.00
 }
 
 pm_rail_transport_building_logging_camp = {
@@ -164,13 +170,14 @@ pm_rail_transport_building_logging_camp = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_transportation_add = 5
+			goods_input_transportation_add = 5 # Price: 30.0, Total: 150.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 200.00 (cost) = -200.00
 }
 
 pm_log_carts = {
@@ -187,13 +194,14 @@ pm_log_carts = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_transportation_add = 8
+			goods_input_transportation_add = 8 # Price: 30.0, Total: 240.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1500
+			building_employment_laborers_add = -1800 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 300.00 (cost) = -300.00
 }
 
 default_building_rubber_plantation = {
@@ -244,7 +252,7 @@ pm_simple_fishing = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output
-			goods_output_fish_add = 25
+			goods_output_fish_add = 30 # Price: 20.0, Total: 600.0
 		}
 
 		level_scaled = {
@@ -253,6 +261,7 @@ pm_simple_fishing = {
 			building_employment_laborers_add = 4500
 		}
 	}
+	# Profit = 600.00 (rev) - 200.00 (cost) = 400.00
 }
 
 pm_fishing_trawlers = {
@@ -261,10 +270,10 @@ pm_fishing_trawlers = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_clippers_add = 5
+			goods_input_clippers_add = 10 # Price: 60.0, Total: 600.0
 
 			# output
-			goods_output_fish_add = 50
+			goods_output_fish_add = 60 # Price: 20.0, Total: 1200.0
 		}
 
 		level_scaled = {
@@ -274,6 +283,7 @@ pm_fishing_trawlers = {
 			building_employment_machinists_add = 500
 		}
 	}
+	# Profit = 1200.00 (rev) - 600.00 (cost) = 600.00
 }
 
 pm_steam_trawlers = {
@@ -291,11 +301,11 @@ pm_steam_trawlers = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_steamers_add = 5
-			goods_input_coal_add = 15
+			goods_input_steamers_add = 10 # Price: 70.0, Total: 700.0
+			goods_input_coal_add = 25 # Price: 30.0, Total: 750.0
 
 			# output
-			goods_output_fish_add = 100
+			goods_output_fish_add = 120 # Price: 20.0, Total: 2400.0
 		}
 
 		level_scaled = {
@@ -306,6 +316,7 @@ pm_steam_trawlers = {
 			building_employment_engineers_add = 500
 		}
 	}
+	# Profit = 2400.00 (rev) - 1400.00 (cost) = 1000.00
 }
 
 pm_refrigerated_storage_building_fishing_wharf = {
@@ -318,16 +329,17 @@ pm_refrigerated_storage_building_fishing_wharf = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_electricity_add = 5
+			goods_input_electricity_add = 5 # Price: 30.0, Total: 150.0
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 200.00 (cost) = -200.00
 }
 
 pm_refrigerated_rail_cars_building_fishing_wharf = {
@@ -346,17 +358,18 @@ pm_refrigerated_rail_cars_building_fishing_wharf = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_electricity_add = 5
-			goods_input_transportation_add = 5
+			goods_input_electricity_add = 5 # Price: 30.0, Total: 150.0
+			goods_input_transportation_add = 5 # Price: 30.0, Total: 150.0
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -2400 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 400.00 (cost) = -400.00
 }
 
 pm_flash_freezing_building_fishing_wharf = {
@@ -369,17 +382,18 @@ pm_flash_freezing_building_fishing_wharf = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_electricity_add = 7
-			goods_input_transportation_add = 7
+			goods_input_electricity_add = 7 # Price: 30.0, Total: 210.0
+			goods_input_transportation_add = 7 # Price: 30.0, Total: 210.0
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -3000
+			building_employment_laborers_add = -3600 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 550.00 (cost) = -550.00
 }
 
 pm_simple_whaling = {
@@ -390,8 +404,8 @@ pm_simple_whaling = {
 			# input
 
 			# output
-			goods_output_meat_add = 5
-			goods_output_oil_add = 10
+			goods_output_meat_add = 5 # Price: 30.0, Total: 150.0
+			goods_output_oil_add = 10 # Price: 40.0, Total: 400.0
 		}
 
 		level_scaled = {
@@ -400,6 +414,7 @@ pm_simple_whaling = {
 			building_employment_laborers_add = 4500
 		}
 	}
+	# Profit = 700.00 (rev) - 250.00 (cost) = 450.00
 }
 
 pm_wooden_whaling_ships = {
@@ -408,11 +423,11 @@ pm_wooden_whaling_ships = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_clippers_add = 5
+			goods_input_clippers_add = 10 # Price: 60.0, Total: 600.0
 
 			# output
-			goods_output_meat_add = 10
-			goods_output_oil_add = 20
+			goods_output_meat_add = 15 # Price: 30.0, Total: 450.0
+			goods_output_oil_add = 25 # Price: 40.0, Total: 1000.0
 		}
 
 		level_scaled = {
@@ -422,6 +437,7 @@ pm_wooden_whaling_ships = {
 			building_employment_machinists_add = 500
 		}
 	}
+	# Profit = 1350.00 (rev) - 700.00 (cost) = 650.00
 }
 
 pm_steam_whaling_ships = {
@@ -439,11 +455,11 @@ pm_steam_whaling_ships = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_steamers_add = 5
-			goods_input_coal_add = 20
+			goods_input_steamers_add = 10 # Price: 70.0, Total: 700.0
+			goods_input_coal_add = 30 # Price: 30.0, Total: 900.0
 
-			goods_output_meat_add = 20
-			goods_output_oil_add = 40
+			goods_output_meat_add = 30 # Price: 30.0, Total: 900.0
+			goods_output_oil_add = 45 # Price: 40.0, Total: 1800.0
 		}
 
 		level_scaled = {
@@ -454,6 +470,7 @@ pm_steam_whaling_ships = {
 			building_employment_engineers_add = 500
 		}
 	}
+	# Profit = 2650.00 (rev) - 1650.00 (cost) = 1000.00
 }
 
 pm_refrigerated_storage_building_whaling_station = {
@@ -466,16 +483,17 @@ pm_refrigerated_storage_building_whaling_station = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_electricity_add = 5
+			goods_input_electricity_add = 5 # Price: 30.0, Total: 150.0
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 200.00 (cost) = -200.00
 }
 
 pm_refrigerated_rail_cars_building_whaling_station = {
@@ -494,17 +512,18 @@ pm_refrigerated_rail_cars_building_whaling_station = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_electricity_add = 5
-			goods_input_transportation_add = 5
+			goods_input_electricity_add = 5 # Price: 30.0, Total: 150.0
+			goods_input_transportation_add = 5 # Price: 30.0, Total: 150.0
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -2400 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 400.00 (cost) = -400.00
 }
 
 pm_flash_freezing_building_whaling_station = {
@@ -517,17 +536,18 @@ pm_flash_freezing_building_whaling_station = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_electricity_add = 7
-			goods_input_transportation_add = 7
+			goods_input_electricity_add = 7 # Price: 30.0, Total: 210.0
+			goods_input_transportation_add = 7 # Price: 30.0, Total: 210.0
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = -3000
+			building_employment_laborers_add = -3600 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 550.00 (cost) = -550.00
 }
 
 pm_steam_derricks = {
@@ -542,11 +562,11 @@ pm_steam_derricks = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_engines_add = 5
-			goods_input_coal_add = 10
+			goods_input_engines_add = 10 # Price: 60.0, Total: 600.0
+			goods_input_coal_add = 25 # Price: 30.0, Total: 750.0
 
 			# output goods
-			goods_output_oil_add = 60
+			goods_output_oil_add = 70 # Price: 40.0, Total: 2800.0
 		}
 
 		level_scaled = {
@@ -556,6 +576,7 @@ pm_steam_derricks = {
 			building_employment_engineers_add = 500
 		}
 	}
+	# Profit = 2900.00 (rev) - 1450.00 (cost) = 1450.00
 }
 
 pm_combustion_derricks = {
@@ -574,10 +595,10 @@ pm_combustion_derricks = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_engines_add = 10
+			goods_input_engines_add = 35 # Price: 60.0, Total: 2100.0
 
 			# output goods
-			goods_output_oil_add = 100
+			goods_output_oil_add = 120 # Price: 40.0, Total: 4800.0
 		}
 
 		level_scaled = {
@@ -587,6 +608,7 @@ pm_combustion_derricks = {
 			building_employment_engineers_add = 1000
 		}
 	}
+	# Profit = 4800.00 (rev) - 2050.00 (cost) = 2750.00
 }
 
 pm_rail_transport_building_oil_rig = {
@@ -604,13 +626,14 @@ pm_rail_transport_building_oil_rig = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_transportation_add = 5
+			goods_input_transportation_add = 5 # Price: 30.0, Total: 150.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 200.00 (cost) = -200.00
 }
 
 pm_tanker_cars = {
@@ -628,11 +651,12 @@ pm_tanker_cars = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_transportation_add = 10
+			goods_input_transportation_add = 15 # Price: 30.0, Total: 450.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -2400 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 400.00 (cost) = -400.00
 }

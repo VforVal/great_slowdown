@@ -1,13 +1,13 @@
-﻿pm_picks_and_shovels_building_coal_mine = {
+pm_picks_and_shovels_building_coal_mine = {
 	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
+			goods_input_tools_add = 10 # Price: 40.0, Total: 400.0
 
 			# output goods
-			goods_output_coal_add = 25
+			goods_output_coal_add = 30 # Price: 30.0, Total: 900.0
 		}
 
 		level_scaled = {
@@ -15,6 +15,7 @@
 			building_employment_laborers_add = 4500
 		}
 	}
+	# Profit = 900.00 (rev) - 450.00 (cost) = 450.00
 }
 
 pm_atmospheric_engine_pump_building_coal_mine = {
@@ -33,10 +34,10 @@ pm_atmospheric_engine_pump_building_coal_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 10
+			goods_input_tools_add = 20 # Price: 40.0, Total: 800.0
 
 			# output goods
-			goods_output_coal_add = 40
+			goods_output_coal_add = 50 # Price: 30.0, Total: 1500.0
 		}
 
 		level_scaled = {
@@ -46,6 +47,7 @@ pm_atmospheric_engine_pump_building_coal_mine = {
 			building_employment_engineers_add = 250
 		}
 	}
+	# Profit = 1450.00 (rev) - 800.00 (cost) = 650.00
 }
 
 pm_condensing_engine_pump_building_coal_mine = {
@@ -64,10 +66,10 @@ pm_condensing_engine_pump_building_coal_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
+			goods_input_tools_add = 30 # Price: 40.0, Total: 1200.0
 
 			# output goods
-			goods_output_coal_add = 60
+			goods_output_coal_add = 75 # Price: 30.0, Total: 2250.0
 		}
 
 		level_scaled = {
@@ -77,6 +79,7 @@ pm_condensing_engine_pump_building_coal_mine = {
 			building_employment_engineers_add = 500
 		}
 	}
+	# Profit = 2200.00 (rev) - 1200.00 (cost) = 1000.00
 }
 
 pm_diesel_pump_building_coal_mine = {
@@ -95,11 +98,11 @@ pm_diesel_pump_building_coal_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_oil_add = 5
+			goods_input_tools_add = 25 # Price: 40.0, Total: 1000.0
+			goods_input_oil_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_coal_add = 90
+			goods_output_coal_add = 110 # Price: 30.0, Total: 3300.0
 		}
 
 		level_scaled = {
@@ -109,6 +112,7 @@ pm_diesel_pump_building_coal_mine = {
 			building_employment_engineers_add = 750
 		}
 	}
+	# Profit = 3250.00 (rev) - 1700.00 (cost) = 1550.00
 }
 
 pm_no_explosives = {
@@ -131,10 +135,10 @@ pm_nitroglycerin_building_coal_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_explosives_add = 5
+			goods_input_explosives_add = 5 # Price: 50.0, Total: 250.0
 
 			# output goods
-			goods_output_coal_add = 15
+			goods_output_coal_add = 20 # Price: 30.0, Total: 600.0
 		}
 
 		level_scaled = {
@@ -147,6 +151,7 @@ pm_nitroglycerin_building_coal_mine = {
 			building_engineers_mortality_mult = 0.1
 		}
 	}
+	# Profit = 550.00 (rev) - 350.00 (cost) = 200.00
 }
 
 pm_dynamite_building_coal_mine = {
@@ -164,16 +169,17 @@ pm_dynamite_building_coal_mine = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_explosives_add = 10
+			goods_input_explosives_add = 15 # Price: 50.0, Total: 750.0
 
 			# output goods
-			goods_output_coal_add = 25
+			goods_output_coal_add = 30 # Price: 30.0, Total: 900.0
 		}
 
 		level_scaled = {
 			building_employment_engineers_add = 250
 		}
 	}
+	# Profit = 900.00 (rev) - 700.00 (cost) = 200.00
 }
 
 pm_no_steam_automation = {
@@ -200,14 +206,15 @@ pm_steam_donkey_building_coal_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-				goods_input_engines_add = 1
-				goods_output_coal_add = -3
+				goods_input_engines_add = 1 # Price: 60.0, Total: 60.0
+				goods_output_coal_add = -3 # Price: 30.0, Total: -90.0
 			}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
+	# Profit = -100.00 (rev) - 100.00 (cost) = -200.00
 }
 
 pm_road_carts = {
@@ -220,10 +227,10 @@ pm_picks_and_shovels_building_iron_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_iron_add = 20
+			goods_output_iron_add = 25 # Price: 40.0, Total: 1000.0
 		}
 
 		level_scaled = {
@@ -231,6 +238,7 @@ pm_picks_and_shovels_building_iron_mine = {
 			building_employment_laborers_add = 4500
 		}
 	}
+	# Profit = 1000.00 (rev) - 500.00 (cost) = 500.00
 }
 
 pm_atmospheric_engine_pump_building_iron_mine = {
@@ -249,11 +257,11 @@ pm_atmospheric_engine_pump_building_iron_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 10
-			goods_input_coal_add = 10
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
+			goods_input_coal_add = 20 # Price: 30.0, Total: 600.0
 
 			# output goods
-			goods_output_iron_add = 40
+			goods_output_iron_add = 50 # Price: 40.0, Total: 2000.0
 		}
 
 		level_scaled = {
@@ -263,6 +271,7 @@ pm_atmospheric_engine_pump_building_iron_mine = {
 			building_employment_engineers_add = 250
 		}
 	}
+	# Profit = 1950.00 (rev) - 1200.00 (cost) = 750.00
 }
 
 pm_condensing_engine_pump_building_iron_mine = {
@@ -281,11 +290,11 @@ pm_condensing_engine_pump_building_iron_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_coal_add = 15
+			goods_input_tools_add = 25 # Price: 40.0, Total: 1000.0
+			goods_input_coal_add = 25 # Price: 30.0, Total: 750.0
 
 			# output goods
-			goods_output_iron_add = 60
+			goods_output_iron_add = 70 # Price: 40.0, Total: 2800.0
 		}
 
 		level_scaled = {
@@ -295,6 +304,7 @@ pm_condensing_engine_pump_building_iron_mine = {
 			building_employment_engineers_add = 500
 		}
 	}
+	# Profit = 2900.00 (rev) - 1800.00 (cost) = 1100.00
 }
 
 pm_diesel_pump_building_iron_mine = {
@@ -313,11 +323,11 @@ pm_diesel_pump_building_iron_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_oil_add = 5
+			goods_input_tools_add = 25 # Price: 40.0, Total: 1000.0
+			goods_input_oil_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_iron_add = 70
+			goods_output_iron_add = 85 # Price: 40.0, Total: 3400.0
 		}
 
 		level_scaled = {
@@ -327,6 +337,7 @@ pm_diesel_pump_building_iron_mine = {
 			building_employment_engineers_add = 750
 		}
 	}
+	# Profit = 3400.00 (rev) - 1800.00 (cost) = 1600.00
 }
 
 pm_nitroglycerin_building_iron_mine = {
@@ -344,10 +355,10 @@ pm_nitroglycerin_building_iron_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_explosives_add = 5
+			goods_input_explosives_add = 10 # Price: 50.0, Total: 500.0
 
 			# output goods
-			goods_output_iron_add = 12
+			goods_output_iron_add = 17 # Price: 40.0, Total: 680.0
 		}
 
 		level_scaled = {
@@ -360,6 +371,7 @@ pm_nitroglycerin_building_iron_mine = {
 			building_engineers_mortality_mult = 0.1
 		}
 	}
+	# Profit = 600.00 (rev) - 400.00 (cost) = 200.00
 }
 
 pm_dynamite_building_iron_mine = {
@@ -376,16 +388,17 @@ pm_dynamite_building_iron_mine = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_explosives_add = 10
+			goods_input_explosives_add = 15 # Price: 50.0, Total: 750.0
 
 			# output goods
-			goods_output_iron_add = 20
+			goods_output_iron_add = 25 # Price: 40.0, Total: 1000.0
 		}
 
 		level_scaled = {
 			building_employment_engineers_add = 250
 		}
 	}
+	# Profit = 1000.00 (rev) - 750.00 (cost) = 250.00
 }
 
 pm_steam_donkey_mine = {
@@ -407,14 +420,15 @@ pm_steam_donkey_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_engines_add = 1
-			goods_input_coal_add = 4
+			goods_input_engines_add = 1 # Price: 60.0, Total: 60.0
+			goods_input_coal_add = 4 # Price: 30.0, Total: 120.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 250.00 (cost) = -250.00
 }
 
 pm_rail_transport_mine = {
@@ -432,13 +446,14 @@ pm_rail_transport_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_transportation_add = 5
+			goods_input_transportation_add = 5 # Price: 30.0, Total: 150.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 200.00 (cost) = -200.00
 }
 
 pm_picks_and_shovels_building_lead_mine = {
@@ -447,10 +462,10 @@ pm_picks_and_shovels_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_lead_add = 20
+			goods_output_lead_add = 25 # Price: 40.0, Total: 1000.0
 		}
 
 		level_scaled = {
@@ -458,6 +473,7 @@ pm_picks_and_shovels_building_lead_mine = {
 			building_employment_laborers_add = 4500
 		}
 	}
+	# Profit = 1000.00 (rev) - 500.00 (cost) = 500.00
 }
 
 pm_atmospheric_engine_pump_building_lead_mine = {
@@ -475,11 +491,11 @@ pm_atmospheric_engine_pump_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 10
-			goods_input_coal_add = 10
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
+			goods_input_coal_add = 20 # Price: 30.0, Total: 600.0
 
 			# output goods
-			goods_output_lead_add = 40
+			goods_output_lead_add = 50 # Price: 40.0, Total: 2000.0
 		}
 
 		level_scaled = {
@@ -489,6 +505,7 @@ pm_atmospheric_engine_pump_building_lead_mine = {
 			building_employment_engineers_add = 250
 		}
 	}
+	# Profit = 1950.00 (rev) - 1200.00 (cost) = 750.00
 }
 
 pm_condensing_engine_pump_building_lead_mine = {
@@ -506,11 +523,11 @@ pm_condensing_engine_pump_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_coal_add = 15
+			goods_input_tools_add = 25 # Price: 40.0, Total: 1000.0
+			goods_input_coal_add = 25 # Price: 30.0, Total: 750.0
 
 			# output goods
-			goods_output_lead_add = 60
+			goods_output_lead_add = 70 # Price: 40.0, Total: 2800.0
 		}
 
 		level_scaled = {
@@ -520,6 +537,7 @@ pm_condensing_engine_pump_building_lead_mine = {
 			building_employment_engineers_add = 500
 		}
 	}
+	# Profit = 2900.00 (rev) - 1800.00 (cost) = 1100.00
 }
 
 pm_diesel_pump_building_lead_mine = {
@@ -537,11 +555,11 @@ pm_diesel_pump_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_oil_add = 5
+			goods_input_tools_add = 25 # Price: 40.0, Total: 1000.0
+			goods_input_oil_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_lead_add = 70
+			goods_output_lead_add = 85 # Price: 40.0, Total: 3400.0
 		}
 
 		level_scaled = {
@@ -551,6 +569,7 @@ pm_diesel_pump_building_lead_mine = {
 			building_employment_engineers_add = 750
 		}
 	}
+	# Profit = 3400.00 (rev) - 1800.00 (cost) = 1600.00
 }
 
 pm_nitroglycerin_building_lead_mine = {
@@ -568,10 +587,10 @@ pm_nitroglycerin_building_lead_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_explosives_add = 5
+			goods_input_explosives_add = 10 # Price: 50.0, Total: 500.0
 
 			# output goods
-			goods_output_lead_add = 12
+			goods_output_lead_add = 17 # Price: 40.0, Total: 680.0
 		}
 
 		level_scaled = {
@@ -584,6 +603,7 @@ pm_nitroglycerin_building_lead_mine = {
 			building_engineers_mortality_mult = 0.1
 		}
 	}
+	# Profit = 600.00 (rev) - 400.00 (cost) = 200.00
 }
 
 pm_dynamite_building_lead_mine = {
@@ -600,16 +620,17 @@ pm_dynamite_building_lead_mine = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_explosives_add = 10
+			goods_input_explosives_add = 15 # Price: 50.0, Total: 750.0
 
 			# output goods
-			goods_output_lead_add = 20
+			goods_output_lead_add = 25 # Price: 40.0, Total: 1000.0
 		}
 
 		level_scaled = {
 			building_employment_engineers_add = 250
 		}
 	}
+	# Profit = 1000.00 (rev) - 750.00 (cost) = 250.00
 }
 
 pm_picks_and_shovels_building_sulfur_mine = {
@@ -618,10 +639,10 @@ pm_picks_and_shovels_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_sulfur_add = 20
+			goods_output_sulfur_add = 25 # Price: 50.0, Total: 1250.0
 		}
 
 		level_scaled = {
@@ -629,6 +650,7 @@ pm_picks_and_shovels_building_sulfur_mine = {
 			building_employment_laborers_add = 4500
 		}
 	}
+	# Profit = 1200.00 (rev) - 550.00 (cost) = 650.00
 }
 
 pm_atmospheric_engine_pump_building_sulfur_mine = {
@@ -646,11 +668,11 @@ pm_atmospheric_engine_pump_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 10
-			goods_input_coal_add = 10
+			goods_input_tools_add = 20 # Price: 40.0, Total: 800.0
+			goods_input_coal_add = 20 # Price: 30.0, Total: 600.0
 
 			# output goods
-			goods_output_sulfur_add = 40
+			goods_output_sulfur_add = 50 # Price: 50.0, Total: 2500.0
 		}
 
 		level_scaled = {
@@ -660,6 +682,7 @@ pm_atmospheric_engine_pump_building_sulfur_mine = {
 			building_employment_engineers_add = 250
 		}
 	}
+	# Profit = 2400.00 (rev) - 1350.00 (cost) = 1050.00
 }
 
 pm_condensing_engine_pump_building_sulfur_mine = {
@@ -677,11 +700,11 @@ pm_condensing_engine_pump_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_coal_add = 15
+			goods_input_tools_add = 25 # Price: 40.0, Total: 1000.0
+			goods_input_coal_add = 30 # Price: 30.0, Total: 900.0
 
 			# output goods
-			goods_output_sulfur_add = 60
+			goods_output_sulfur_add = 70 # Price: 50.0, Total: 3500.0
 		}
 
 		level_scaled = {
@@ -691,6 +714,7 @@ pm_condensing_engine_pump_building_sulfur_mine = {
 			building_employment_engineers_add = 500
 		}
 	}
+	# Profit = 3600.00 (rev) - 2000.00 (cost) = 1600.00
 }
 
 pm_diesel_pump_building_sulfur_mine = {
@@ -708,11 +732,11 @@ pm_diesel_pump_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_oil_add = 5
+			goods_input_tools_add = 35 # Price: 40.0, Total: 1400.0
+			goods_input_oil_add = 25 # Price: 40.0, Total: 1000.0
 
 			# output goods
-			goods_output_sulfur_add = 80
+			goods_output_sulfur_add = 95 # Price: 50.0, Total: 4750.0
 		}
 
 		level_scaled = {
@@ -722,6 +746,7 @@ pm_diesel_pump_building_sulfur_mine = {
 			building_employment_engineers_add = 750
 		}
 	}
+	# Profit = 4800.00 (rev) - 2200.00 (cost) = 2600.00
 }
 
 pm_nitroglycerin_building_sulfur_mine = {
@@ -739,10 +764,10 @@ pm_nitroglycerin_building_sulfur_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_explosives_add = 5
+			goods_input_explosives_add = 10 # Price: 50.0, Total: 500.0
 
 			# output goods
-			goods_output_sulfur_add = 10
+			goods_output_sulfur_add = 10 # Price: 50.0, Total: 500.0
 		}
 
 		level_scaled = {
@@ -755,6 +780,7 @@ pm_nitroglycerin_building_sulfur_mine = {
 			building_engineers_mortality_mult = 0.1
 		}
 	}
+	# Profit = 600.00 (rev) - 400.00 (cost) = 200.00
 }
 
 pm_dynamite_building_sulfur_mine = {
@@ -771,16 +797,17 @@ pm_dynamite_building_sulfur_mine = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_explosives_add = 10
+			goods_input_explosives_add = 15 # Price: 50.0, Total: 750.0
 
 			# output goods
-			goods_output_sulfur_add = 20
+			goods_output_sulfur_add = 25 # Price: 50.0, Total: 1250.0
 		}
 
 		level_scaled = {
 			building_employment_engineers_add = 250
 		}
 	}
+	# Profit = 1200.00 (rev) - 800.00 (cost) = 400.00
 }
 
 
@@ -790,10 +817,10 @@ pm_picks_and_shovels_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 5
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_gold_add = 8
+			goods_output_gold_add = 8 # Price: 100.0, Total: 800.0
 		}
 
 		level_scaled = {
@@ -807,6 +834,7 @@ pm_picks_and_shovels_building_gold_mine = {
 			country_minting_add = 250
 		}
 	}
+	# Profit = 1000.00 (rev) - 500.00 (cost) = 500.00
 }
 
 pm_atmospheric_engine_pump_building_gold_mine = {
@@ -824,11 +852,11 @@ pm_atmospheric_engine_pump_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 10
-			goods_input_coal_add = 10
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
+			goods_input_coal_add = 20 # Price: 30.0, Total: 600.0
 
 			# output goods
-			goods_output_gold_add = 15
+			goods_output_gold_add = 20 # Price: 100.0, Total: 2000.0
 		}
 
 		level_scaled = {
@@ -844,6 +872,7 @@ pm_atmospheric_engine_pump_building_gold_mine = {
 			country_minting_add = 500
 		}
 	}
+	# Profit = 1800.00 (rev) - 1150.00 (cost) = 650.00
 }
 
 pm_condensing_engine_pump_building_gold_mine = {
@@ -861,11 +890,11 @@ pm_condensing_engine_pump_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_coal_add = 15
+			goods_input_tools_add = 25 # Price: 40.0, Total: 1000.0
+			goods_input_coal_add = 25 # Price: 30.0, Total: 750.0
 
 			# output goods
-			goods_output_gold_add = 25
+			goods_output_gold_add = 30 # Price: 100.0, Total: 3000.0
 		}
 
 		level_scaled = {
@@ -881,6 +910,7 @@ pm_condensing_engine_pump_building_gold_mine = {
 			country_minting_add = 750
 		}
 	}
+	# Profit = 3000.00 (rev) - 1800.00 (cost) = 1200.00
 }
 
 pm_diesel_pump_building_gold_mine = {
@@ -898,11 +928,11 @@ pm_diesel_pump_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 15
-			goods_input_oil_add = 5
+			goods_input_tools_add = 25 # Price: 40.0, Total: 1000.0
+			goods_input_oil_add = 15 # Price: 40.0, Total: 600.0
 
 			# output goods
-			goods_output_gold_add = 30
+			goods_output_gold_add = 35 # Price: 100.0, Total: 3500.0
 		}
 
 		level_scaled = {
@@ -918,6 +948,7 @@ pm_diesel_pump_building_gold_mine = {
 			country_minting_add = 1000
 		}
 	}
+	# Profit = 3600.00 (rev) - 1800.00 (cost) = 1800.00
 }
 
 pm_nitroglycerin_building_gold_mine = {
@@ -935,10 +966,10 @@ pm_nitroglycerin_building_gold_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_explosives_add = 5
+			goods_input_explosives_add = 10 # Price: 50.0, Total: 500.0
 
 			# output goods
-			goods_output_gold_add = 5
+			goods_output_gold_add = 5 # Price: 100.0, Total: 500.0
 		}
 
 		level_scaled = {
@@ -957,6 +988,7 @@ pm_nitroglycerin_building_gold_mine = {
 			country_minting_add = 125
 		}
 	}
+	# Profit = 600.00 (rev) - 400.00 (cost) = 200.00
 }
 
 pm_dynamite_building_gold_mine = {
@@ -973,10 +1005,10 @@ pm_dynamite_building_gold_mine = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_explosives_add = 10
+			goods_input_explosives_add = 15 # Price: 50.0, Total: 750.0
 
 			# output goods
-			goods_output_gold_add = 10
+			goods_output_gold_add = 10 # Price: 100.0, Total: 1000.0
 		}
 
 		level_scaled = {
@@ -989,6 +1021,7 @@ pm_dynamite_building_gold_mine = {
 			country_minting_add = 250
 		}
 	}
+	# Profit = 1200.00 (rev) - 800.00 (cost) = 400.00
 }
 
 default_building_gold_fields = {

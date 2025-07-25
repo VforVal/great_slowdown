@@ -340,6 +340,6 @@ pm_home_workshops_no_building_subsistence_rice_paddies,subsistence,12_subsistenc
 pm_home_workshops_building_subsistence_rice_paddies,subsistence,12_subsistence.txt,0,{},"{'clothes': 0.5, 'furniture': 0.5, 'liquor': 0.5}",0,45,45,0,0,100,50,,#DIV/0!
 pm_serfdom_building_subsistence_rice_paddies,subsistence,12_subsistence.txt,0,{},{'grain': 1.0},0,20,20,0,0,50,50,,#DIV/0!
 pm_wooden_buildings,construction,13_construction.txt,1000,"{'fabric': 25.0, 'wood': 75.0}",{},2000,0,-2000,-2,2800,0,-2800,0,0
-pm_iron_frame_buildings,construction,13_construction.txt,1000,"{'wood': 45.0, 'fabric': 20.0, 'iron': 50.0, 'tools': 10.0}",{},3700,0,-3700,-3.7,5150,0,-5150,0,0
-pm_steel_frame_buildings,construction,13_construction.txt,1000,"{'steel': 56.0, 'glass': 40.0, 'explosives': 10.0, 'tools': 20.0}",{},5700,0,-5700,-5.7,7950,0,-7950,0,0
+pm_iron_frame_buildings,construction,13_construction.txt,1000,"{'wood': 45.0, 'fabric': 20.0, 'iron': 50.0, 'tools': 10.0}",{},3700,0,-3700,-3.7,5100,0,-5100,0,0
+pm_steel_frame_buildings,construction,13_construction.txt,1000,"{'steel': 56.0, 'glass': 40.0, 'explosives': 10.0, 'tools': 20.0}",{},5700,0,-5700,-5.7,7900,0,-7900,0,0
 pm_arc_welded_buildings,construction,13_construction.txt,1000,"{'steel': 48.0, 'glass': 40.0, 'explosives': 20.0, 'tools': 40.0, 'electricity': 40.0}",{},7800,0,-7800,-7.8,10900,0,-10900,0,0

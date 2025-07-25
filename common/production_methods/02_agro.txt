@@ -1,9 +1,9 @@
-﻿pm_simple_farming = {
+pm_simple_farming = {
 	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			goods_output_grain_add = 20 # 400
+			goods_output_grain_add = 25 # 400 # Price: 20.0, Total: 500.0
 		}
 
 		level_scaled = {
@@ -11,6 +11,7 @@
 			building_employment_farmers_add = 1000
 		}
 	}
+	# Profit = 500.00 (rev) - 150.00 (cost) = 350.00
 }
 
 pm_soil_enriching_farming = {
@@ -23,10 +24,10 @@ pm_soil_enriching_farming = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_fertilizer_add = 5 # 150
+			goods_input_fertilizer_add = 10 # 150 # Price: 30.0, Total: 300.0
 
 			# output goods
-			goods_output_grain_add = 30 # 600
+			goods_output_grain_add = 40 # 600 # Price: 20.0, Total: 800.0
 		}
 
 		level_scaled = {
@@ -35,6 +36,7 @@ pm_soil_enriching_farming = {
 			building_employment_farmers_add = 1500
 		}
 	}
+	# Profit = 750.00 (rev) - 350.00 (cost) = 400.00
 }
 
 pm_fertilization = {
@@ -53,10 +55,10 @@ pm_fertilization = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_fertilizer_add = 10	# 300
+			goods_input_fertilizer_add = 20	# 300 # Price: 30.0, Total: 600.0
 
 			# output goods
-			goods_output_grain_add = 45 # 900
+			goods_output_grain_add = 55 # 900 # Price: 20.0, Total: 1100.0
 		}
 
 		level_scaled = {
@@ -65,6 +67,7 @@ pm_fertilization = {
 			building_employment_farmers_add = 2000
 		}
 	}
+	# Profit = 1100.00 (rev) - 600.00 (cost) = 500.00
 }
 
 pm_chemical_fertilizer = {
@@ -82,10 +85,10 @@ pm_chemical_fertilizer = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_fertilizer_add = 15	 # 450
+			goods_input_fertilizer_add = 30	 # 450 # Price: 30.0, Total: 900.0
 
 			# output goods
-			goods_output_grain_add = 60 # 1200
+			goods_output_grain_add = 70 # 1200 # Price: 20.0, Total: 1400.0
 		}
 
 		level_scaled = {
@@ -94,6 +97,7 @@ pm_chemical_fertilizer = {
 			building_employment_farmers_add = 2500
 		}
 	}
+	# Profit = 1450.00 (rev) - 850.00 (cost) = 600.00
 }
 
 pm_no_secondary = {
@@ -133,13 +137,14 @@ pm_tools = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 2
+			goods_input_tools_add = 2 # Price: 40.0, Total: 80.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 100.00 (cost) = -100.00
 }
 
 pm_steam_threshers = {
@@ -157,14 +162,15 @@ pm_steam_threshers = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 2
-			goods_input_coal_add = 1
+			goods_input_tools_add = 2 # Price: 40.0, Total: 80.0
+			goods_input_coal_add = 1 # Price: 30.0, Total: 30.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1500
+			building_employment_laborers_add = -1800 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 150.00 (cost) = -150.00
 }
 
 pm_tractors = {
@@ -182,14 +188,15 @@ pm_tractors = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_coal_add = 2
-			goods_input_engines_add = 1
+			goods_input_coal_add = 2 # Price: 30.0, Total: 60.0
+			goods_input_engines_add = 1 # Price: 60.0, Total: 60.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -2400 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 150.00 (cost) = -150.00
 }
 
 pm_compression_ignition_tractors = {
@@ -207,14 +214,15 @@ pm_compression_ignition_tractors = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_oil_add = 2
-			goods_input_engines_add = 1
+			goods_input_oil_add = 2 # Price: 40.0, Total: 80.0
+			goods_input_engines_add = 1 # Price: 60.0, Total: 60.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2500
+			building_employment_laborers_add = -3000 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 150.00 (cost) = -150.00
 }
 
 pm_citrus_orchards = {
@@ -234,7 +242,7 @@ pm_simple_farming_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			goods_output_grain_add = 35
+			goods_output_grain_add = 45 # Price: 20.0, Total: 900.0
 		}
 
 		level_scaled = {
@@ -242,6 +250,7 @@ pm_simple_farming_building_rice_farm = {
 			building_employment_farmers_add = 2000
 		}
 	}
+	# Profit = 850.00 (rev) - 250.00 (cost) = 600.00
 }
 
 pm_soil_enriching_farming_building_rice_farm = {
@@ -254,10 +263,10 @@ pm_soil_enriching_farming_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_fertilizer_add = 10	# 300
+			goods_input_fertilizer_add = 20	# 300 # Price: 30.0, Total: 600.0
 
 			# output goods
-			goods_output_grain_add = 50	# 1000
+			goods_output_grain_add = 60	# 1000 # Price: 20.0, Total: 1200.0
 		}
 
 		level_scaled = {
@@ -266,6 +275,7 @@ pm_soil_enriching_farming_building_rice_farm = {
 			building_employment_farmers_add = 3000
 		}
 	}
+	# Profit = 1200.00 (rev) - 600.00 (cost) = 600.00
 }
 
 pm_fertilization_building_rice_farm = {
@@ -278,10 +288,10 @@ pm_fertilization_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_fertilizer_add = 20	# 600
+			goods_input_fertilizer_add = 35	# 600 # Price: 30.0, Total: 1050.0
 
 			# output goods
-			goods_output_grain_add = 75 # 1500
+			goods_output_grain_add = 90 # 1500 # Price: 20.0, Total: 1800.0
 		}
 
 		level_scaled = {
@@ -290,6 +300,7 @@ pm_fertilization_building_rice_farm = {
 			building_employment_farmers_add = 4000
 		}
 	}
+	# Profit = 1800.00 (rev) - 1050.00 (cost) = 750.00
 }
 
 pm_chemical_fertilizer_building_rice_farm = {
@@ -300,10 +311,10 @@ pm_chemical_fertilizer_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_fertilizer_add = 30	# 900
+			goods_input_fertilizer_add = 50	# 900 # Price: 30.0, Total: 1500.0
 
 			# output goods
-			goods_output_grain_add = 100 # 2000
+			goods_output_grain_add = 120 # 2000 # Price: 20.0, Total: 2400.0
 		}
 
 		level_scaled = {
@@ -312,6 +323,7 @@ pm_chemical_fertilizer_building_rice_farm = {
 			building_employment_farmers_add = 5000
 		}
 	}
+	# Profit = 2400.00 (rev) - 1500.00 (cost) = 900.00
 }
 
 pm_fig_orchards_building_rice_farm = {
@@ -319,11 +331,12 @@ pm_fig_orchards_building_rice_farm = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_grain_add = -30
-			goods_output_fruit_add = 12
-			goods_output_sugar_add = 18
+			goods_output_grain_add = -30 # Price: 20.0, Total: -600.0
+			goods_output_fruit_add = 12 # Price: 30.0, Total: 360.0
+			goods_output_sugar_add = 18 # Price: 30.0, Total: 540.0
 		}
 	}
+	# Profit = 400.00 (rev) - -20.00 (cost) = 420.00
 }
 
 pm_tools_building_rice_farm = {
@@ -332,13 +345,14 @@ pm_tools_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 4
+			goods_input_tools_add = 4 # Price: 40.0, Total: 160.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -2400 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 200.00 (cost) = -200.00
 }
 
 pm_steam_threshers_building_rice_farm = {
@@ -356,14 +370,15 @@ pm_steam_threshers_building_rice_farm = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 4
-			goods_input_coal_add = 2
+			goods_input_tools_add = 4 # Price: 40.0, Total: 160.0
+			goods_input_coal_add = 2 # Price: 30.0, Total: 60.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -3000
+			building_employment_laborers_add = -3600 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 300.00 (cost) = -300.00
 }
 
 pm_fig_orchards = {
@@ -383,9 +398,10 @@ pm_simple_ranch = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_fabric_add = 5
+			goods_output_fabric_add = 5 # Price: 20.0, Total: 100.0
 		}
 	}
+	# Profit = 150.00 (rev) - 50.00 (cost) = 100.00
 }
 
 pm_sheep_farms = {
@@ -397,11 +413,12 @@ pm_sheep_farms = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_grain_add = 10 # 200
-			goods_output_fabric_add = 15 # 300
-			goods_output_fertilizer_add = 2.5 # 75
+			goods_input_grain_add = 15 # 200 # Price: 20.0, Total: 300.0
+			goods_output_fabric_add = 15 # 300 # Price: 20.0, Total: 300.0
+			goods_output_fertilizer_add = 2 # 75 # Price: 30.0, Total: 60.0
 		}
 	}
+	# Profit = 450.00 (rev) - 300.00 (cost) = 150.00
 }
 
 pm_intensive_grazing_ranch = {
@@ -430,7 +447,7 @@ pm_open_air_stockyards = {
 	texture = "gfx/interface/icons/production_method_icons/open_air_stockyards.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_meat_add = 10 # 300
+			goods_output_meat_add = 15 # 300 # Price: 30.0, Total: 450.0
 		}
 
 		level_scaled = {
@@ -438,14 +455,15 @@ pm_open_air_stockyards = {
 			building_employment_farmers_add = 1000
 		}
 	}
+	# Profit = 400.00 (rev) - 150.00 (cost) = 250.00
 }
 
 pm_butchering_tools = {
 	texture = "gfx/interface/icons/production_method_icons/butchering_tools.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_tools_add = 2 # 60
-			goods_output_meat_add = 15 # 450
+			goods_input_tools_add = 7 # 60 # Price: 40.0, Total: 280.0
+			goods_output_meat_add = 20 # 450 # Price: 30.0, Total: 600.0
 		}
 
 		level_scaled = {
@@ -453,6 +471,7 @@ pm_butchering_tools = {
 			building_employment_farmers_add = 1000
 		}
 	}
+	# Profit = 550.00 (rev) - 250.00 (cost) = 300.00
 }
 
 pm_slaughterhouses = {
@@ -469,8 +488,8 @@ pm_slaughterhouses = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_tools_add = 5 # 200
-			goods_output_meat_add = 25 # 750
+			goods_input_tools_add = 10 # 200 # Price: 40.0, Total: 400.0
+			goods_output_meat_add = 30 # 750 # Price: 30.0, Total: 900.0
 		}
 
 		level_scaled = {
@@ -479,6 +498,7 @@ pm_slaughterhouses = {
 			building_employment_machinists_add = 250
 		}
 	}
+	# Profit = 900.00 (rev) - 450.00 (cost) = 450.00
 }
 
 pm_mechanized_slaughtering = {
@@ -495,9 +515,9 @@ pm_mechanized_slaughtering = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_tools_add = 5 # 200
-			goods_input_coal_add = 5 # 150
-			goods_output_meat_add = 35 # 1050
+			goods_input_tools_add = 10 # 200 # Price: 40.0, Total: 400.0
+			goods_input_coal_add = 10 # 150 # Price: 30.0, Total: 300.0
+			goods_output_meat_add = 45 # 1050 # Price: 30.0, Total: 1350.0
 		}
 
 		level_scaled = {
@@ -506,6 +526,7 @@ pm_mechanized_slaughtering = {
 			building_employment_machinists_add = 500
 		}
 	}
+	# Profit = 1300.00 (rev) - 700.00 (cost) = 600.00
 }
 
 pm_standard_fences = {
@@ -519,13 +540,14 @@ pm_barbed_wire_fences = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_iron_add = 1
+			goods_input_iron_add = 1 # Price: 40.0, Total: 40.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -500
+			building_employment_laborers_add = -600 # Employment update
 		}
 	}
+	# Profit = 0.00 (rev) - 50.00 (cost) = -50.00
 }
 
 pm_electric_fencing = {
@@ -535,16 +557,17 @@ pm_electric_fencing = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_iron_add = 1
-			goods_input_electricity_add = 1
+			goods_input_iron_add = 1 # Price: 40.0, Total: 40.0
+			goods_input_electricity_add = 1 # Price: 30.0, Total: 30.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 50.00 (cost) = -50.00
 }
 
 pm_unrefrigerated = {
@@ -560,15 +583,16 @@ pm_refrigerated_storage_building_livestock_ranch = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_electricity_add = 1
+			goods_input_electricity_add = 1 # Price: 30.0, Total: 30.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -500
+			building_employment_laborers_add = -600 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 0.00 (cost) = 0.00
 }
 
 pm_refrigerated_rail_cars_building_livestock_ranch = {
@@ -580,14 +604,15 @@ pm_refrigerated_rail_cars_building_livestock_ranch = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_electricity_add = 1
-			goods_input_transportation_add = 1
+			goods_input_electricity_add = 1 # Price: 30.0, Total: 30.0
+			goods_input_transportation_add = 1 # Price: 30.0, Total: 30.0
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1200 # Employment update
 		}
 	}
 
 	required_input_goods = electricity
+	# Profit = 0.00 (rev) - 50.00 (cost) = -50.00
 }

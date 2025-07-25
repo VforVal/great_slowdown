@@ -1,4 +1,4 @@
-﻿pm_anchorage = {
+pm_anchorage = {
 	texture = "gfx/interface/icons/production_method_icons/anchorage.dds"
 
 	low_pop_method = yes # AI will activate this method for states with low population
@@ -17,8 +17,8 @@ pm_basic_port = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_clippers_add = 5 # 300
-			goods_output_merchant_marine_add = 10 # 500
+			goods_input_clippers_add = 5 # 300 # Price: 60.0, Total: 300.0
+			goods_output_merchant_marine_add = 10 # 500 # Price: 50.0, Total: 500.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 700
@@ -37,6 +37,7 @@ pm_basic_port = {
 			state_infrastructure_add = 3
 		}
 	}
+	# Profit = 600.00 (rev) - 400.00 (cost) = 200.00
 }
 
 pm_industrial_port = {
@@ -48,9 +49,9 @@ pm_industrial_port = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_steamers_add = 5 # 350
-			goods_input_coal_add = 5 # 150
-			goods_output_merchant_marine_add = 20 # 1000
+			goods_input_steamers_add = 5 # 350 # Price: 70.0, Total: 350.0
+			goods_input_coal_add = 10 # 150 # Price: 30.0, Total: 300.0
+			goods_output_merchant_marine_add = 25 # 1000 # Price: 50.0, Total: 1250.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 500
@@ -70,6 +71,7 @@ pm_industrial_port = {
 			state_infrastructure_add = 4
 		}
 	}
+	# Profit = 1200.00 (rev) - 800.00 (cost) = 400.00
 }
 
 pm_modern_port = {
@@ -80,9 +82,9 @@ pm_modern_port = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_steamers_add = 5 # 350
-			goods_input_oil_add = 10 # 400
-			goods_output_merchant_marine_add = 30 # 1500
+			goods_input_steamers_add = 10 # 350 # Price: 70.0, Total: 700.0
+			goods_input_oil_add = 15 # 400 # Price: 40.0, Total: 600.0
+			goods_output_merchant_marine_add = 35 # 1500 # Price: 50.0, Total: 1750.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 400
@@ -103,6 +105,7 @@ pm_modern_port = {
 			state_infrastructure_add = 5
 		}
 	}
+	# Profit = 1800.00 (rev) - 1200.00 (cost) = 600.00
 }
 
 pm_early_trains = {
@@ -110,9 +113,9 @@ pm_early_trains = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 5 # 300
-			goods_input_coal_add = 2 # 60
-			goods_output_transportation_add = 20 # 600
+			goods_input_engines_add = 5 # 300 # Price: 60.0, Total: 300.0
+			goods_input_coal_add = 7 # 60 # Price: 30.0, Total: 210.0
+			goods_output_transportation_add = 25 # 600 # Price: 30.0, Total: 750.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 600
@@ -127,6 +130,7 @@ pm_early_trains = {
 			state_pollution_generation_add = 25
 		}
 	}
+	# Profit = 750.00 (rev) - 550.00 (cost) = 200.00
 }
 
 pm_steam_trains = {
@@ -139,9 +143,9 @@ pm_steam_trains = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 5 # 300
-			goods_input_coal_add = 5 # 150
-			goods_output_transportation_add = 25 # 750
+			goods_input_engines_add = 5 # 300 # Price: 60.0, Total: 300.0
+			goods_input_coal_add = 10 # 150 # Price: 30.0, Total: 300.0
+			goods_output_transportation_add = 30 # 750 # Price: 30.0, Total: 900.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 500
@@ -156,6 +160,7 @@ pm_steam_trains = {
 			state_pollution_generation_add = 20
 		}
 	}
+	# Profit = 900.00 (rev) - 650.00 (cost) = 250.00
 }
 
 pm_steam_trains_principle_transport_3 = {
@@ -172,9 +177,9 @@ pm_steam_trains_principle_transport_3 = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 6 # 300
-			goods_input_coal_add = 6 # 150
-			goods_output_transportation_add = 30 # 750
+			goods_input_engines_add = 6 # 300 # Price: 60.0, Total: 360.0
+			goods_input_coal_add = 11 # 150 # Price: 30.0, Total: 330.0
+			goods_output_transportation_add = 35 # 750 # Price: 30.0, Total: 1050.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 500
@@ -189,6 +194,7 @@ pm_steam_trains_principle_transport_3 = {
 			state_pollution_generation_add = 25
 		}
 	}
+	# Profit = 1100.00 (rev) - 800.00 (cost) = 300.00
 }
 
 pm_electric_trains = {
@@ -201,9 +207,9 @@ pm_electric_trains = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 5 # 300
-			goods_input_electricity_add = 8 # 240
-			goods_output_transportation_add = 35 # 1050
+			goods_input_engines_add = 10 # 300 # Price: 60.0, Total: 600.0
+			goods_input_electricity_add = 13 # 240 # Price: 30.0, Total: 390.0
+			goods_output_transportation_add = 45 # 1050 # Price: 30.0, Total: 1350.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 400
@@ -220,6 +226,7 @@ pm_electric_trains = {
 	}
 
 	required_input_goods = electricity
+	# Profit = 1300.00 (rev) - 850.00 (cost) = 450.00
 }
 
 pm_electric_trains_principle_transport_3 = {
@@ -236,9 +243,9 @@ pm_electric_trains_principle_transport_3 = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 6 # 360
-			goods_input_electricity_add = 10 # 300
-			goods_output_transportation_add = 45 # 1350
+			goods_input_engines_add = 11 # 360 # Price: 60.0, Total: 660.0
+			goods_input_electricity_add = 15 # 300 # Price: 30.0, Total: 450.0
+			goods_output_transportation_add = 55 # 1350 # Price: 30.0, Total: 1650.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 400
@@ -255,6 +262,7 @@ pm_electric_trains_principle_transport_3 = {
 	}
 
 	required_input_goods = electricity
+	# Profit = 1650.00 (rev) - 1050.00 (cost) = 600.00
 }
 
 pm_diesel_trains = {
@@ -267,9 +275,9 @@ pm_diesel_trains = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 5 # 300
-			goods_input_oil_add = 6 # 240
-			goods_output_transportation_add = 40 # 1200
+			goods_input_engines_add = 10 # 300 # Price: 60.0, Total: 600.0
+			goods_input_oil_add = 11 # 240 # Price: 40.0, Total: 440.0
+			goods_output_transportation_add = 50 # 1200 # Price: 30.0, Total: 1500.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 400
@@ -285,6 +293,7 @@ pm_diesel_trains = {
 			state_pollution_generation_add = 15
 		}
 	}
+	# Profit = 1450.00 (rev) - 900.00 (cost) = 550.00
 }
 
 pm_diesel_trains_principle_transport_3 = {
@@ -301,9 +310,9 @@ pm_diesel_trains_principle_transport_3 = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_engines_add = 6 # 360
-			goods_input_oil_add = 8 # 320
-			goods_output_transportation_add = 50 # 1500
+			goods_input_engines_add = 11 # 360 # Price: 60.0, Total: 660.0
+			goods_input_oil_add = 13 # 320 # Price: 40.0, Total: 520.0
+			goods_output_transportation_add = 60 # 1500 # Price: 30.0, Total: 1800.0
 		}
 		level_scaled = {
 			building_employment_laborers_add = 400
@@ -319,6 +328,7 @@ pm_diesel_trains_principle_transport_3 = {
 			state_pollution_generation_add = 20
 		}
 	}
+	# Profit = 1800.00 (rev) - 1100.00 (cost) = 700.00
 }
 
 pm_no_passenger_trains = {
@@ -330,13 +340,14 @@ pm_wooden_passenger_carriages = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_wood_add = 8 # 160
-			goods_output_transportation_add = 10 # 300
+			goods_input_wood_add = 13 # 160 # Price: 20.0, Total: 260.0
+			goods_output_transportation_add = 15 # 300 # Price: 30.0, Total: 450.0
 		}
 		level_scaled = {
 			building_employment_clerks_add = 100
 		}
 	}
+	# Profit = 400.00 (rev) - 250.00 (cost) = 150.00
 }
 
 pm_steel_passenger_carriages = {
@@ -348,13 +359,14 @@ pm_steel_passenger_carriages = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_steel_add = 5 # 250
-			goods_output_transportation_add = 15 # 450
+			goods_input_steel_add = 5 # 250 # Price: 50.0, Total: 250.0
+			goods_output_transportation_add = 20 # 450 # Price: 30.0, Total: 600.0
 		}
 		level_scaled = {
 			building_employment_clerks_add = 200
 		}
 	}
+	# Profit = 550.00 (rev) - 350.00 (cost) = 200.00
 }
 
 pm_trade_center = {
@@ -411,7 +423,7 @@ pm_trade_center_trade_quantity_limited = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_merchant_marine_add = 3
+			goods_input_merchant_marine_add = 3 # Price: 50.0, Total: 150.0
 		}
 	}
 	state_modifiers = {
@@ -419,6 +431,7 @@ pm_trade_center_trade_quantity_limited = {
 			state_trade_quantity_mult = -0.5
 		}
 	}
+	# Profit = 0.00 (rev) - 100.00 (cost) = -100.00
 }
 
 pm_trade_center_trade_quantity_normal = {
@@ -427,9 +440,10 @@ pm_trade_center_trade_quantity_normal = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_merchant_marine_add = 4
+			goods_input_merchant_marine_add = 4 # Price: 50.0, Total: 200.0
 		}
 	}
+	# Profit = 0.00 (rev) - 150.00 (cost) = -150.00
 }
 
 pm_trade_center_trade_quantity_high = {

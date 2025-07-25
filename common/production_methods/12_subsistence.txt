@@ -1,4 +1,4 @@
-﻿default_building_subsistence_farms = {
+default_building_subsistence_farms = {
 	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
 
 	building_modifiers = {
@@ -329,11 +329,12 @@ pm_home_workshops_building_subsistence_rice_paddies = {
 
 	building_modifiers = {
 		workforce_scaled = { # 45
-			goods_output_clothes_add = 0.5 # 15
-			goods_output_furniture_add = 0.5 # 15
-			goods_output_liquor_add = 0.5 # 15
+			goods_output_clothes_add = 0 # 15 # Price: 30.0, Total: 0.0
+			goods_output_furniture_add = 0 # 15 # Price: 30.0, Total: 0.0
+			goods_output_liquor_add = 0 # 15 # Price: 30.0, Total: 0.0
 		}
 	}
+	# Profit = 100.00 (rev) - 0.00 (cost) = 100.00
 }
 
 pm_serfdom_building_subsistence_rice_paddies = {
@@ -343,11 +344,12 @@ pm_serfdom_building_subsistence_rice_paddies = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_grain_add = 1 # 20
+			goods_output_grain_add = 1 # 20 # Price: 20.0, Total: 20.0
 		}
 
 		unscaled = {
 			building_subsistence_output_add = 3
 		}
 	}
+	# Profit = 50.00 (rev) - 0.00 (cost) = 50.00
 }

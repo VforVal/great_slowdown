@@ -1,4 +1,4 @@
-﻿pm_canal = {
+pm_canal = {
 	texture = "gfx/interface/icons/production_method_icons/canals.dds"
 
 	country_modifiers = {
@@ -16,8 +16,8 @@
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_tools_add = 10
-			goods_input_coal_add = 15
+			goods_input_tools_add = 15 # Price: 40.0, Total: 600.0
+			goods_input_coal_add = 20 # Price: 30.0, Total: 600.0
 		}
 
 		level_scaled = {
@@ -26,4 +26,5 @@
 			building_employment_bureaucrats_add = 500
 		}
 	}
+	# Profit = 0.00 (rev) - 1150.00 (cost) = -1150.00
 }
