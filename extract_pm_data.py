@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simple script to extract Victoria 3 production methods data to CSV.
+Script to extract Victoria 3 production methods data to CSV.
 Outputs only the CSV file with minimal console output.
 """
 
@@ -9,7 +9,7 @@ import re
 import pandas as pd
 from typing import Dict, List, Tuple
 import pyradox
-from analyze_pm_profitability import PMProfitabilityAnalyzer
+from pm_analysis.loader import load_goods_prices
 
 def tree_to_dict(node):
     if hasattr(node, 'items'):
@@ -23,8 +23,7 @@ class PMDataExtractor:
     def __init__(self, directory: str):
         self.directory = directory
         self.file_paths = self._find_files()
-        analyzer = PMProfitabilityAnalyzer()
-        self.goods_prices = analyzer.load_goods_prices()
+        self.goods_prices = load_goods_prices()
 
     def _find_files(self) -> List[str]:
         files = []
@@ -47,9 +46,7 @@ class PMDataExtractor:
                     employment_dict = self.get_employment(pm_data)
                     total_employment = sum(employment_dict.values())
                     inputs, outputs = self.get_goods(pm_data)
-                    
                     profit_data = self.calculate_profitability(inputs, outputs, total_employment)
-
                     data = {
                         "production_method_name": pm_name,
                         "parent_building": self.get_parent_building(pm_data, filename),
@@ -66,11 +63,9 @@ class PMDataExtractor:
         input_cost = sum(self.goods_prices.get(good, 0) * quantity for good, quantity in inputs.items())
         output_revenue = sum(self.goods_prices.get(good, 0) * quantity for good, quantity in outputs.items())
         total_profit = output_revenue - input_cost
-        
         profit_per_employee = 0
         if total_employment != 0:
             profit_per_employee = total_profit / total_employment
-            
         return {
             "input_cost": input_cost,
             "output_revenue": output_revenue,

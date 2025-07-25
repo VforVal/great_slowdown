@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 import re
-from analyze_pm_profitability import PMProfitabilityAnalyzer
 import pyradox
+from pm_analysis.loader import load_goods_prices
 
 PM_CHANGES_CSV = "pm_changes.csv"
 PROD_METHODS_DIR = "common/production_methods/"
@@ -26,8 +26,7 @@ def tree_to_dict(node):
 def main():
     df = pd.read_csv(PM_CHANGES_CSV)
     df = df[df["updated_input_cost"].notna() | df["updated_revenue"].notna()]
-    analyzer = PMProfitabilityAnalyzer(goods_file_path=GOODS_FILE)
-    goods_prices = analyzer.load_goods_prices()
+    goods_prices = load_goods_prices(GOODS_FILE)
     
     file_to_pms = {}
     for _, row in df.iterrows():
@@ -93,8 +92,13 @@ def main():
                 if not isinstance(workforce_scaled, dict): workforce_scaled = {}
                 input_keys = {k: v for k, v in workforce_scaled.items() if k.startswith("goods_input_")}
                 output_keys = {k: v for k, v in workforce_scaled.items() if k.startswith("goods_output_")}
+                # --- Employment update logic ---
+                level_scaled = pm_node.get("building_modifiers", {}).get("level_scaled", {})
+                if not isinstance(level_scaled, dict):
+                    level_scaled = {}
+                employment_keys = {k: v for k, v in level_scaled.items() if k.startswith("building_employment_")}
             except Exception as e:
-                print(f"  Error accessing workforce_scaled for {pm_name}: {e}")
+                print(f"  Error accessing workforce_scaled/level_scaled for {pm_name}: {e}")
                 continue
 
             edits = {}
@@ -128,17 +132,37 @@ def main():
                     edits[key] = (old_val, new_val, price)
                     pm_changed = True
 
+            # --- Employment update logic ---
+            updated_employment = row.get("updated_employment")
+            original_employment = row.get("total_employment")
+            if pd.notna(updated_employment) and employment_keys:
+                delta = int(updated_employment) - int(original_employment)
+                n_keys = len(employment_keys)
+                if n_keys > 0 and delta != 0:
+                    base_delta = delta // n_keys
+                    remainder = delta % n_keys
+                    for idx, (key, old_val) in enumerate(employment_keys.items()):
+                        add = base_delta + (1 if idx < abs(remainder) and remainder != 0 else 0)
+                        if remainder < 0 and idx < abs(remainder):
+                            add = base_delta - 1
+                        new_val = int(old_val) + add
+                        edits[key] = (old_val, new_val, None)  # None for price, not used
+                        pm_changed = True
+
             if not pm_changed:
                 continue
             file_changed = True
 
             for i in range(pm_start_line, pm_end_line + 1):
-                for key, (old_val, new_val, price) in edits.items():
+                for key, (old_val, new_val, price) in list(edits.items()):
                     pattern = re.compile(r'(\s*' + re.escape(key) + r'\s*=\s*)' + str(old_val) + r'(\b.*)')
                     match = pattern.search(lines[i])
                     if match:
-                        total_good_cost = new_val * price
-                        comment = f" # Price: {price}, Total: {total_good_cost}"
+                        if price is not None:
+                            total_good_cost = new_val * price
+                            comment = f" # Price: {price}, Total: {total_good_cost}"
+                        else:
+                            comment = " # Employment update"
                         new_line = f"{match.group(1)}{new_val}{match.group(2).rstrip()}{comment}\n"
                         print(f"  - Changing line {i+1}: {lines[i].strip()} -> {new_line.strip()}")
                         lines[i] = new_line
