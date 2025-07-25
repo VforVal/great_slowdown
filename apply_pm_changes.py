@@ -25,7 +25,7 @@ def tree_to_dict(node):
 
 def main():
     df = pd.read_csv(PM_CHANGES_CSV)
-    df = df[df["updated_input_cost"].notna() | df["updated_revenue"].notna()]
+    df = df[df["updated_input_cost"].notna() | df["updated_revenue"].notna() | df["updated_employment"].notna()]
     goods_prices = load_goods_prices(GOODS_FILE)
     
     file_to_pms = {}
@@ -134,20 +134,44 @@ def main():
 
             # --- Employment update logic ---
             updated_employment = row.get("updated_employment")
-            original_employment = row.get("total_employment")
-            if pd.notna(updated_employment) and employment_keys:
-                delta = int(updated_employment) - int(original_employment)
-                n_keys = len(employment_keys)
-                if n_keys > 0 and delta != 0:
-                    base_delta = delta // n_keys
-                    remainder = delta % n_keys
-                    for idx, (key, old_val) in enumerate(employment_keys.items()):
-                        add = base_delta + (1 if idx < abs(remainder) and remainder != 0 else 0)
-                        if remainder < 0 and idx < abs(remainder):
-                            add = base_delta - 1
-                        new_val = int(old_val) + add
-                        edits[key] = (old_val, new_val, None)  # None for price, not used
-                        pm_changed = True
+            if pd.notna(updated_employment) and updated_employment != 0 and employment_keys:
+                original_total_employment = sum(employment_keys.values())
+                new_total_employment = int(updated_employment)
+
+                if new_total_employment == original_total_employment:
+                    continue
+
+                if original_total_employment == 0:
+                    if employment_keys:
+                        delta = new_total_employment
+                        n_keys = len(employment_keys)
+                        base_delta = delta // n_keys
+                        remainder = delta % n_keys
+                        for idx, (key, old_val) in enumerate(employment_keys.items()):
+                            add = base_delta + (1 if idx < remainder else 0)
+                            new_val = int(old_val) + add
+                            edits[key] = (old_val, new_val, None)
+                            pm_changed = True
+                else:
+                    new_values_float = {key: (val / original_total_employment) * new_total_employment for key, val in employment_keys.items()}
+                    new_values_floor = {key: int(val) for key, val in new_values_float.items()}
+                    remainders = {key: val - new_values_floor[key] for key, val in new_values_float.items()}
+                    
+                    current_total = sum(new_values_floor.values())
+                    shortfall = new_total_employment - current_total
+                    
+                    keys_sorted_by_remainder = sorted(remainders, key=lambda k: remainders[k], reverse=True)
+                    
+                    final_new_values = new_values_floor.copy()
+                    for i in range(shortfall):
+                        key_to_increment = keys_sorted_by_remainder[i]
+                        final_new_values[key_to_increment] += 1
+
+                    for key, old_val in employment_keys.items():
+                        new_val = final_new_values[key]
+                        if int(old_val) != new_val:
+                            edits[key] = (old_val, new_val, None)
+                            pm_changed = True
 
             if not pm_changed:
                 continue
