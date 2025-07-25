@@ -3394,11 +3394,11 @@ ai_strategy_default = {
 			}
 			add = {
 				value = investment_pool_income
-				divide = 2000 # 1 construction output per this much into the investment pool
+				divide = 2800 # 1 construction output per this much into the investment pool
 			}
 			add = {
 				value = income
-				divide = 2000 # 1 construction output per this much income
+				divide = 2800 # 1 construction output per this much income
 			}
 
 			if = {
@@ -3450,11 +3450,11 @@ ai_strategy_default = {
 			}
 			add = {
 				value = investment_pool_income
-				divide = 1200 # 1 construction output per this much into the investment pool
+				divide = 1700 # 1 construction output per this much into the investment pool
 			}
 			add = {
 				value = income
-				divide = 1200 # 1 construction output per this much income
+				divide = 1700 # 1 construction output per this much income
 			}
 
 			if = {
@@ -3506,12 +3506,12 @@ ai_strategy_default = {
 			}
 			add = {
 				value = investment_pool_income
-				divide = 700 # 1 construction output per this much into the investment pool
+				divide = 1100 # 1 construction output per this much into the investment pool
 			}
 
 			add = {
 				value = income
-				divide = 700 # 1 construction output per this much income
+				divide = 1100 # 1 construction output per this much income
 			}
 			
 			if = {
@@ -3562,12 +3562,12 @@ ai_strategy_default = {
 			}
 			add = {
 				value = investment_pool_income
-				divide = 600 # 1 construction output per this much into the investment pool
+				divide = 1000 # 1 construction output per this much into the investment pool
 			}
 
 			add = {
 				value = income
-				divide = 600 # 1 construction output per this much income
+				divide = 1000 # 1 construction output per this much income
 			}
 			
 			if = {

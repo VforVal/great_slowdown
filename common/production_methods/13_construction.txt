@@ -31,6 +31,7 @@ pm_wooden_buildings = {
 		}
 	}
 	# Profit = 0.00 (rev) - 2800.00 (cost) = -2800.00
+	# Cost per construction = 2800
 }
 
 pm_iron_frame_buildings = {
@@ -46,8 +47,6 @@ pm_iron_frame_buildings = {
 		}
 	}
 	building_modifiers = {
-        # Total input cost: 3600 (wood: 45x20=900, fabric: 20x20=400, iron: 50x40=2000, tools: 10x30=300)
-        # Cost per construction point: 1200
 		workforce_scaled = {
             goods_input_wood_add = 65 # Price: 20.0, Total: 1300.0
 			goods_input_fabric_add = 40 # Price: 20.0, Total: 800.0
@@ -71,6 +70,7 @@ pm_iron_frame_buildings = {
 		}
 	}
 	# Profit = 0.00 (rev) - 5100.00 (cost) = -5100.00
+	# Cost per construction = 1700
 }
 
 pm_steel_frame_buildings = {
@@ -86,8 +86,6 @@ pm_steel_frame_buildings = {
 		}
 	}
 	building_modifiers = {
-        # Total input cost: 4900 (steel: 56x50=2800, glass: 40x30=1200, explosives: 10x30=300, tools: 20x30=600)
-        # Cost per construction point: 700
 		workforce_scaled = {
             goods_input_steel_add = 66 # Price: 50.0, Total: 3300.0
 			goods_input_glass_add = 55 # Price: 40.0, Total: 2200.0
@@ -111,6 +109,7 @@ pm_steel_frame_buildings = {
 		}
 	}
 	# Profit = 0.00 (rev) - 7900.00 (cost) = -7900.00
+	# Cost per construction ~ 1100
 }
 
 pm_arc_welded_buildings = {
@@ -126,8 +125,6 @@ pm_arc_welded_buildings = {
 		}
 	}
 	building_modifiers = {
-        # Total input cost: 6600 (steel: 48x50=2400, glass: 40x30=1200, explosives: 20x30=600, tools: 40x30=1200, electricity: 40x30=1200)
-        # Cost per construction point: 600
 		workforce_scaled = {
             goods_input_steel_add = 58 # Price: 50.0, Total: 2900.0
 			goods_input_glass_add = 55 # Price: 40.0, Total: 2200.0
@@ -155,4 +152,5 @@ pm_arc_welded_buildings = {
 
 	required_input_goods = electricity
 	# Profit = 0.00 (rev) - 10900.00 (cost) = -10900.00
+	# Cost per construction ~ 1000
 }
